@@ -138,3 +138,4 @@ em,.hero-product p,.scent-scene-caption p,.cta-monogram{font-family:var(--font-h
 .simple-home .catalog .product-card h3{font-size:20px}
 .simple-home .home-fragrances .fragrance-row h3{font-size:22px}
 @media(max-width:750px){.simple-home .catalog .product-card h3{font-size:16px}.simple-home .home-fragrances .fragrance-row h3{font-size:19px}}
+.product-feature-checks{list-style:none;padding:0;margin:0 0 12px;display:grid;gap:11px}.product-feature-checks li{display:flex;align-items:center;gap:10px;font-size:14px;color:#294b38;line-height:1.5}.product-feature-checks svg{width:23px;height:23px;padding:2px;border-radius:50%;background:#e7efdf;flex-shrink:0}.feature-usage-note{font-size:11px;line-height:1.5;color:#74806b;margin:0 0 20px}@media(max-width:750px){.product-feature-checks li{font-size:13px}.product-feature-checks{gap:10px}}
