@@ -1,0 +1,9 @@
+import WhatsAppButton from '@/components/WhatsAppButton';
+import Link from 'next/link';
+import Navigation from './Navigation';
+export function Header(){return <header className="header"><Link href="/" className="brand" aria-label="HUME Spaces home">HUME<span>Spaces</span></Link><Navigation/><WhatsAppButton label="WhatsApp enquiry" className="header-cta"/></header>}
+export function Footer(){return <footer><div className="footer-top"><Link href="/" className="brand">HUME<span>Spaces</span></Link><p>Commercial scenting.<br/>Considered for your space.</p><div><Link href="/about">About HUME Spaces</Link><Link href="/contact">Contact</Link><Link href="/privacy">Privacy</Link></div><div><Link href="/equipment">Explore equipment</Link><Link href="/selector">Describe your space</Link><Link href="/compare">Compare products</Link><Link href="/industries">Solutions by space</Link><Link href="/faq">Scenting FAQs</Link><Link href="/search">Search</Link><WhatsAppButton label="WhatsApp: +91 9559024822" className="whatsapp-link"/></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} HUME Spaces</span><span>Equipment & fragrance discovery · India</span></div></footer>}
+export function Cta(){return <section className="cta wrap"><div><p className="eyebrow">BEGIN WITH THE SPACE</p><h2>Request a scenting<br/>consultation</h2><p>Share your layout, airflow and operating hours.<br/>Explore the equipment and fragrance direction together.</p></div><WhatsAppButton label="Enquire on WhatsApp" className="button light"/></section>}
+export function PageIntro({eyebrow,title,description}:{eyebrow:string;title:string;description:string}){return <section className="page-intro wrap"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="lede">{description}</p><WhatsAppButton topic={title}/></section>}
+
+
