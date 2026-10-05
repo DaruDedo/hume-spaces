@@ -134,3 +134,7 @@ em,.hero-product p,.scent-scene-caption p,.cta-monogram{font-family:var(--font-h
 .brand{letter-spacing:.08em}
 .product-card h3,.simple-home .catalog .product-card h3{font-weight:500;letter-spacing:-.035em}
 .product-price{font-weight:600;font-variant-numeric:tabular-nums}
+/* Slightly smaller names in homepage browsing cards. */
+.simple-home .catalog .product-card h3{font-size:20px}
+.simple-home .home-fragrances .fragrance-row h3{font-size:22px}
+@media(max-width:750px){.simple-home .catalog .product-card h3{font-size:16px}.simple-home .home-fragrances .fragrance-row h3{font-size:19px}}
