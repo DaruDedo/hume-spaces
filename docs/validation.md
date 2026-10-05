@@ -11,3 +11,6 @@
 - Final production server at `http://127.0.0.1:3100` returned HTTP 200 for the homepage and the expected 503/`accepted: false` for an unconnected enquiry. Production mobile navigation closes after selecting a route. Desktop document width was 1440 px at a 1440 px viewport. Final screenshots were captured against this production server.
 
 These checks validate the software. They do not verify supplier specifications, approved pricing, scent inventory, service promises or business contacts. A real receiving endpoint and final privacy terms remain unconnected.
+
+## Launch readiness update
+Production build and six tests passed. Production robots allows crawling, canonical uses humespaces.in, sitemap contains 32 URLs. Browser checks confirmed fragrance selection persistence across navigation/reload, clearing, enquiry attribution and no mobile overflow. Analytics stays disabled without an ID; live GA reporting requires owner configuration and validation.

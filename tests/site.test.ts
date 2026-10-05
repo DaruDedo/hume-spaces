@@ -1,0 +1,4 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {siteOrigin,allowIndexing} from '../lib/site';
+test('production uses the approved domain and preview/development remain noindex',()=>{const original={...process.env};try{delete process.env.SITE_ORIGIN;delete process.env.SITE_NOINDEX;delete process.env.VERCEL_ENV;Object.assign(process.env,{NODE_ENV:'production'});assert.equal(siteOrigin(),'https://humespaces.in');assert.equal(allowIndexing(),true);process.env.VERCEL_ENV='preview';assert.equal(allowIndexing(),false);delete process.env.VERCEL_ENV;process.env.SITE_NOINDEX='true';assert.equal(allowIndexing(),false);delete process.env.SITE_NOINDEX;Object.assign(process.env,{NODE_ENV:'development'});assert.equal(siteOrigin(),undefined);assert.equal(allowIndexing(),false);}finally{for(const key of Object.keys(process.env))if(!(key in original))delete process.env[key];Object.assign(process.env,original);}});

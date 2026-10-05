@@ -9,4 +9,5 @@ Attach humespaces.in and optionally www.humespaces.in through the chosen host. A
 
 After deployment, verify /robots.txt, /sitemap.xml, /llms.txt, product canonical URLs, WhatsApp links and mobile navigation. Add the domain to Google Search Console and submit its sitemap. Current enquiries open WhatsApp; the legacy API webhook is optional and is not required for the WhatsApp flow.
 
-Repository destination, hosting provider and registrar are still to be confirmed. No remote push or public deployment has been performed.
+Repository: https://github.com/DaruDedo/hume-spaces. The owner deployed the website. Production uses humespaces.in as its default origin; SITE_ORIGIN can override it. Verify the latest commit is deployed. Hosting provider and registrar account access remain with the owner.
+
