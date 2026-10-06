@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import {buyerGuides} from '../lib/buyer-guides';
 import {guides,products} from '../lib/content';
 test('all requested buyer guides have unique routes, distinct advice and existing recommendations',()=>{
- assert.equal(buyerGuides.length,30);
- assert.equal(new Set(buyerGuides.map(g=>g.slug)).size,30);
+ assert.equal(buyerGuides.length,45);
+ assert.equal(new Set(buyerGuides.map(g=>g.slug)).size,45);
  const bodies=new Set<string>();
  for(const g of buyerGuides){
   assert.ok(products.some(p=>p.slug===g.product),g.slug);

@@ -1,3 +1,4 @@
+import {hvacGuides} from './hvac-guides';
 import {machineGuides} from './machine-guides';
 export const buyerGuideSources=[
  {name:'Initial India — Signature Scenting',url:'https://www.initial.com/in/hygiene-services/air-hygiene/signature-scenting',summary:'Describes a signature-scent device and fragrance options for commercial settings.'},
@@ -7,6 +8,7 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+...hvacGuides,
 ...machineGuides,
 guide('best-scent-marketing-companies-india','Best Scent Marketing Companies in India: Complete Buyer’s Guide','The best scent marketing company for your business is the one that can document a suitable fragrance, equipment plan, refill costs and support for your actual site. Compare proposals rather than unverified rankings.','800ml-commercial-diffuser',[
 ['Build a shortlist by scope','Separate equipment suppliers, managed scenting services and custom-fragrance developers. Initial India describes signature scenting; Aerocide describes HVAC scenting; Signature Aromas describes oils, machines and fragrance development. These are examples from their official websites, not a ranked or independently tested list. HUME Spaces offers a priced equipment catalog and fragrance discovery; confirm any additional service scope in a quote.'],
