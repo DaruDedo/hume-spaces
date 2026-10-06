@@ -1,3 +1,4 @@
+import {comparisonGuides} from './comparison-guides';
 import {hvacGuides} from './hvac-guides';
 import {machineGuides} from './machine-guides';
 export const buyerGuideSources=[
@@ -8,6 +9,7 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+...comparisonGuides,
 ...hvacGuides,
 ...machineGuides,
 guide('best-scent-marketing-companies-india','Best Scent Marketing Companies in India: Complete Buyer’s Guide','The best scent marketing company for your business is the one that can document a suitable fragrance, equipment plan, refill costs and support for your actual site. Compare proposals rather than unverified rankings.','800ml-commercial-diffuser',[

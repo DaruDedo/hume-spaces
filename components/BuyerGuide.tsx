@@ -1,3 +1,4 @@
+import {comparisonGuides,comparisonSources} from '@/lib/comparison-guides';
 import {hvacGuides,hvacSources} from '@/lib/hvac-guides';
 import {machineGuides} from '@/lib/machine-guides';
 import Link from 'next/link';
@@ -8,8 +9,9 @@ import {siteOrigin} from '@/lib/site';
 import {JsonLd,breadcrumbData} from './StructuredData';
 import WhatsAppButton from './WhatsAppButton';
 export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]}){
+ const comparison=comparisonGuides.find(item=>item.slug===g.slug);
  const isHvacGuide=hvacGuides.some(item=>item.slug===g.slug);
- const sources=isHvacGuide?hvacSources:buyerGuideSources;
+ const sources=comparison?comparisonSources:isHvacGuide?hvacSources:buyerGuideSources;
  const isMachineGuide=machineGuides.some(item=>item.slug===g.slug);
  const p=products.find(p=>p.slug===g.product)!;
  const path=`/guides/${g.slug}`;
@@ -19,7 +21,8 @@ export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]})
   <header><p className="eyebrow">INDIA SCENTING BUYER GUIDE</p><h1>{g.title}</h1><p className="buyer-answer">{g.description}</p><p className="buyer-byline">By HUME Spaces · Published 7 October 2026</p></header>
   <section className="buyer-product" aria-labelledby="guide-product-title"><div className="buyer-product-image"><Image src={`/images/spaces/${p.image}`} alt={p.name} fill sizes="(max-width: 650px) 140px, 240px"/></div><div><p className="eyebrow">EXPLORE HUME SPACES EQUIPMENT</p><h2 id="guide-product-title">{p.name}</h2><p className="buyer-product-price">₹{p.price.toLocaleString('en-IN')}</p><p>{p.capacity} reservoir · Listed coverage: {p.coverage}*</p><p className="buyer-product-note">A starting point for a suitable zone. Confirm approved oil, layout, GST, delivery and service scope before ordering.</p><div className="buyer-product-actions"><Link className="button outline" href={`/equipment/${p.slug}`}>Product details →</Link><WhatsAppButton topic={`${g.title}: ${p.name}`} label="Enquire on WhatsApp"/></div></div></section>
   <aside className="buyer-disclosure">Published by HUME Spaces, which sells scenting equipment. “Best” means the best fit for your brief; this guide does not award rankings or claim independent product testing.</aside>
-  <nav className="buyer-contents" aria-label="On this page"><strong>In this guide</strong>{g.sections.map(([heading],i)=><a href={`#section-${i+1}`} key={heading}>{heading}</a>)}<a href="#buyer-faq">Buyer questions</a></nav>
+  {comparison&&<section className="buyer-comparison" aria-labelledby="comparison-heading"><h2 id="comparison-heading">At a glance</h2><div className="buyer-table-scroll" role="region" aria-label="Format comparison" tabIndex={0}><table><thead><tr><th scope="col">Compare</th><th scope="col">{comparison.left}</th><th scope="col">{comparison.right}</th></tr></thead><tbody>{comparison.rows.map(([label,left,right])=><tr key={label}><th scope="row">{label}</th><td>{left}</td><td>{right}</td></tr>)}</tbody></table></div></section>}
+<nav className="buyer-contents" aria-label="On this page"><strong>In this guide</strong>{g.sections.map(([heading],i)=><a href={`#section-${i+1}`} key={heading}>{heading}</a>)}<a href="#buyer-faq">Buyer questions</a></nav>
   <div className="buyer-body">{g.sections.map(([heading,body],i)=><section id={`section-${i+1}`} key={heading}><h2>{heading}</h2><p>{body}</p></section>)}
   <section className="buyer-checklist"><h2>Before you accept a quote</h2><ul><li>Identify the proposed zones and areas to leave unscented.</li><li>Check exact equipment specifications and approved fragrance.</li><li>Request consumption assumptions and itemised ongoing costs.</li><li>Confirm installation responsibilities and written support terms.</li></ul><Link href="/selector" className="text-link dark">Prepare your property brief →</Link></section>
   <section id="buyer-faq"><h2>Buyer questions</h2>{g.questions.map(([q,a])=><details className="simple-disclosure" key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
