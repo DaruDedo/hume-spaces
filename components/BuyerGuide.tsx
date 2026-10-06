@@ -1,3 +1,4 @@
+import {machineGuides} from '@/lib/machine-guides';
 import Link from 'next/link';
 import Image from 'next/image';
 import {buyerGuides,buyerGuideSources} from '@/lib/buyer-guides';
@@ -6,6 +7,7 @@ import {siteOrigin} from '@/lib/site';
 import {JsonLd,breadcrumbData} from './StructuredData';
 import WhatsAppButton from './WhatsAppButton';
 export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]}){
+ const isMachineGuide=machineGuides.some(item=>item.slug===g.slug);
  const p=products.find(p=>p.slug===g.product)!;
  const path=`/guides/${g.slug}`;
  const related=buyerGuides.filter(other=>other.slug!==g.slug&&other.product===g.product).slice(0,3);
@@ -18,7 +20,7 @@ export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]})
   <div className="buyer-body">{g.sections.map(([heading,body],i)=><section id={`section-${i+1}`} key={heading}><h2>{heading}</h2><p>{body}</p></section>)}
   <section className="buyer-checklist"><h2>Before you accept a quote</h2><ul><li>Identify the proposed zones and areas to leave unscented.</li><li>Check exact equipment specifications and approved fragrance.</li><li>Request consumption assumptions and itemised ongoing costs.</li><li>Confirm installation responsibilities and written support terms.</li></ul><Link href="/selector" className="text-link dark">Prepare your property brief →</Link></section>
   <section id="buyer-faq"><h2>Buyer questions</h2>{g.questions.map(([q,a])=><details className="simple-disclosure" key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
-  <section className="buyer-sources"><h2>Sources and how to use them</h2><p>Official provider pages reviewed on 7 October 2026. These sources describe the providers’ own offers; they do not verify service quality or establish a ranking. Confirm current scope directly.</p>{buyerGuideSources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name} ↗</a> — {s.summary}</p>)}</section>
+  <section className="buyer-sources"><h2>Sources and how to use them</h2>{isMachineGuide?<><p>Equipment figures and prices come from the HUME Spaces catalog, reviewed on 7 October 2026. Coverage is indicative; no independent coverage test or guaranteed machine count is claimed.</p><p><Link href="/compare">Compare the listed product specifications →</Link></p><p><Link href={`/equipment/${p.slug}`}>Read the featured model specifications and FAQs →</Link></p></>:<><p>Official provider pages reviewed on 7 October 2026. These sources describe the providers’ own offers; they do not verify service quality or establish a ranking. Confirm current scope directly.</p>{buyerGuideSources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name} ↗</a> — {s.summary}</p>)}</>}</section>
   <section><h2>Discuss your property with HUME Spaces</h2><p>Send your city, property type, zone area, ventilation and operating hours. Ask for a suitable equipment and approved-fragrance pairing, with all requested services itemised.</p><WhatsAppButton topic={`${g.title}: property enquiry`} label="Send your brief on WhatsApp"/></section>
   <section><h2>Related buying guides</h2><div className="buyer-related">{related.map(r=><Link key={r.slug} href={`/guides/${r.slug}`}>{r.title} →</Link>)}<Link href="/compare">Compare HUME Spaces products →</Link></div></section></div>
   <JsonLd data={breadcrumbData([{name:'Home',path:'/'},{name:'Guides',path:'/guides'},{name:g.title,path}])}/>
