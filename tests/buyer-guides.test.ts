@@ -8,8 +8,8 @@ test('new articles use direct paths while original guides keep their existing pa
  assert.equal(guidePath('choosing-a-scent-machine'),'/guides/choosing-a-scent-machine');
 });
 test('all requested buyer guides have unique routes, distinct advice and existing recommendations',()=>{
- assert.equal(buyerGuides.length,656);
- assert.equal(new Set(buyerGuides.map(g=>g.slug)).size,656);
+ assert.equal(buyerGuides.length,706);
+ assert.equal(new Set(buyerGuides.map(g=>g.slug)).size,706);
  const bodies=new Set<string>();
  for(const g of buyerGuides){
   assert.ok(products.some(p=>p.slug===g.product),g.slug);

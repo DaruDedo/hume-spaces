@@ -1,3 +1,4 @@
+import {salonGuides} from './salon-guides';
 import {gymFragrancePages} from './gym-fragrances';
 import {gymComparisonPages} from './gym-comparisons';
 import {gymProblemPages} from './gym-problems';
@@ -21,6 +22,7 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+...salonGuides,
 ...gymFragrancePages,
 ...gymComparisonPages,
 ...gymProblemPages,
