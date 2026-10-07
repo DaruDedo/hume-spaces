@@ -1,3 +1,4 @@
+import {gymTechnologyPages} from './gym-technology';
 import {gymCommercialPages} from './gym-commercial';
 import {gymGuides} from './gym-guides';
 import {hotelComparisonPages} from './hotel-comparisons';
@@ -17,12 +18,13 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+...gymTechnologyPages,
 ...gymCommercialPages,
 ...gymGuides,
 ...hotelComparisonPages,
 ...hotelFragrancePages,
 ...hotelProblemPages,
-...hotelTechnologyPages,
+...hotelTechnologyPages.filter(g=>!gymTechnologyPages.some(t=>t.slug===g.slug)),
 ...hotelCommercialPages,
 ...hotelGuides,
 ...comparisonGuides.filter(g=>!hotelComparisonPages.some(h=>h.slug===g.slug)),
