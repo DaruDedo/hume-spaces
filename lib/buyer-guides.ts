@@ -1,3 +1,4 @@
+import {salonFragrancePages} from './salon-fragrances';
 import {salonComparisonPages} from './salon-comparisons';
 import {salonProblemPages} from './salon-problems';
 import {salonTechnologyPages} from './salon-technology';
@@ -26,6 +27,7 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+...salonFragrancePages,
 ...salonComparisonPages,
 ...salonProblemPages,
 ...salonTechnologyPages.filter(g=>g.slug!=='how-fragrance-oil-atomization-works'),
