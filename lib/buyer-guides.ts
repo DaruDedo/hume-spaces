@@ -1,3 +1,4 @@
+import {clinicTechnologyPages} from './clinic-technology';
 import {clinicCommercialPages} from './clinic-commercial';
 import {clinicGuides} from './clinic-guides';
 import {salonFragrancePages} from './salon-fragrances';
@@ -29,6 +30,7 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+...clinicTechnologyPages,
 ...clinicCommercialPages,
 ...clinicGuides,
 ...salonFragrancePages,
