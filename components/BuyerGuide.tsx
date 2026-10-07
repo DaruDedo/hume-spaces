@@ -1,3 +1,4 @@
+import {hotelCommercialPages} from '@/lib/hotel-commercial';
 import {hotelGuides,hotelSources} from '@/lib/hotel-guides';
 import {guidePath} from '@/lib/guide-path';
 import {comparisonGuides,comparisonSources} from '@/lib/comparison-guides';
@@ -11,17 +12,19 @@ import {siteOrigin} from '@/lib/site';
 import {JsonLd,breadcrumbData} from './StructuredData';
 import WhatsAppButton from './WhatsAppButton';
 export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]}){
- const isHotelGuide=hotelGuides.some(item=>item.slug===g.slug);
+ const isHotelCommercial=hotelCommercialPages.some(item=>item.slug===g.slug);
+ const hotelHub=isHotelCommercial?'/hotel-scenting-solutions':'/hotel-scenting-guides';
+ const isHotelGuide=isHotelCommercial||hotelGuides.some(item=>item.slug===g.slug);
  const comparison=comparisonGuides.find(item=>item.slug===g.slug);
  const isHvacGuide=hvacGuides.some(item=>item.slug===g.slug);
  const sources=isHotelGuide?hotelSources:comparison?comparisonSources:isHvacGuide?hvacSources:buyerGuideSources;
- const isMachineGuide=machineGuides.some(item=>item.slug===g.slug);
+ const isMachineGuide=isHotelCommercial||machineGuides.some(item=>item.slug===g.slug);
  const p=products.find(p=>p.slug===g.product)!;
  const path=guidePath(g.slug);
- const related=(isHotelGuide?hotelGuides:buyerGuides).filter(other=>other.slug!==g.slug&&other.product===g.product).slice(0,3);
+ const related=(isHotelCommercial?hotelCommercialPages:isHotelGuide?hotelGuides:buyerGuides).filter(other=>other.slug!==g.slug&&other.product===g.product).slice(0,3);
  return <article className="wrap buyer-guide">
-  <nav aria-label="Breadcrumb"><Link href={isHotelGuide?"/hotel-scenting-guides":"/guides"}>{isHotelGuide?"← Hotel scenting guides":"← All guides"}</Link></nav>
-  <header><p className="eyebrow">{isHotelGuide?"HOTEL SCENTING EDUCATION":"INDIA SCENTING BUYER GUIDE"}</p><h1>{g.title}</h1><p className="buyer-answer">{g.description}</p><p className="buyer-byline">By HUME Spaces · Published 7 October 2026</p></header>
+  <nav aria-label="Breadcrumb"><Link href={isHotelGuide?hotelHub:"/guides"}>{isHotelCommercial?"← Hotel equipment & fragrance enquiries":isHotelGuide?"← Hotel scenting guides":"← All guides"}</Link></nav>
+  <header><p className="eyebrow">{isHotelCommercial?"HOTEL EQUIPMENT & FRAGRANCE ENQUIRIES":isHotelGuide?"HOTEL SCENTING EDUCATION":"INDIA SCENTING BUYER GUIDE"}</p><h1>{g.title}</h1><p className="buyer-answer">{g.description}</p><p className="buyer-byline">By HUME Spaces · Published 7 October 2026</p></header>
   <section className="buyer-product" aria-labelledby="guide-product-title"><div className="buyer-product-image"><Image src={`/images/spaces/${p.image}`} alt={p.name} fill sizes="(max-width: 650px) 140px, 240px"/></div><div><p className="eyebrow">EXPLORE HUME SPACES EQUIPMENT</p><h2 id="guide-product-title">{p.name}</h2><p className="buyer-product-price">₹{p.price.toLocaleString('en-IN')}</p><p>{p.capacity} reservoir · Listed coverage: {p.coverage}*</p><p className="buyer-product-note">A starting point for a suitable zone. Confirm approved oil, layout, GST, delivery and service scope before ordering.</p><div className="buyer-product-actions"><Link className="button outline" href={`/equipment/${p.slug}`}>Product details →</Link><WhatsAppButton topic={`${g.title}: ${p.name}`} label="Enquire on WhatsApp"/></div></div></section>
   <aside className="buyer-disclosure">{isHotelGuide?"Published by HUME Spaces. Equipment suggestions are starting points for property review; no guaranteed guest, booking or revenue outcome is claimed.":"Published by HUME Spaces, which sells scenting equipment. Best means the best fit for your brief; this guide does not award rankings or claim independent product testing."}</aside>
   {comparison&&<section className="buyer-comparison" aria-labelledby="comparison-heading"><h2 id="comparison-heading">At a glance</h2><div className="buyer-table-scroll" role="region" aria-label="Format comparison" tabIndex={0}><table><thead><tr><th scope="col">Compare</th><th scope="col">{comparison.left}</th><th scope="col">{comparison.right}</th></tr></thead><tbody>{comparison.rows.map(([label,left,right])=><tr key={label}><th scope="row">{label}</th><td>{left}</td><td>{right}</td></tr>)}</tbody></table></div></section>}
@@ -32,7 +35,7 @@ export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]})
   <section className="buyer-sources"><h2>Sources and how to use them</h2>{isMachineGuide?<><p>Equipment figures and prices come from the HUME Spaces catalog, reviewed on 7 October 2026. Coverage is indicative; no independent coverage test or guaranteed machine count is claimed.</p><p><Link href="/compare">Compare the listed product specifications →</Link></p><p><Link href={`/equipment/${p.slug}`}>Read the featured model specifications and FAQs →</Link></p></>:<><p>Official provider pages reviewed on 7 October 2026. External sources describe general formats and their own products; they do not verify HUME specifications or replace the supplied installation manual. No independent ranking is claimed.</p>{sources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name} ↗</a> — {s.summary}</p>)}</>}</section>
   <section><h2>Discuss your property with HUME Spaces</h2><p>Send your city, property type, zone area, ventilation and operating hours. Ask for a suitable equipment and approved-fragrance pairing, with all requested services itemised.</p><WhatsAppButton topic={`${g.title}: property enquiry`} label="Send your brief on WhatsApp"/></section>
   <section><h2>Related buying guides</h2><div className="buyer-related">{related.map(r=><Link key={r.slug} href={guidePath(r.slug)}>{r.title} →</Link>)}<Link href="/compare">Compare HUME Spaces products →</Link></div></section></div>
-  <JsonLd data={breadcrumbData([{name:'Home',path:'/'},{name:isHotelGuide?'Hotel scenting guides':'Guides',path:isHotelGuide?'/hotel-scenting-guides':'/guides'},{name:g.title,path}])}/>
+  <JsonLd data={breadcrumbData([{name:'Home',path:'/'},{name:isHotelCommercial?'Hotel scenting solutions':isHotelGuide?'Hotel scenting guides':'Guides',path:isHotelGuide?hotelHub:'/guides'},{name:g.title,path}])}/>
   <JsonLd data={{'@context':'https://schema.org','@type':'Article',headline:g.title,description:g.description,datePublished:'2026-10-07',author:{'@type':'Organization',name:'HUME Spaces'},publisher:{'@type':'Organization',name:'HUME Spaces'},...(siteOrigin()?{mainEntityOfPage:siteOrigin()+path,image:siteOrigin()+`/images/spaces/${p.image}`}:{})}}/>
   <JsonLd data={{'@context':'https://schema.org','@type':'FAQPage',mainEntity:g.questions.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}}/>
  </article>;
