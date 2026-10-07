@@ -2,6 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {buyerGuides} from '../lib/buyer-guides';
 import {guides,products} from '../lib/content';
+import {guidePath} from '../lib/guide-path';
+test('new articles use direct paths while original guides keep their existing paths',()=>{
+ for(const g of buyerGuides)assert.equal(guidePath(g.slug),`/${g.slug}`);
+ assert.equal(guidePath('choosing-a-scent-machine'),'/guides/choosing-a-scent-machine');
+});
 test('all requested buyer guides have unique routes, distinct advice and existing recommendations',()=>{
  assert.equal(buyerGuides.length,60);
  assert.equal(new Set(buyerGuides.map(g=>g.slug)).size,60);

@@ -1,3 +1,4 @@
+import {guidePath} from '@/lib/guide-path';
 import {comparisonGuides,comparisonSources} from '@/lib/comparison-guides';
 import {hvacGuides,hvacSources} from '@/lib/hvac-guides';
 import {machineGuides} from '@/lib/machine-guides';
@@ -14,7 +15,7 @@ export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]})
  const sources=comparison?comparisonSources:isHvacGuide?hvacSources:buyerGuideSources;
  const isMachineGuide=machineGuides.some(item=>item.slug===g.slug);
  const p=products.find(p=>p.slug===g.product)!;
- const path=`/guides/${g.slug}`;
+ const path=guidePath(g.slug);
  const related=buyerGuides.filter(other=>other.slug!==g.slug&&other.product===g.product).slice(0,3);
  return <article className="wrap buyer-guide">
   <nav aria-label="Breadcrumb"><Link href="/guides">← All guides</Link></nav>
@@ -28,7 +29,7 @@ export default function BuyerGuide({guide:g}:{guide:typeof buyerGuides[number]})
   <section id="buyer-faq"><h2>Buyer questions</h2>{g.questions.map(([q,a])=><details className="simple-disclosure" key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
   <section className="buyer-sources"><h2>Sources and how to use them</h2>{isMachineGuide?<><p>Equipment figures and prices come from the HUME Spaces catalog, reviewed on 7 October 2026. Coverage is indicative; no independent coverage test or guaranteed machine count is claimed.</p><p><Link href="/compare">Compare the listed product specifications →</Link></p><p><Link href={`/equipment/${p.slug}`}>Read the featured model specifications and FAQs →</Link></p></>:<><p>Official provider pages reviewed on 7 October 2026. External sources describe general formats and their own products; they do not verify HUME specifications or replace the supplied installation manual. No independent ranking is claimed.</p>{sources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name} ↗</a> — {s.summary}</p>)}</>}</section>
   <section><h2>Discuss your property with HUME Spaces</h2><p>Send your city, property type, zone area, ventilation and operating hours. Ask for a suitable equipment and approved-fragrance pairing, with all requested services itemised.</p><WhatsAppButton topic={`${g.title}: property enquiry`} label="Send your brief on WhatsApp"/></section>
-  <section><h2>Related buying guides</h2><div className="buyer-related">{related.map(r=><Link key={r.slug} href={`/guides/${r.slug}`}>{r.title} →</Link>)}<Link href="/compare">Compare HUME Spaces products →</Link></div></section></div>
+  <section><h2>Related buying guides</h2><div className="buyer-related">{related.map(r=><Link key={r.slug} href={guidePath(r.slug)}>{r.title} →</Link>)}<Link href="/compare">Compare HUME Spaces products →</Link></div></section></div>
   <JsonLd data={breadcrumbData([{name:'Home',path:'/'},{name:'Guides',path:'/guides'},{name:g.title,path}])}/>
   <JsonLd data={{'@context':'https://schema.org','@type':'Article',headline:g.title,description:g.description,datePublished:'2026-10-07',author:{'@type':'Organization',name:'HUME Spaces'},publisher:{'@type':'Organization',name:'HUME Spaces'},...(siteOrigin()?{mainEntityOfPage:siteOrigin()+path,image:siteOrigin()+`/images/spaces/${p.image}`}:{})}}/>
   <JsonLd data={{'@context':'https://schema.org','@type':'FAQPage',mainEntity:g.questions.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}}/>
