@@ -1,3 +1,4 @@
+import {studioProblemPages} from './studio-problems';
 import {studioTechnologyPages} from './studio-technology';
 import {studioCommercialPages} from './studio-commercial';
 import {studioGuides} from './studio-guides';
@@ -42,6 +43,7 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+ ...studioProblemPages,
  ...studioTechnologyPages,
  ...studioCommercialPages,
  ...studioGuides,
