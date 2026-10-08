@@ -1,0 +1,5 @@
+import HotelContentHub from '@/components/HotelContentHub';
+import {automotiveCommercialPages,automotiveCommercialClusters} from '@/lib/automotive-commercial';
+import {metadata} from '@/lib/site';
+export const generateMetadata=()=>metadata('Automotive Showroom Scenting Solutions India','Explore 50 car dealership equipment, fragrance and signature scent enquiries, including brand-specific showroom briefs.','/automotive-scenting-solutions');
+export default function Page(){return <HotelContentHub title="Automotive showroom scenting solutions" category="Automotive showrooms" solutionPath="/industries/retail" image="retail-stores-app.jpg" description="Find equipment and fragrance enquiry pages for car showrooms, customer lounges and dealership groups. Brand names identify the dealership enquiry; HUME Spaces is an independent supplier without implied manufacturer affiliation or approval." path="/automotive-scenting-solutions" pages={automotiveCommercialPages} clusters={automotiveCommercialClusters}/>;}
