@@ -1,3 +1,4 @@
+import {automotiveTechnologyPages} from './automotive-technology';
 import {automotiveCommercialPages} from './automotive-commercial';
 import {jewelleryComparisonPages,jewelleryFragrancePages} from './jewellery-additional';
 import {automotiveGuides} from './automotive-guides';
@@ -51,7 +52,7 @@ export const buyerGuideSources=[
 ];
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
-export const buyerGuides=[...automotiveCommercialPages,
+export const buyerGuides=[...automotiveTechnologyPages,...automotiveCommercialPages,
  ...jewelleryComparisonPages, ...jewelleryFragrancePages,
  ...automotiveGuides,
  ...jewelleryProblemPages,
