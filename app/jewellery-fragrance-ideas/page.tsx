@@ -1,0 +1,5 @@
+import HotelContentHub from '@/components/HotelContentHub';
+import {jewelleryFragrancePages,jewelleryFragranceClusters} from '@/lib/jewellery-additional';
+import {metadata} from '@/lib/site';
+export const generateMetadata=()=>metadata('Jewellery fragrance ideas','50 jewellery showroom decisions with confirmed concepts, specification limits and permitted-zone enquiries.','/jewellery-fragrance-ideas');
+export default function Page(){return <HotelContentHub title="Jewellery fragrance ideas" category="Jewellery showrooms" solutionPath="/industries/retail" image="retail-stores-app.jpg" description="Explore 50 jewellery showroom topics with customer preferences, merchandise care and exact product approval considered." path="/jewellery-fragrance-ideas" pages={jewelleryFragrancePages} clusters={jewelleryFragranceClusters}/>;}

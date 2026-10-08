@@ -1,0 +1,5 @@
+import HotelContentHub from '@/components/HotelContentHub';
+import {jewelleryComparisonPages,jewelleryComparisonClusters} from '@/lib/jewellery-additional';
+import {metadata} from '@/lib/site';
+export const generateMetadata=()=>metadata('Jewellery scenting comparisons','50 jewellery showroom decisions with confirmed concepts, specification limits and permitted-zone enquiries.','/jewellery-scenting-comparisons');
+export default function Page(){return <HotelContentHub title="Jewellery scenting comparisons" category="Jewellery showrooms" solutionPath="/industries/retail" image="retail-stores-app.jpg" description="Explore 50 jewellery showroom topics with customer preferences, merchandise care and exact product approval considered." path="/jewellery-scenting-comparisons" pages={jewelleryComparisonPages} clusters={jewelleryComparisonClusters}/>;}
