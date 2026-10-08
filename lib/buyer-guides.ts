@@ -1,3 +1,4 @@
+import {jewelleryCommercialPages} from './jewellery-commercial';
 import {jewelleryGuides} from './jewellery-guides';
 import {studioFragrancePages} from './studio-fragrances';
 import {studioComparisonPages} from './studio-comparisons';
@@ -46,6 +47,7 @@ export const buyerGuideSources=[
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
 export const buyerGuides=[
+ ...jewelleryCommercialPages,
  ...jewelleryGuides,
  ...studioFragrancePages,
  ...studioComparisonPages,
