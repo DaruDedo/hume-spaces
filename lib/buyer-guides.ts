@@ -1,3 +1,4 @@
+import {mgPages} from './mg-pages';
 import {volkswagenPages} from './volkswagen-pages';
 import {tataPages} from './tata-pages';
 import {kiaPages} from './kia-pages';
@@ -68,7 +69,7 @@ export const buyerGuideSources=[
 ];
 type Section=[string,string];
 function guide(slug:string,title:string,description:string,product:string,sections:Section[],questions:Section[]){return {slug,title,description,product,sections,questions};}
-export const buyerGuides=[...volkswagenPages,...tataPages,...kiaPages,...hyundaiPages,...porschePages,...volvoPages,...lexusPages,...landRoverPages,...audiPages,...bmwPages,...mercedesPages,...toyotaPages,...mahindraPages,...automotiveFragrancePages,...automotiveComparisonPages,...automotiveProblemPages,...automotiveTechnologyPages,...automotiveCommercialPages,
+export const buyerGuides=[...mgPages,...volkswagenPages,...tataPages,...kiaPages,...hyundaiPages,...porschePages,...volvoPages,...lexusPages,...landRoverPages,...audiPages,...bmwPages,...mercedesPages,...toyotaPages,...mahindraPages,...automotiveFragrancePages,...automotiveComparisonPages,...automotiveProblemPages,...automotiveTechnologyPages,...automotiveCommercialPages,
  ...jewelleryComparisonPages, ...jewelleryFragrancePages,
  ...automotiveGuides,
  ...jewelleryProblemPages,
