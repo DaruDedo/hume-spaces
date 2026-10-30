@@ -1,3 +1,4 @@
+import {fragranceCatalog} from './fragrance-catalog';
 import {buyerGuides} from './buyer-guides';
 import {additionalPlaces} from './places';
 export const products = [
@@ -8,14 +9,7 @@ export const products = [
  ,{slug:'800ml-commercial-diffuser',price:7950,name:'800ml Commercial Diffuser',label:'Commercial scent machine',image:'800ml-commercial-diffuser.png',capacity:'800 ml',coverage:'Up to 2,000 sq ft',technology:'Pending confirmation',controls:'Pending confirmation',description:'A commercial diffuser with an 800 ml fragrance oil capacity and listed coverage up to 2,000 sq ft. Suitability depends on layout and airflow.',compatibility:'Confirm the approved fragrance oil and refill instructions for this model before use.',installation:'Confirm placement, power requirements, mounting options and installation instructions before ordering.'}
 ,{slug:'car-room-diffuser',price:1190,name:'Car & Room Diffuser',label:'Personal spaces',image:'car-room-diffuser.png',capacity:'Confirm capacity',coverage:'Cars, cabins & small rooms',technology:'Confirm diffusion technology',controls:'Confirm controls',description:'A compact diffuser for cars, office cabins and small rooms, priced at ₹1,190.',compatibility:'Confirm the approved refill, supplied fragrance and usage instructions for this model.',installation:'Follow the supplied placement instructions. Confirm vehicle compatibility and power requirements before use.'}
 ] as const;
-export const scents = [
- {name:'Ivory Lobby',family:'Citrus · tea · woods',notes:'Bergamot, white tea, cedar',mood:'Polished and welcoming',color:'#d6cabb'},
- {name:'Santal Residence',family:'Soft woods · amber',notes:'Sandalwood, iris, amber',mood:'Warm and understated',color:'#bea78e'},
- {name:'Verdant Courtyard',family:'Green · aromatic',notes:'Neroli, fig leaf, vetiver',mood:'Airy and green',color:'#9aa691'},
- {name:'Midnight Suite',family:'Floral · woody',notes:'Saffron, rosewood, soft oud',mood:'Intimate and distinctive',color:'#9b8580'},
- {name:'Coastal Gallery',family:'Mineral · fresh woods',notes:'Mineral air, sage, pale woods',mood:'Fresh and restrained',color:'#aab9b5'},
- {name:'Quiet Library',family:'Tea · leather · woods',notes:'Black tea, suede, cedar',mood:'Composed and woody',color:'#a99d89'}
-];
+export const scents = fragranceCatalog;
 export const industries = [
  {slug:'hotels',name:'Hotels & hospitality',short:'Hotels',image:'hotels-app.jpg',intro:'Scenting for hotels',description:'A lobby, corridor and spa have different airflow, operating hours and guest needs. Describe each zone before choosing equipment.',zones:['Lobby & reception','Guest corridors','Spa reception'],considerations:['Record lobby ceiling height, entrance traffic and air-conditioning hours.','Consider guest preferences and retain unscented areas.','Keep fragrance away from dining and food preparation.'],equipment:[0,1,2]},
  {slug:'gyms',name:'Gyms & fitness studios',short:'Gyms',image:'gyms-app.png',intro:'Scenting for gyms',description:'Open workout floors, changing areas and reception need separate consideration. Fragrance should complement a clean, ventilated space.',zones:['Reception','Workout floor','Studio entrance'],considerations:['Explain fresh-air ventilation, extraction and peak occupancy.','Scenting does not replace cleaning or ventilation and is not an odour-removal claim.','Discuss member sensitivities and keep enclosed activity areas lightly scented or unscented.'],equipment:[0,1]},
@@ -35,7 +29,7 @@ export const faqs = [
  ['Are the coverage figures guaranteed?','No. These are specifications listed in the existing HUME reference and are pending supplier confirmation. Actual suitability depends on room volume, airflow and zoning.'],
  ['How much will equipment and oil cost?','Request an itemised quotation. Equipment prices and oil pack prices are pending approval, and no verified consumption rate is available for a monthly estimate.'],
  ['Do you offer installation, maintenance or a warranty?','Availability, responsibilities and terms must be confirmed in your quotation. This website does not promise installation, maintenance visits or a warranty.'],
- ['Can I subscribe to refills or managed scenting?','Those are potential future offers. The launch site supports equipment and fragrance discovery and consultation requests.'],
+ ['Can I subscribe to refills or managed scenting?','HUME Spaces provides commercial scenting and custom fragrance development. Ask for refill supply, service availability and any recurring plan terms in your project quotation.'],
  ['Can I use any fragrance oil?','No universal compatibility is established. Confirm the approved formula, viscosity and instructions for your specific machine before adding oil.'],
  ['Are fragrance samples available?','Sample availability and trial arrangements need confirmation. Include your preferred scent direction in your enquiry.']
 ];

@@ -1,5 +1,6 @@
+import WhatsAppButton from '@/components/WhatsAppButton';
 import {PageIntro} from '@/components/Shell';
 import {FragranceExplorer} from '@/components/HomeExperience';
 import {metadata} from '@/lib/site';
-export const generateMetadata=()=>metadata('Fragrance oils','Explore six scent profiles and enquire about availability and compatibility.','/fragrance-oils');
-export default function Oils(){return <><PageIntro eyebrow="FRAGRANCE OILS" title="Choose your fragrance" description="Compare the notes. Enquire about the scent you like."/><section className="wrap section-bottom"><p className="simple-note">These are scent concepts. Confirm oil availability, price and compatibility with your machine before ordering.</p><FragranceExplorer standalone/></section></>}
+export const generateMetadata=()=>metadata('Fragrance oils','Explore fragrance profiles and perfumer-led private blends for hotels, gyms, malls and other businesses.','/fragrance-oils');
+export default function Oils(){return <><PageIntro eyebrow="FRAGRANCE OILS" title="Choose your fragrance" description="Compare the notes. Enquire about the scent you like."/><section className="wrap section-bottom"><p className="simple-note">Prices are per 100ml of 100% pure fragrance oil. Confirm machine compatibility, GST and delivery before purchase.</p><FragranceExplorer standalone/><section className="simple-section"><h2>Create a private fragrance blend</h2><p>Our perfumers create signature blends for businesses, with private fragrance development experience for gyms, hotels and malls. Bring a new brief or fragrance reference and discuss samples, development scope and supply for your property.</p><WhatsAppButton topic="a private fragrance blend" label="Discuss a custom blend"/></section></section></>}

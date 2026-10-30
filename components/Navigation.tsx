@@ -6,7 +6,7 @@ import Link from 'next/link';
 import {useEffect,useRef,useState} from 'react';
 
 const categories={
- fragrances:{label:'Fragrances',description:'Choose a scent. Check the pairing.',items:[{title:'Explore fragrance profiles',text:'Six scent directions',image:'decorative-diffuser.png',href:'/fragrance-oils'},{title:'Oil compatibility',text:'Know what your machine needs',image:'hume-spaces-hero.png',href:'/guides/fragrance-and-compatibility'}]},
+ fragrances:{label:'Fragrances',description:'Choose a scent. Check the pairing.',items:[{title:'Explore fragrance profiles',text:'25 fragrance oils · 100ml',image:'decorative-diffuser.png',href:'/fragrance-oils'},{title:'Oil compatibility',text:'Know what your machine needs',image:'hume-spaces-hero.png',href:'/guides/fragrance-and-compatibility'}]},
  products:{label:'Products',description:'Compare the equipment.',items:[{title:'Scent machines',text:'Cold-air, tower and HVAC',image:'commercial-diffuser.png',href:'/equipment'},{title:'Reed diffuser',text:'A format for small areas',image:'decorative-diffuser.png',href:'/equipment/hume-mini-reed-diffuser-50ml'}]}
 };
 type Category=keyof typeof categories;

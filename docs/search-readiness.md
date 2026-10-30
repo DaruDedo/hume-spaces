@@ -24,3 +24,6 @@ The project is local, so there is no public indexing, ranking or AI-citation bas
 Add supplier-approved specifications, oil safety/compatibility documents, real project photos and customer-approved case studies. Confirm service locations and warranty/delivery terms. Obtain real editorial or partner mentions; do not fabricate reviews or backlinks.
 
 Official guidance used: https://developers.google.com/search/docs/appearance/ai-features and https://developers.google.com/search/docs/fundamentals/creating-helpful-content .
+
+## Business positioning update — 29 October 2026
+See brand-positioning.md for the updated owner-supplied service footprint, private-blend capability, Google profile copy and rollout. The earlier statement that no public indexing baseline exists is superseded by the limited public search check recorded there. City coverage is now supplied by the owner; local offices and installation terms are not implied.

@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import Image from 'next/image';
+export default function FragranceGallery({name,images}:{name:string;images:{image:string;label:string}[]}){const [active,setActive]=useState(0);const current=images[active];return <div><div className="fragrance-detail-image"><Image src={'/images/spaces/'+current.image} alt={name+' — '+current.label.toLowerCase()} fill priority sizes="(max-width: 750px) 90vw, 50vw"/></div><p className="fragrance-photo-note" aria-live="polite">{current.label}</p>{images.length>1&&<div className="fragrance-thumbnails" role="group" aria-label={name+' images'}>{images.map((image,index)=><button key={image.image} type="button" aria-label={'View '+image.label.toLowerCase()+' for '+name} aria-pressed={active===index} onClick={()=>setActive(index)}><Image src={'/images/spaces/'+image.image} alt="" fill sizes="80px"/></button>)}</div>}</div>;}

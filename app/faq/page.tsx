@@ -1,5 +1,7 @@
 import {PageIntro} from '@/components/Shell';
-import {faqs} from '@/lib/content';
+import {faqs as productFaqs} from '@/lib/content';
+import {brandFaqs} from '@/lib/brand';
+const faqs=[...brandFaqs,...productFaqs];
 import {metadata} from '@/lib/site';
 import {JsonLd} from '@/components/StructuredData';
 export const generateMetadata=()=>metadata('Commercial scenting FAQs','Answers about machine coverage, fragrance oil compatibility, quotations, installation and running costs.','/faq');
