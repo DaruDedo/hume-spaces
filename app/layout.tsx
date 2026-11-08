@@ -5,6 +5,7 @@ import './globals.css';
 import './refresh.css';
 import './navigation.css';
 import './simplified.css';
+import './commerce.css';
 import WhatsAppContact from '@/components/WhatsAppContact';
 import {Header,Footer} from '@/components/Shell';
 import Analytics from '@/components/Analytics';

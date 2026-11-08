@@ -4,9 +4,9 @@ Independent commercial scenting website built locally with Next.js 16, React 19,
 
 ## Local setup
 
-Requires Node.js 20.9 or later. Run `npm install`, then `npm run dev`. Review at http://127.0.0.1:3100. Run `npm run build` and `npm start` for production locally. Run `npm run typecheck` and `npm test` for checks.
+Requires Node.js 22.17 or later for the store. Run `npm install`, then `npm run dev`. Review at http://127.0.0.1:3100. Run `npm run build` and `npm start` for production locally. Run `npm run typecheck` and `npm test` for checks. See [store setup](docs/commerce.md) for payment, inventory, email and admin configuration.
 
-Copy `.env.example` to `.env.local` only when values are confirmed. Every placeholder is intentionally empty. Restart the server after changing values; public variables and static SEO configuration also require a rebuild.
+Keep local configuration in the ignored `.env` file. Restart the server after changing values; public variables and static SEO configuration also require a rebuild.
 
 ## Implemented
 

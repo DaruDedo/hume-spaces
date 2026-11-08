@@ -53,12 +53,12 @@ export const hyundaiPages:Page[]=[
   {
     "slug": "commercial-aroma-diffuser-for-hyundai-dealership",
     "title": "Commercial Aroma Diffuser for Hyundai Dealership",
-    "description": "Compare HUME commercial diffusers by measured zone requirements and refill access. The 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; separate lounge and display settings may work better than assuming one machine covers the dealership.",
+    "description": "Compare HUME commercial diffusers by measured zone requirements and refill access. The 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; separate lounge and display settings may work better than assuming one machine covers the dealership.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Compare HUME commercial diffusers by measured zone requirements and refill access. The 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; separate lounge and display settings may work better than assuming one machine covers the dealership. HUME Spaces is an independent supplier. No Hyundai affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Compare HUME commercial diffusers by measured zone requirements and refill access. The 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; separate lounge and display settings may work better than assuming one machine covers the dealership. HUME Spaces is an independent supplier. No Hyundai affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the customer zones in this brief",
@@ -76,7 +76,7 @@ export const hyundaiPages:Page[]=[
     "questions": [
       [
         "What should this Hyundai dealership review?",
-        "Compare HUME commercial diffusers by measured zone requirements and refill access. The 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; separate lounge and display settings may work better than assuming one machine covers the dealership."
+        "Compare HUME commercial diffusers by measured zone requirements and refill access. The 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; separate lounge and display settings may work better than assuming one machine covers the dealership."
       ],
       [
         "Is HUME an official Hyundai partner?",
@@ -203,12 +203,12 @@ export const hyundaiPages:Page[]=[
   {
     "slug": "hyundai-customer-lounge-fragrance-solution",
     "title": "Hyundai Customer Lounge Fragrance Solution",
-    "description": "Keep Hyundai customer lounge fragrance restrained and separately controlled from the vehicle floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; avoid directing output toward occupied seats.",
+    "description": "Keep Hyundai customer lounge fragrance restrained and separately controlled from the vehicle floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; avoid directing output toward occupied seats.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Keep Hyundai customer lounge fragrance restrained and separately controlled from the vehicle floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; avoid directing output toward occupied seats. HUME Spaces is an independent supplier. No Hyundai affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Keep Hyundai customer lounge fragrance restrained and separately controlled from the vehicle floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; avoid directing output toward occupied seats. HUME Spaces is an independent supplier. No Hyundai affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the customer zones in this brief",
@@ -226,7 +226,7 @@ export const hyundaiPages:Page[]=[
     "questions": [
       [
         "What should this Hyundai dealership review?",
-        "Keep Hyundai customer lounge fragrance restrained and separately controlled from the vehicle floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; avoid directing output toward occupied seats."
+        "Keep Hyundai customer lounge fragrance restrained and separately controlled from the vehicle floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; avoid directing output toward occupied seats."
       ],
       [
         "Is HUME an official Hyundai partner?",
@@ -353,12 +353,12 @@ export const hyundaiPages:Page[]=[
   {
     "slug": "best-scent-machine-for-hyundai-dealership",
     "title": "Best Scent Machine for Hyundai Dealership",
-    "description": "Choose a Hyundai dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage.",
+    "description": "Choose a Hyundai dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Choose a Hyundai dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage. HUME Spaces is an independent supplier. No Hyundai affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Choose a Hyundai dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage. HUME Spaces is an independent supplier. No Hyundai affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the customer zones in this brief",
@@ -376,7 +376,7 @@ export const hyundaiPages:Page[]=[
     "questions": [
       [
         "What should this Hyundai dealership review?",
-        "Choose a Hyundai dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage."
+        "Choose a Hyundai dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage."
       ],
       [
         "Is HUME an official Hyundai partner?",

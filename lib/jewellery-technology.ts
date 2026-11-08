@@ -37,7 +37,7 @@ const briefs:[string,string][]=[
  ['How Many Diffusers Does a Jewellery Store Need?','Machine count requires zone, airflow and placement review; dividing floor area by a coverage label does not validate distribution.'],
  ['Jewellery Store Fragrance Oil Consumption Guide','Measure reservoir use over representative days and record supported settings and hours; tank capacity alone does not predict monthly consumption.'],
  ['How Long Does Fragrance Oil Last in a Jewellery Showroom Diffuser?','Duration depends on approved formula, output and hours; no 400ml, 800ml or HVAC reservoir establishes a fixed monthly refill interval.'],
- ['400ml vs 800ml Jewellery Store Scent Machine','The 400ml model is ₹4,190 and the 800ml ₹7,950; both reference up to 2,000 sq ft, so the larger tank does not establish greater coverage.'],
+ ['400ml vs 800ml Jewellery Store Scent Machine','The 400ml model is ₹4,450 and the 800ml ₹8,700; both reference up to 2,000 sq ft, so the larger tank does not establish greater coverage.'],
  ['Small Scent Machine for Boutique Jewellery Stores','Compare actual supported settings, circulation and service access rather than choose by small-device marketing alone.'],
  ['High-Projection Diffuser for Large Jewellery Showrooms','HUME high-projection ratings are unconfirmed. Request actual device specifications and zoned assessment rather than relabel a catalog unit as high-projection.'],
  ['Commercial Diffuser for Central-AC Jewellery Stores','Central AC requires actual air-side review before duct integration; a system label does not establish an approved connection.'],

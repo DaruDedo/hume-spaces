@@ -153,12 +153,12 @@ export const porschePages:Page[]=[
   {
     "slug": "commercial-diffuser-for-porsche-dealerships",
     "title": "Commercial Diffuser for Porsche Dealerships",
-    "description": "Compare commercial diffuser models using measured zone size, ceiling height, door openings, controls and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; one machine should not be assumed to cover an entire dealership.",
+    "description": "Compare commercial diffuser models using measured zone size, ceiling height, door openings, controls and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; one machine should not be assumed to cover an entire dealership.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Compare commercial diffuser models using measured zone size, ceiling height, door openings, controls and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; one machine should not be assumed to cover an entire dealership. HUME Spaces is an independent supplier. No Porsche affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Compare commercial diffuser models using measured zone size, ceiling height, door openings, controls and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; one machine should not be assumed to cover an entire dealership. HUME Spaces is an independent supplier. No Porsche affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the permitted customer journey",
@@ -176,7 +176,7 @@ export const porschePages:Page[]=[
     "questions": [
       [
         "What should this Porsche dealership consider?",
-        "Compare commercial diffuser models using measured zone size, ceiling height, door openings, controls and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; one machine should not be assumed to cover an entire dealership."
+        "Compare commercial diffuser models using measured zone size, ceiling height, door openings, controls and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; one machine should not be assumed to cover an entire dealership."
       ],
       [
         "Is HUME an official Porsche partner?",
@@ -203,12 +203,12 @@ export const porschePages:Page[]=[
   {
     "slug": "porsche-customer-lounge-fragrance-solution",
     "title": "Porsche Customer Lounge Fragrance Solution",
-    "description": "Control the Porsche lounge separately from the display floor and use restrained intensity for longer visits. The HUME 400ml machine at ₹4,190 may suit a measured lounge zone; keep output away from occupied seats.",
+    "description": "Control the Porsche lounge separately from the display floor and use restrained intensity for longer visits. The HUME 400ml machine at ₹4,450 may suit a measured lounge zone; keep output away from occupied seats.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Control the Porsche lounge separately from the display floor and use restrained intensity for longer visits. The HUME 400ml machine at ₹4,190 may suit a measured lounge zone; keep output away from occupied seats. HUME Spaces is an independent supplier. No Porsche affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Control the Porsche lounge separately from the display floor and use restrained intensity for longer visits. The HUME 400ml machine at ₹4,450 may suit a measured lounge zone; keep output away from occupied seats. HUME Spaces is an independent supplier. No Porsche affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the permitted customer journey",
@@ -226,7 +226,7 @@ export const porschePages:Page[]=[
     "questions": [
       [
         "What should this Porsche dealership consider?",
-        "Control the Porsche lounge separately from the display floor and use restrained intensity for longer visits. The HUME 400ml machine at ₹4,190 may suit a measured lounge zone; keep output away from occupied seats."
+        "Control the Porsche lounge separately from the display floor and use restrained intensity for longer visits. The HUME 400ml machine at ₹4,450 may suit a measured lounge zone; keep output away from occupied seats."
       ],
       [
         "Is HUME an official Porsche partner?",
@@ -403,12 +403,12 @@ export const porschePages:Page[]=[
   {
     "slug": "best-commercial-scent-machine-for-porsche-showrooms",
     "title": "Best Commercial Scent Machine for Porsche Showrooms",
-    "description": "Choose a Porsche showroom scent machine by zone requirements and placement, then compare controls and refill access. The ₹9,650 tower has stated coverage up to 1,500 sq ft; the ₹7,950 800ml model has stated coverage up to 2,000 sq ft, both subject to actual conditions.",
+    "description": "Choose a Porsche showroom scent machine by zone requirements and placement, then compare controls and refill access. The ₹11,200 tower has stated coverage up to 1,500 sq ft; the ₹8,700 800ml model has stated coverage up to 2,000 sq ft, both subject to actual conditions.",
     "product": "hume-pro-commercial-tower",
     "sections": [
       [
         "The practical recommendation",
-        "Choose a Porsche showroom scent machine by zone requirements and placement, then compare controls and refill access. The ₹9,650 tower has stated coverage up to 1,500 sq ft; the ₹7,950 800ml model has stated coverage up to 2,000 sq ft, both subject to actual conditions. HUME Spaces is an independent supplier. No Porsche affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Choose a Porsche showroom scent machine by zone requirements and placement, then compare controls and refill access. The ₹11,200 tower has stated coverage up to 1,500 sq ft; the ₹8,700 800ml model has stated coverage up to 2,000 sq ft, both subject to actual conditions. HUME Spaces is an independent supplier. No Porsche affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the permitted customer journey",
@@ -426,7 +426,7 @@ export const porschePages:Page[]=[
     "questions": [
       [
         "What should this Porsche dealership consider?",
-        "Choose a Porsche showroom scent machine by zone requirements and placement, then compare controls and refill access. The ₹9,650 tower has stated coverage up to 1,500 sq ft; the ₹7,950 800ml model has stated coverage up to 2,000 sq ft, both subject to actual conditions."
+        "Choose a Porsche showroom scent machine by zone requirements and placement, then compare controls and refill access. The ₹11,200 tower has stated coverage up to 1,500 sq ft; the ₹8,700 800ml model has stated coverage up to 2,000 sq ft, both subject to actual conditions."
       ],
       [
         "Is HUME an official Porsche partner?",

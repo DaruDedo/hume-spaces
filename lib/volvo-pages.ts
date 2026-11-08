@@ -153,12 +153,12 @@ export const volvoPages:Page[]=[
   {
     "slug": "commercial-aroma-diffuser-for-volvo-dealership",
     "title": "Commercial Aroma Diffuser for Volvo Dealership",
-    "description": "Choose a commercial diffuser from measured area, ceiling height, doors and airflow. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; large Volvo dealership floors may need separately controlled zones.",
+    "description": "Choose a commercial diffuser from measured area, ceiling height, doors and airflow. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; large Volvo dealership floors may need separately controlled zones.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Choose a commercial diffuser from measured area, ceiling height, doors and airflow. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; large Volvo dealership floors may need separately controlled zones. HUME Spaces is an independent supplier. No Volvo affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Choose a commercial diffuser from measured area, ceiling height, doors and airflow. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; large Volvo dealership floors may need separately controlled zones. HUME Spaces is an independent supplier. No Volvo affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the customer areas for this brief",
@@ -176,7 +176,7 @@ export const volvoPages:Page[]=[
     "questions": [
       [
         "What should this Volvo dealership review?",
-        "Choose a commercial diffuser from measured area, ceiling height, doors and airflow. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; large Volvo dealership floors may need separately controlled zones."
+        "Choose a commercial diffuser from measured area, ceiling height, doors and airflow. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; large Volvo dealership floors may need separately controlled zones."
       ],
       [
         "Is HUME an official Volvo partner?",
@@ -203,12 +203,12 @@ export const volvoPages:Page[]=[
   {
     "slug": "volvo-customer-lounge-scenting",
     "title": "Volvo Customer Lounge Scenting",
-    "description": "Keep Volvo customer lounge scenting at a restrained setting independent of the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; place it away from occupied seats and allow an unscented option.",
+    "description": "Keep Volvo customer lounge scenting at a restrained setting independent of the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; place it away from occupied seats and allow an unscented option.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Keep Volvo customer lounge scenting at a restrained setting independent of the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; place it away from occupied seats and allow an unscented option. HUME Spaces is an independent supplier. No Volvo affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Keep Volvo customer lounge scenting at a restrained setting independent of the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; place it away from occupied seats and allow an unscented option. HUME Spaces is an independent supplier. No Volvo affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the customer areas for this brief",
@@ -226,7 +226,7 @@ export const volvoPages:Page[]=[
     "questions": [
       [
         "What should this Volvo dealership review?",
-        "Keep Volvo customer lounge scenting at a restrained setting independent of the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; place it away from occupied seats and allow an unscented option."
+        "Keep Volvo customer lounge scenting at a restrained setting independent of the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; place it away from occupied seats and allow an unscented option."
       ],
       [
         "Is HUME an official Volvo partner?",
@@ -403,12 +403,12 @@ export const volvoPages:Page[]=[
   {
     "slug": "best-scent-machine-for-volvo-showrooms",
     "title": "Best Scent Machine for Volvo Showrooms",
-    "description": "Compare the HUME 400ml, 800ml and tower models by placement, controls and maintenance access. The ₹9,650 tower has stated coverage up to 1,500 sq ft; reservoir size and appearance do not establish whole-dealership coverage.",
+    "description": "Compare the HUME 400ml, 800ml and tower models by placement, controls and maintenance access. The ₹11,200 tower has stated coverage up to 1,500 sq ft; reservoir size and appearance do not establish whole-dealership coverage.",
     "product": "hume-pro-commercial-tower",
     "sections": [
       [
         "The practical recommendation",
-        "Compare the HUME 400ml, 800ml and tower models by placement, controls and maintenance access. The ₹9,650 tower has stated coverage up to 1,500 sq ft; reservoir size and appearance do not establish whole-dealership coverage. HUME Spaces is an independent supplier. No Volvo affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Compare the HUME 400ml, 800ml and tower models by placement, controls and maintenance access. The ₹11,200 tower has stated coverage up to 1,500 sq ft; reservoir size and appearance do not establish whole-dealership coverage. HUME Spaces is an independent supplier. No Volvo affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the customer areas for this brief",
@@ -426,7 +426,7 @@ export const volvoPages:Page[]=[
     "questions": [
       [
         "What should this Volvo dealership review?",
-        "Compare the HUME 400ml, 800ml and tower models by placement, controls and maintenance access. The ₹9,650 tower has stated coverage up to 1,500 sq ft; reservoir size and appearance do not establish whole-dealership coverage."
+        "Compare the HUME 400ml, 800ml and tower models by placement, controls and maintenance access. The ₹11,200 tower has stated coverage up to 1,500 sq ft; reservoir size and appearance do not establish whole-dealership coverage."
       ],
       [
         "Is HUME an official Volvo partner?",

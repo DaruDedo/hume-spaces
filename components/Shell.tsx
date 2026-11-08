@@ -1,10 +1,27 @@
 import WhatsAppButton from '@/components/WhatsAppButton';
 import Link from 'next/link';
 import Navigation from './Navigation';
-export function Header(){return <header className="header"><Link href="/" className="brand" aria-label="HUME Spaces home">HUME<span>Spaces</span></Link><Navigation/><WhatsAppButton label="WhatsApp enquiry" className="header-cta"/></header>}
+import HeaderCart from './HeaderCart';
+export function Header() {
+  return <header className="header site-header">
+    <Link href="/" className="brand" aria-label="HUME Spaces home">HUME<span>Spaces</span></Link>
+    <Navigation />
+    <div className="site-header-actions">
+      <Link className="header-cart header-account" href="/account" aria-label="My account">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+          <circle cx="12" cy="8" r="3.5" />
+          <path d="M5 20v-1a7 7 0 0 1 14 0v1" strokeLinecap="round" />
+        </svg>
+        <span>Account</span>
+      </Link>
+      <HeaderCart />
+      <WhatsAppButton label="WhatsApp enquiry" className="header-cta" />
+    </div>
+  </header>;
+}
 export function Footer(){return <footer><div className="footer-top"><Link href="/" className="brand">HUME<span>Spaces</span></Link><p>Commercial scenting.<br/>A signature for your business.</p><div><Link href="/about">About HUME Spaces</Link><Link href="/contact">Contact</Link><Link href="/privacy">Privacy</Link><Link href="/policies">Ordering & support</Link></div><div><Link href="/equipment">Explore equipment</Link><Link href="/selector">Describe your space</Link><Link href="/compare">Compare products</Link><Link href="/industries">Solutions by space</Link><Link href="/faq">Scenting FAQs</Link><Link href="/search">Search</Link><WhatsAppButton label="WhatsApp: +91 9559024822" className="whatsapp-link"/></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} HUME Spaces</span><span>Commercial scenting & signature fragrances · India</span></div></footer>}
 export function Cta(){return <section className="cta wrap"><div><p className="eyebrow">BEGIN WITH THE SPACE</p><h2>Request a scenting<br/>consultation</h2><p>Share your layout, airflow and operating hours.<br/>Explore the equipment and fragrance direction together.</p></div><WhatsAppButton label="Enquire on WhatsApp" className="button light"/></section>}
-export function PageIntro({eyebrow,title,description}:{eyebrow:string;title:string;description:string}){return <section className="page-intro wrap"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="lede">{description}</p><WhatsAppButton topic={title}/></section>}
+export function PageIntro({eyebrow,title,description,showEnquiry=true}:{eyebrow:string;title:string;description:string;showEnquiry?:boolean}){return <section className="page-intro wrap"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="lede">{description}</p>{showEnquiry&&<WhatsAppButton topic={title}/>}</section>}
 
 
 

@@ -36,7 +36,7 @@ const briefs:[string,string][]=[
  ['How Many Diffusers Does a Yoga Studio Need?','Count only approved zones after excluding fragrance-free practice areas, then request room-by-room placement review.'],
  ['Studio Fragrance-Machine Oil Consumption Guide','Measure actual reservoir use across representative operating days, recording supported settings and hours; capacity alone does not predict consumption.'],
  ['How Long Does Fragrance Oil Last in a Pilates Studio Diffuser?','Oil duration depends on approved formula, supported output and hours. Neither the 400ml nor 800ml reservoir establishes a fixed monthly refill interval.'],
- ['400ml vs 800ml Diffuser for Boutique Fitness Studios','The 400ml model is ₹4,190 and the 800ml model ₹7,950. Both reference up to 2,000 sq ft; the larger reservoir does not establish greater coverage.'],
+ ['400ml vs 800ml Diffuser for Boutique Fitness Studios','The 400ml model is ₹4,450 and the 800ml model ₹8,700. Both reference up to 2,000 sq ft; the larger reservoir does not establish greater coverage.'],
  ['Small Diffuser for Boutique Pilates Studio','Compare an adjustable approved-zone plan and exact device specifications rather than selecting a machine solely because the room is small.'],
  ['High-Capacity Diffuser for Large Fitness Studios','Reservoir capacity and room coverage are different specifications. The 800ml model has an 800 ml tank with up to 2,000 sq ft reference coverage.'],
  ['HVAC Scenting for Large Boutique Fitness Studios','HVAC integration requires qualified review of ducts, approved equipment and zone separation; shared air paths may conflict with unscented practice rooms.'],

@@ -102,8 +102,8 @@ How to Create a Signature Scent Customers Associate With Your Jewellery Brand`.s
 const slug=(title:string)=>title.toLowerCase().replace(/['?]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const scope='Respect customer preferences, landlord policy and fragrance-free choices. Keep liquid and direct discharge away from jewellery, packaging and displays; confirm material-care requirements with relevant suppliers. No sales, loyalty, therapeutic or universal compatibility guarantee is claimed.';
 function advice(option:string){
- if(/400ml/i.test(option))return 'The 400ml Commercial Diffuser is ₹4,190 with a 400 ml reservoir and 1,000–2,000 sq ft reference coverage.';
- if(/800ml/i.test(option))return 'The 800ml Commercial Diffuser is ₹7,950 with an 800 ml reservoir and up to 2,000 sq ft reference coverage; tank size does not establish greater coverage.';
+ if(/400ml/i.test(option))return 'The 400ml Commercial Diffuser is ₹4,450 with a 400 ml reservoir and 1,000–2,000 sq ft reference coverage.';
+ if(/800ml/i.test(option))return 'The 800ml Commercial Diffuser is ₹8,700 with an 800 ml reservoir and up to 2,000 sq ft reference coverage; tank size does not establish greater coverage.';
  if(/HVAC|5,000|Centralised/i.test(option))return 'Qualified air-side review is required. HUME HVAC lists up to 5,000 sq ft reference coverage, not an automatic whole-showroom guarantee.';
  if(/Reed/i.test(option))return 'The HUME reed format lists up to 120 sq ft passive coverage; confirm approved liquid and permitted small-zone placement.';
  if(/High-Projection|Wall-Mounted|Portable|Hidden/i.test(option))return 'Exact projection, mounting, portable-use or concealed-installation approval must be confirmed; category names do not establish these ratings.';

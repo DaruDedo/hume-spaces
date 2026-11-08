@@ -62,7 +62,7 @@ export const toyotaPages:Page[]=[
       ],
       [
         "Compare the ordered model",
-        "400ml costs ₹4,190 and references 1,000–2,000 sq ft; 800ml costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. Confirm oil approval, hardware and servicing access."
+        "400ml costs ₹4,450 and references 1,000–2,000 sq ft; 800ml costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. Confirm oil approval, hardware and servicing access."
       ],
       [
         "Review the permitted environment",

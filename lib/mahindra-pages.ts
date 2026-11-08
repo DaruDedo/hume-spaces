@@ -62,7 +62,7 @@ export const mahindraPages:Page[]=[
       ],
       [
         "Choose by the exact zone",
-        "400ml: ₹4,190, reference 1,000–2,000 sq ft. 800ml: ₹7,950, reference up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. Confirm liquid, placement and supported settings for the order."
+        "400ml: ₹4,450, reference 1,000–2,000 sq ft. 800ml: ₹8,700, reference up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. Confirm liquid, placement and supported settings for the order."
       ],
       [
         "Review the permitted environment",

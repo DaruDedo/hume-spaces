@@ -2,9 +2,9 @@ type Section=[string,string];
 const tower='hume-pro-commercial-tower',commercial='400ml Commercial Diffuser';
 const machine='hume-commercial-scent-machine-pro',large='800ml-commercial-diffuser',hvac='hume-hvac-scenting-system',reed='hume-mini-reed-diffuser-50ml',personal='car-room-diffuser';
 const equipment:Record<string,string>={
- [tower]:'The Tower Commercial Diffuser is ₹9,650, with a 500ml reservoir and indicative coverage up to 1,500 sq ft. Review its placement, Bluetooth app controls and operating schedule for the intended hotel zone.',
- [machine]:`The ${commercial} is ₹4,190, with a listed 1,000–2,000 sq ft range and Wi-Fi, Bluetooth and mobile app control. Review the actual zone before selecting it.`,
- [large]:'The 800ml Commercial Diffuser is ₹7,950 with indicative coverage up to 2,000 sq ft. A larger reservoir does not establish greater reach than the 400ml model or a fixed refill interval.',
+ [tower]:'The Tower Commercial Diffuser is ₹11,200, with a 500ml reservoir and indicative coverage up to 1,500 sq ft. Review its placement, Bluetooth app controls and operating schedule for the intended hotel zone.',
+ [machine]:`The ${commercial} is ₹4,450, with a listed 1,000–2,000 sq ft range and Wi-Fi, Bluetooth and mobile app control. Review the actual zone before selecting it.`,
+ [large]:'The 800ml Commercial Diffuser is ₹8,700 with indicative coverage up to 2,000 sq ft. A larger reservoir does not establish greater reach than the 400ml model or a fixed refill interval.',
  [hvac]:'The HVAC Scenting System is ₹12,000 with a 1,000ml reservoir and indicative coverage up to 5,000 sq ft. Duct compatibility, zoning, controls and installation responsibilities require technical confirmation.',
  [reed]:'The Mini Reed Diffuser is ₹800 with 50ml capacity and indicative coverage up to 120 sq ft. It is a passive option for a suitable small corner, not a whole-room or whole-hotel guarantee.',
  [personal]:'The Car & Room Diffuser is ₹1,190 and intended for personal spaces such as small rooms and cabins. Capacity, power, controls and a square-foot rating have not been confirmed; ask for the supplied specifications.'

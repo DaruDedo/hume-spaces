@@ -253,12 +253,12 @@ export const landRoverPages:Page[]=[
   {
     "slug": "range-rover-customer-lounge-scenting",
     "title": "Range Rover Customer Lounge Scenting",
-    "description": "Control the Range Rover customer lounge separately from the main display floor. A 400ml HUME machine at ₹4,190 may suit a measured lounge zone; place it away from seated customers and start with a low setting.",
+    "description": "Control the Range Rover customer lounge separately from the main display floor. A 400ml HUME machine at ₹4,450 may suit a measured lounge zone; place it away from seated customers and start with a low setting.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Control the Range Rover customer lounge separately from the main display floor. A 400ml HUME machine at ₹4,190 may suit a measured lounge zone; place it away from seated customers and start with a low setting. HUME Spaces is an independent supplier. No Range Rover or Land Rover affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Control the Range Rover customer lounge separately from the main display floor. A 400ml HUME machine at ₹4,450 may suit a measured lounge zone; place it away from seated customers and start with a low setting. HUME Spaces is an independent supplier. No Range Rover or Land Rover affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the relevant showroom zones",
@@ -276,7 +276,7 @@ export const landRoverPages:Page[]=[
     "questions": [
       [
         "What should this Range Rover or Land Rover dealership consider?",
-        "Control the Range Rover customer lounge separately from the main display floor. A 400ml HUME machine at ₹4,190 may suit a measured lounge zone; place it away from seated customers and start with a low setting."
+        "Control the Range Rover customer lounge separately from the main display floor. A 400ml HUME machine at ₹4,450 may suit a measured lounge zone; place it away from seated customers and start with a low setting."
       ],
       [
         "Is HUME an official Range Rover or Land Rover partner?",
@@ -353,12 +353,12 @@ export const landRoverPages:Page[]=[
   {
     "slug": "best-scent-machine-for-large-range-rover-showrooms",
     "title": "Best Scent Machine for Large Range Rover Showrooms",
-    "description": "For a large Range Rover showroom, compare multiple controlled zones with an air-system review. The 800ml HUME model costs ₹7,950 and has stated coverage up to 2,000 sq ft; reservoir size does not establish whole-showroom coverage.",
+    "description": "For a large Range Rover showroom, compare multiple controlled zones with an air-system review. The 800ml HUME model costs ₹8,700 and has stated coverage up to 2,000 sq ft; reservoir size does not establish whole-showroom coverage.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "For a large Range Rover showroom, compare multiple controlled zones with an air-system review. The 800ml HUME model costs ₹7,950 and has stated coverage up to 2,000 sq ft; reservoir size does not establish whole-showroom coverage. HUME Spaces is an independent supplier. No Range Rover or Land Rover affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "For a large Range Rover showroom, compare multiple controlled zones with an air-system review. The 800ml HUME model costs ₹8,700 and has stated coverage up to 2,000 sq ft; reservoir size does not establish whole-showroom coverage. HUME Spaces is an independent supplier. No Range Rover or Land Rover affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Review the relevant showroom zones",
@@ -376,7 +376,7 @@ export const landRoverPages:Page[]=[
     "questions": [
       [
         "What should this Range Rover or Land Rover dealership consider?",
-        "For a large Range Rover showroom, compare multiple controlled zones with an air-system review. The 800ml HUME model costs ₹7,950 and has stated coverage up to 2,000 sq ft; reservoir size does not establish whole-showroom coverage."
+        "For a large Range Rover showroom, compare multiple controlled zones with an air-system review. The 800ml HUME model costs ₹8,700 and has stated coverage up to 2,000 sq ft; reservoir size does not establish whole-showroom coverage."
       ],
       [
         "Is HUME an official Range Rover or Land Rover partner?",

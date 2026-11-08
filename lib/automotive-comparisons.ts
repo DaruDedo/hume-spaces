@@ -35,7 +35,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -104,7 +104,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -173,7 +173,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -242,7 +242,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -311,7 +311,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -380,7 +380,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -449,7 +449,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -518,7 +518,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -587,7 +587,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -656,7 +656,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -725,7 +725,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -794,7 +794,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -863,7 +863,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -932,7 +932,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1001,7 +1001,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1070,7 +1070,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1139,7 +1139,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1208,7 +1208,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1277,7 +1277,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1346,7 +1346,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1415,7 +1415,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1484,7 +1484,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1553,7 +1553,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1622,7 +1622,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1691,7 +1691,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1760,7 +1760,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1829,7 +1829,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1898,7 +1898,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1942,13 +1942,13 @@ export const automotiveComparisonPages:Page[]=[
     "rows": [
       [
         "What you are comparing",
-        "400ml; ₹4,190; reference 1,000–2,000 sq ft",
-        "800ml; ₹7,950; reference up to 2,000 sq ft"
+        "400ml; ₹4,450; reference 1,000–2,000 sq ft",
+        "800ml; ₹8,700; reference up to 2,000 sq ft"
       ],
       [
         "Decision for this dealership",
-        "400ml: 400ml; ₹4,190; reference 1,000–2,000 sq ft",
-        "800ml Car Showroom Scent Machine: 800ml; ₹7,950; reference up to 2,000 sq ft"
+        "400ml: 400ml; ₹4,450; reference 1,000–2,000 sq ft",
+        "800ml Car Showroom Scent Machine: 800ml; ₹8,700; reference up to 2,000 sq ft"
       ],
       [
         "What to confirm",
@@ -1963,11 +1963,11 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Compare the actual showroom needs",
-        "For 400ml vs 800ml Car Showroom Scent Machine, compare 400ml (400ml; ₹4,190; reference 1,000–2,000 sq ft) with 800ml Car Showroom Scent Machine (800ml; ₹7,950; reference up to 2,000 sq ft). Record permitted customer zones, dimensions, ceiling height, doors, seating, vehicles and actual air paths. Both list Wi-Fi, Bluetooth and app control. Larger tank capacity does not establish a larger coverage area."
+        "For 400ml vs 800ml Car Showroom Scent Machine, compare 400ml (400ml; ₹4,450; reference 1,000–2,000 sq ft) with 800ml Car Showroom Scent Machine (800ml; ₹8,700; reference up to 2,000 sq ft). Record permitted customer zones, dimensions, ceiling height, doors, seating, vehicles and actual air paths. Both list Wi-Fi, Bluetooth and app control. Larger tank capacity does not establish a larger coverage area."
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -1981,7 +1981,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "What is the main difference?",
-        "400ml: 400ml; ₹4,190; reference 1,000–2,000 sq ft. 800ml Car Showroom Scent Machine: 800ml; ₹7,950; reference up to 2,000 sq ft."
+        "400ml: 400ml; ₹4,450; reference 1,000–2,000 sq ft. 800ml Car Showroom Scent Machine: 800ml; ₹8,700; reference up to 2,000 sq ft."
       ],
       [
         "Does a bigger tank mean better showroom coverage?",
@@ -2036,7 +2036,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2105,7 +2105,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2174,7 +2174,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2243,7 +2243,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2312,7 +2312,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2381,7 +2381,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2450,7 +2450,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2519,7 +2519,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2588,7 +2588,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2657,7 +2657,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2726,7 +2726,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2795,7 +2795,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2864,7 +2864,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -2933,7 +2933,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -3002,7 +3002,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -3071,7 +3071,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -3140,7 +3140,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -3209,7 +3209,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -3278,7 +3278,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -3347,7 +3347,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",
@@ -3416,7 +3416,7 @@ export const automotiveComparisonPages:Page[]=[
       ],
       [
         "Where HUME equipment may fit",
-        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. The ₹9,650 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
+        "The featured machine is an enquiry starting point for a reviewed customer zone. The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. The ₹11,200 tower has a 500ml reservoir and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Reservoir size is not coverage or a fixed refill duration. Confirm approved oil, controls, placement, hardware and servicing access."
       ],
       [
         "Confirm the brief before purchasing",

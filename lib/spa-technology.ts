@@ -256,7 +256,7 @@ const briefs:[string,string,string,string,string][]=[
     "400ml-vs-800ml-spa-fragrance-machine",
     "400ml vs 800ml Spa Fragrance Machine",
     "800ml-commercial-diffuser",
-    "400ml costs ₹4,190 and lists 1,000–2,000 sq ft; 800ml costs ₹7,950 and lists up to 2,000 sq ft.",
+    "400ml costs ₹4,450 and lists 1,000–2,000 sq ft; 800ml costs ₹8,700 and lists up to 2,000 sq ft.",
     "Both list Wi-Fi, Bluetooth and app controls. Larger capacity does not double coverage; confirm oil and GST separately."
   ],
   [

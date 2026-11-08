@@ -153,12 +153,12 @@ export const kiaPages:Page[]=[
   {
     "slug": "commercial-aroma-diffuser-for-kia-showroom",
     "title": "Commercial Aroma Diffuser for Kia Showroom",
-    "description": "Select a commercial aroma diffuser from measured zone area, ceiling height, door openings and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; a dealership may need several independently controlled zones.",
+    "description": "Select a commercial aroma diffuser from measured zone area, ceiling height, door openings and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; a dealership may need several independently controlled zones.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Select a commercial aroma diffuser from measured zone area, ceiling height, door openings and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; a dealership may need several independently controlled zones. HUME Spaces is an independent supplier. No Kia affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Select a commercial aroma diffuser from measured zone area, ceiling height, door openings and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; a dealership may need several independently controlled zones. HUME Spaces is an independent supplier. No Kia affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the permitted customer zones",
@@ -176,7 +176,7 @@ export const kiaPages:Page[]=[
     "questions": [
       [
         "What should this Kia showroom review?",
-        "Select a commercial aroma diffuser from measured zone area, ceiling height, door openings and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; a dealership may need several independently controlled zones."
+        "Select a commercial aroma diffuser from measured zone area, ceiling height, door openings and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; a dealership may need several independently controlled zones."
       ],
       [
         "Is HUME an official Kia partner?",
@@ -203,12 +203,12 @@ export const kiaPages:Page[]=[
   {
     "slug": "kia-customer-lounge-fragrance-solution",
     "title": "Kia Customer Lounge Fragrance Solution",
-    "description": "Keep Kia lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; place it away from occupied seats and provide an unscented option.",
+    "description": "Keep Kia lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; place it away from occupied seats and provide an unscented option.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Keep Kia lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; place it away from occupied seats and provide an unscented option. HUME Spaces is an independent supplier. No Kia affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Keep Kia lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; place it away from occupied seats and provide an unscented option. HUME Spaces is an independent supplier. No Kia affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the permitted customer zones",
@@ -226,7 +226,7 @@ export const kiaPages:Page[]=[
     "questions": [
       [
         "What should this Kia showroom review?",
-        "Keep Kia lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; place it away from occupied seats and provide an unscented option."
+        "Keep Kia lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; place it away from occupied seats and provide an unscented option."
       ],
       [
         "Is HUME an official Kia partner?",
@@ -353,12 +353,12 @@ export const kiaPages:Page[]=[
   {
     "slug": "best-scent-machine-for-kia-dealership",
     "title": "Best Scent Machine for Kia Dealership",
-    "description": "Choose a Kia dealership scent machine by measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage.",
+    "description": "Choose a Kia dealership scent machine by measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Choose a Kia dealership scent machine by measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage. HUME Spaces is an independent supplier. No Kia affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Choose a Kia dealership scent machine by measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage. HUME Spaces is an independent supplier. No Kia affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the permitted customer zones",
@@ -376,7 +376,7 @@ export const kiaPages:Page[]=[
     "questions": [
       [
         "What should this Kia showroom review?",
-        "Choose a Kia dealership scent machine by measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage."
+        "Choose a Kia dealership scent machine by measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage."
       ],
       [
         "Is HUME an official Kia partner?",

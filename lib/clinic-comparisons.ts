@@ -240,8 +240,8 @@ const briefs:[string,string,string,string,string,string,string][]=[
     "800ml-commercial-diffuser",
     "400ml HUME model",
     "800ml HUME model",
-    "₹4,190; 400ml; listed 1,000–2,000 sq ft; Wi-Fi, Bluetooth and app controls.",
-    "₹7,950; 800ml; listed up to 2,000 sq ft; the larger reservoir does not double coverage."
+    "₹4,450; 400ml; listed 1,000–2,000 sq ft; Wi-Fi, Bluetooth and app controls.",
+    "₹8,700; 800ml; listed up to 2,000 sq ft; the larger reservoir does not double coverage."
   ],
   [
     "500-sq-ft-vs-1-500-sq-ft-clinic-scent-machine",

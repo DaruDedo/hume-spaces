@@ -53,12 +53,12 @@ export const audiPages:Page[]=[
   {
     "slug": "commercial-scent-machine-for-audi-dealership",
     "title": "Commercial Scent Machine for Audi Dealership",
-    "description": "Compare the 400ml and 800ml HUME machines by placement, reservoir capacity and permitted customer-zone coverage. The 800ml model costs ₹7,950 and has stated coverage up to 2,000 sq ft; an open dealership may need separately controlled zones.",
+    "description": "Compare the 400ml and 800ml HUME machines by placement, reservoir capacity and permitted customer-zone coverage. The 800ml model costs ₹8,700 and has stated coverage up to 2,000 sq ft; an open dealership may need separately controlled zones.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Compare the 400ml and 800ml HUME machines by placement, reservoir capacity and permitted customer-zone coverage. The 800ml model costs ₹7,950 and has stated coverage up to 2,000 sq ft; an open dealership may need separately controlled zones. HUME Spaces is an independent supplier. No Audi affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Compare the 400ml and 800ml HUME machines by placement, reservoir capacity and permitted customer-zone coverage. The 800ml model costs ₹8,700 and has stated coverage up to 2,000 sq ft; an open dealership may need separately controlled zones. HUME Spaces is an independent supplier. No Audi affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the approved customer journey",
@@ -76,7 +76,7 @@ export const audiPages:Page[]=[
     "questions": [
       [
         "What is the recommendation for this Audi dealership brief?",
-        "Compare the 400ml and 800ml HUME machines by placement, reservoir capacity and permitted customer-zone coverage. The 800ml model costs ₹7,950 and has stated coverage up to 2,000 sq ft; an open dealership may need separately controlled zones."
+        "Compare the 400ml and 800ml HUME machines by placement, reservoir capacity and permitted customer-zone coverage. The 800ml model costs ₹8,700 and has stated coverage up to 2,000 sq ft; an open dealership may need separately controlled zones."
       ],
       [
         "Is HUME an official Audi partner?",
@@ -203,12 +203,12 @@ export const audiPages:Page[]=[
   {
     "slug": "audi-customer-lounge-fragrance-solution",
     "title": "Audi Customer Lounge Fragrance Solution",
-    "description": "Use a separately controlled lounge setting with lower perceived intensity than the display floor. The HUME 400ml machine at ₹4,190 is a candidate for a measured customer area; placement must avoid directing output toward seated visitors.",
+    "description": "Use a separately controlled lounge setting with lower perceived intensity than the display floor. The HUME 400ml machine at ₹4,450 is a candidate for a measured customer area; placement must avoid directing output toward seated visitors.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Use a separately controlled lounge setting with lower perceived intensity than the display floor. The HUME 400ml machine at ₹4,190 is a candidate for a measured customer area; placement must avoid directing output toward seated visitors. HUME Spaces is an independent supplier. No Audi affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Use a separately controlled lounge setting with lower perceived intensity than the display floor. The HUME 400ml machine at ₹4,450 is a candidate for a measured customer area; placement must avoid directing output toward seated visitors. HUME Spaces is an independent supplier. No Audi affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the approved customer journey",
@@ -226,7 +226,7 @@ export const audiPages:Page[]=[
     "questions": [
       [
         "What is the recommendation for this Audi dealership brief?",
-        "Use a separately controlled lounge setting with lower perceived intensity than the display floor. The HUME 400ml machine at ₹4,190 is a candidate for a measured customer area; placement must avoid directing output toward seated visitors."
+        "Use a separately controlled lounge setting with lower perceived intensity than the display floor. The HUME 400ml machine at ₹4,450 is a candidate for a measured customer area; placement must avoid directing output toward seated visitors."
       ],
       [
         "Is HUME an official Audi partner?",

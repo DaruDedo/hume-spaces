@@ -153,12 +153,12 @@ export const lexusPages:Page[]=[
   {
     "slug": "commercial-diffuser-for-lexus-showroom",
     "title": "Commercial Diffuser for Lexus Showroom",
-    "description": "Compare the HUME 400ml and 800ml commercial diffusers using measured customer-zone size, ceiling height, door openings and airflow. The 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; larger dealerships may need several controlled zones.",
+    "description": "Compare the HUME 400ml and 800ml commercial diffusers using measured customer-zone size, ceiling height, door openings and airflow. The 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; larger dealerships may need several controlled zones.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Compare the HUME 400ml and 800ml commercial diffusers using measured customer-zone size, ceiling height, door openings and airflow. The 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; larger dealerships may need several controlled zones. HUME Spaces is an independent supplier. No Lexus affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Compare the HUME 400ml and 800ml commercial diffusers using measured customer-zone size, ceiling height, door openings and airflow. The 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; larger dealerships may need several controlled zones. HUME Spaces is an independent supplier. No Lexus affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Plan the relevant hospitality zone",
@@ -176,7 +176,7 @@ export const lexusPages:Page[]=[
     "questions": [
       [
         "What is the recommendation for this Lexus showroom brief?",
-        "Compare the HUME 400ml and 800ml commercial diffusers using measured customer-zone size, ceiling height, door openings and airflow. The 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; larger dealerships may need several controlled zones."
+        "Compare the HUME 400ml and 800ml commercial diffusers using measured customer-zone size, ceiling height, door openings and airflow. The 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; larger dealerships may need several controlled zones."
       ],
       [
         "Is HUME an official Lexus partner?",
@@ -203,12 +203,12 @@ export const lexusPages:Page[]=[
   {
     "slug": "lexus-customer-lounge-fragrance",
     "title": "Lexus Customer Lounge Fragrance",
-    "description": "Keep Lexus lounge fragrance subtle and separately controlled from the display floor. The HUME 400ml machine at ₹4,190 is a candidate for a measured lounge zone; avoid directing fragrance at seated visitors and offer an unscented option.",
+    "description": "Keep Lexus lounge fragrance subtle and separately controlled from the display floor. The HUME 400ml machine at ₹4,450 is a candidate for a measured lounge zone; avoid directing fragrance at seated visitors and offer an unscented option.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Keep Lexus lounge fragrance subtle and separately controlled from the display floor. The HUME 400ml machine at ₹4,190 is a candidate for a measured lounge zone; avoid directing fragrance at seated visitors and offer an unscented option. HUME Spaces is an independent supplier. No Lexus affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Keep Lexus lounge fragrance subtle and separately controlled from the display floor. The HUME 400ml machine at ₹4,450 is a candidate for a measured lounge zone; avoid directing fragrance at seated visitors and offer an unscented option. HUME Spaces is an independent supplier. No Lexus affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Plan the relevant hospitality zone",
@@ -226,7 +226,7 @@ export const lexusPages:Page[]=[
     "questions": [
       [
         "What is the recommendation for this Lexus showroom brief?",
-        "Keep Lexus lounge fragrance subtle and separately controlled from the display floor. The HUME 400ml machine at ₹4,190 is a candidate for a measured lounge zone; avoid directing fragrance at seated visitors and offer an unscented option."
+        "Keep Lexus lounge fragrance subtle and separately controlled from the display floor. The HUME 400ml machine at ₹4,450 is a candidate for a measured lounge zone; avoid directing fragrance at seated visitors and offer an unscented option."
       ],
       [
         "Is HUME an official Lexus partner?",
@@ -403,12 +403,12 @@ export const lexusPages:Page[]=[
   {
     "slug": "best-luxury-scent-machine-for-lexus-dealership",
     "title": "Best Luxury Scent Machine for Lexus Dealership",
-    "description": "Choose a luxury scent machine by placement, controllability, access for refills and measured zone requirements. Compare the ₹9,650 tower with the ₹7,950 800ml model; appearance and tank size do not establish whole-showroom coverage.",
+    "description": "Choose a luxury scent machine by placement, controllability, access for refills and measured zone requirements. Compare the ₹11,200 tower with the ₹8,700 800ml model; appearance and tank size do not establish whole-showroom coverage.",
     "product": "hume-pro-commercial-tower",
     "sections": [
       [
         "The practical recommendation",
-        "Choose a luxury scent machine by placement, controllability, access for refills and measured zone requirements. Compare the ₹9,650 tower with the ₹7,950 800ml model; appearance and tank size do not establish whole-showroom coverage. HUME Spaces is an independent supplier. No Lexus affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Choose a luxury scent machine by placement, controllability, access for refills and measured zone requirements. Compare the ₹11,200 tower with the ₹8,700 800ml model; appearance and tank size do not establish whole-showroom coverage. HUME Spaces is an independent supplier. No Lexus affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Plan the relevant hospitality zone",
@@ -426,7 +426,7 @@ export const lexusPages:Page[]=[
     "questions": [
       [
         "What is the recommendation for this Lexus showroom brief?",
-        "Choose a luxury scent machine by placement, controllability, access for refills and measured zone requirements. Compare the ₹9,650 tower with the ₹7,950 800ml model; appearance and tank size do not establish whole-showroom coverage."
+        "Choose a luxury scent machine by placement, controllability, access for refills and measured zone requirements. Compare the ₹11,200 tower with the ₹8,700 800ml model; appearance and tank size do not establish whole-showroom coverage."
       ],
       [
         "Is HUME an official Lexus partner?",

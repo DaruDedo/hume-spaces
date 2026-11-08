@@ -153,12 +153,12 @@ export const mgPages:Page[]=[
   {
     "slug": "commercial-aroma-diffuser-for-mg-showroom",
     "title": "Commercial Aroma Diffuser for MG Showroom",
-    "description": "Choose a commercial aroma diffuser from measured zone size, ceiling height, doors, controls and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; separate display and lounge settings may suit an MG dealership better than one machine.",
+    "description": "Choose a commercial aroma diffuser from measured zone size, ceiling height, doors, controls and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; separate display and lounge settings may suit an MG dealership better than one machine.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Choose a commercial aroma diffuser from measured zone size, ceiling height, doors, controls and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; separate display and lounge settings may suit an MG dealership better than one machine. HUME Spaces is an independent supplier. No MG Motor affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Choose a commercial aroma diffuser from measured zone size, ceiling height, doors, controls and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; separate display and lounge settings may suit an MG dealership better than one machine. HUME Spaces is an independent supplier. No MG Motor affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the permitted hospitality areas",
@@ -176,7 +176,7 @@ export const mgPages:Page[]=[
     "questions": [
       [
         "What should this MG Motor dealership review?",
-        "Choose a commercial aroma diffuser from measured zone size, ceiling height, doors, controls and refill access. The HUME 800ml model costs ₹7,950 with stated coverage up to 2,000 sq ft; separate display and lounge settings may suit an MG dealership better than one machine."
+        "Choose a commercial aroma diffuser from measured zone size, ceiling height, doors, controls and refill access. The HUME 800ml model costs ₹8,700 with stated coverage up to 2,000 sq ft; separate display and lounge settings may suit an MG dealership better than one machine."
       ],
       [
         "Is HUME an official MG Motor partner?",
@@ -203,12 +203,12 @@ export const mgPages:Page[]=[
   {
     "slug": "mg-customer-lounge-fragrance",
     "title": "MG Customer Lounge Fragrance",
-    "description": "Keep MG customer lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; keep output away from occupied seats.",
+    "description": "Keep MG customer lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; keep output away from occupied seats.",
     "product": "hume-commercial-scent-machine-pro",
     "sections": [
       [
         "The practical recommendation",
-        "Keep MG customer lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; keep output away from occupied seats. HUME Spaces is an independent supplier. No MG Motor affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Keep MG customer lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; keep output away from occupied seats. HUME Spaces is an independent supplier. No MG Motor affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the permitted hospitality areas",
@@ -226,7 +226,7 @@ export const mgPages:Page[]=[
     "questions": [
       [
         "What should this MG Motor dealership review?",
-        "Keep MG customer lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,190 may suit a measured lounge zone; keep output away from occupied seats."
+        "Keep MG customer lounge fragrance restrained and separately controlled from the display floor. A HUME 400ml machine at ₹4,450 may suit a measured lounge zone; keep output away from occupied seats."
       ],
       [
         "Is HUME an official MG Motor partner?",
@@ -353,12 +353,12 @@ export const mgPages:Page[]=[
   {
     "slug": "best-scent-machine-for-mg-dealership",
     "title": "Best Scent Machine for MG Dealership",
-    "description": "Select an MG dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage.",
+    "description": "Select an MG dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The practical recommendation",
-        "Select an MG dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage. HUME Spaces is an independent supplier. No MG Motor affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
+        "Select an MG dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage. HUME Spaces is an independent supplier. No MG Motor affiliation, endorsement, approval, official fragrance or existing customer relationship is claimed. Confirm dealer permission."
       ],
       [
         "Map the permitted hospitality areas",
@@ -376,7 +376,7 @@ export const mgPages:Page[]=[
     "questions": [
       [
         "What should this MG Motor dealership review?",
-        "Select an MG dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,190 400ml model, ₹7,950 800ml model and ₹9,650 tower; tank capacity does not establish whole-dealership coverage."
+        "Select an MG dealership scent machine from measured area, ceiling height, airflow, controls and maintenance access. Compare the ₹4,450 400ml model, ₹8,700 800ml model and ₹11,200 tower; tank capacity does not establish whole-dealership coverage."
       ],
       [
         "Is HUME an official MG Motor partner?",

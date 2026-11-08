@@ -62,7 +62,7 @@ export const bmwPages:Page[]=[
       ],
       [
         "Compare machine references",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. Confirm exact liquid, hardware and servicing needs."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. Confirm exact liquid, hardware and servicing needs."
       ],
       [
         "Review the permitted environment",

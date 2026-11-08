@@ -16,7 +16,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -66,7 +66,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -116,7 +116,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -166,7 +166,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -216,7 +216,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -266,7 +266,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -316,7 +316,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -366,7 +366,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -416,7 +416,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -466,7 +466,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -516,7 +516,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -566,7 +566,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -616,7 +616,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -666,7 +666,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -716,7 +716,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -766,7 +766,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -816,7 +816,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -866,7 +866,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -916,7 +916,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -966,7 +966,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1016,7 +1016,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1066,7 +1066,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1116,7 +1116,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1166,7 +1166,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1216,7 +1216,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1266,7 +1266,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1316,7 +1316,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1366,7 +1366,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1416,7 +1416,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1466,7 +1466,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1516,7 +1516,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1566,7 +1566,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1616,7 +1616,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1666,7 +1666,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1716,7 +1716,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1766,7 +1766,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1816,7 +1816,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1853,30 +1853,30 @@ export const automotiveTechnologyPages:Page[]=[
   {
     "slug": "400ml-vs-800ml-car-showroom-fragrance-machine",
     "title": "400ml vs 800ml Car Showroom Fragrance Machine",
-    "description": "Both models reference up to 2,000 sq ft: 400ml costs ₹4,190 and 800ml ₹7,950. The larger tank changes capacity, not a confirmed increase in coverage.",
+    "description": "Both models reference up to 2,000 sq ft: 400ml costs ₹4,450 and 800ml ₹8,700. The larger tank changes capacity, not a confirmed increase in coverage.",
     "product": "800ml-commercial-diffuser",
     "sections": [
       [
         "The equipment answer",
-        "Both models reference up to 2,000 sq ft: 400ml costs ₹4,190 and 800ml ₹7,950. The larger tank changes capacity, not a confirmed increase in coverage."
+        "Both models reference up to 2,000 sq ft: 400ml costs ₹4,450 and 800ml ₹8,700. The larger tank changes capacity, not a confirmed increase in coverage."
       ],
       [
         "Review the dealership setup",
-        "For 400ml vs 800ml Car Showroom Fragrance Machine, document approved customer zones, floor area, ceiling height, doors, vehicle movement, supply and return paths and occupied seating. Both models reference up to 2,000 sq ft: 400ml costs ₹4,190 and 800ml ₹7,950. The larger tank changes capacity, not a confirmed increase in coverage. Keep workshops and source-emission controls separate from optional ambience."
+        "For 400ml vs 800ml Car Showroom Fragrance Machine, document approved customer zones, floor area, ceiling height, doors, vehicle movement, supply and return paths and occupied seating. Both models reference up to 2,000 sq ft: 400ml costs ₹4,450 and 800ml ₹8,700. The larger tank changes capacity, not a confirmed increase in coverage. Keep workshops and source-emission controls separate from optional ambience."
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
-        "Keep direct discharge and liquid away from paint, leather, electronics, vehicle interiors and occupied seats. Confirm dealer brand policy and vehicle-care requirements, offer unscented choices and review actual distribution before expanding. No manufacturer affiliation, purification, sales benefit, universal coverage or fixed refill duration is assumed. Both models reference up to 2,000 sq ft: 400ml costs ₹4,190 and 800ml ₹7,950. The larger tank changes capacity, not a confirmed increase in coverage."
+        "Keep direct discharge and liquid away from paint, leather, electronics, vehicle interiors and occupied seats. Confirm dealer brand policy and vehicle-care requirements, offer unscented choices and review actual distribution before expanding. No manufacturer affiliation, purification, sales benefit, universal coverage or fixed refill duration is assumed. Both models reference up to 2,000 sq ft: 400ml costs ₹4,450 and 800ml ₹8,700. The larger tank changes capacity, not a confirmed increase in coverage."
       ]
     ],
     "questions": [
       [
         "What is the practical recommendation?",
-        "Both models reference up to 2,000 sq ft: 400ml costs ₹4,190 and 800ml ₹7,950. The larger tank changes capacity, not a confirmed increase in coverage."
+        "Both models reference up to 2,000 sq ft: 400ml costs ₹4,450 and 800ml ₹8,700. The larger tank changes capacity, not a confirmed increase in coverage."
       ],
       [
         "Does a larger tank cover a larger showroom?",
@@ -1916,7 +1916,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -1966,7 +1966,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2016,7 +2016,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2066,7 +2066,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2116,7 +2116,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2166,7 +2166,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2216,7 +2216,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2266,7 +2266,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2316,7 +2316,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2366,7 +2366,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2416,7 +2416,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",
@@ -2466,7 +2466,7 @@ export const automotiveTechnologyPages:Page[]=[
       ],
       [
         "Verify model and installation details",
-        "The 400ml model costs ₹4,190 and references 1,000–2,000 sq ft; the 800ml model costs ₹7,950 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹9,650 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
+        "The 400ml model costs ₹4,450 and references 1,000–2,000 sq ft; the 800ml model costs ₹8,700 and references up to 2,000 sq ft. Both list Wi-Fi, Bluetooth and app control. The ₹11,200 tower has a 500ml reservoir, Bluetooth/app control and reference up to 1,500 sq ft. The ₹12,000 HVAC model has a 1,000ml reservoir and reference up to 5,000 sq ft subject to qualified review. Confirm stock, power, oil, controls, hardware, GST, delivery, installation and warranty for the exact order."
       ],
       [
         "Evaluate operation and customer experience",

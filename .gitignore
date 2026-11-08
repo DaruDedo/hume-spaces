@@ -1,7 +1,6 @@
 node_modules/
 .next/
 .env*
-!.env.example
 *.tsbuildinfo
 output/
 
@@ -9,3 +8,4 @@ output/
 
 leads.csv
 lead-exports/
+.commerce/

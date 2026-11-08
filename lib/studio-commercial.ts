@@ -60,7 +60,7 @@ export const studioCommercialPages=briefs.map(([title,brief],index)=>({
  sections:[
   ['What to enquire about',brief],
   ['Prepare this studio quotation brief','For '+title+', send the city and postcode, studio discipline, permitted-zone area, ceiling height, class schedule, occupancy, doors and air paths. Include member preferences, existing product aromas and areas to keep unscented. '+brief],
-  ['Compare machines, approved oils and total costs','The 400ml Commercial Diffuser is listed at ₹4,190 with a 400 ml reservoir and 1,000–2,000 sq ft reference coverage. The 800ml Commercial Diffuser is ₹7,950 with an 800 ml reservoir and up to 2,000 sq ft reference coverage. A larger reservoir does not establish greater coverage or a fixed refill duration. Confirm stock, GST, delivery, approved oil, installation, warranty and support in writing.'],
+  ['Compare machines, approved oils and total costs','The 400ml Commercial Diffuser is listed at ₹4,450 with a 400 ml reservoir and 1,000–2,000 sq ft reference coverage. The 800ml Commercial Diffuser is ₹8,700 with an 800 ml reservoir and up to 2,000 sq ft reference coverage. A larger reservoir does not establish greater coverage or a fixed refill duration. Confirm stock, GST, delivery, approved oil, installation, warranty and support in writing.'],
   ['Agree the permitted rollout','Decide reception and practice rooms separately. Respect venue policy, member preferences and fragrance-free choices; review migration through shared air paths. Scent does not replace cleaning or ventilation, and no therapeutic or exercise-performance benefit is claimed. Custom development, sample supply and managed service availability require confirmation. '+brief],
  ] as Pair[],
  questions:[

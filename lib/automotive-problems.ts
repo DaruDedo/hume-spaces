@@ -16,7 +16,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -66,7 +66,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -116,7 +116,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -166,7 +166,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -216,7 +216,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -266,7 +266,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -316,7 +316,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -366,7 +366,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -416,7 +416,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -466,7 +466,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -516,7 +516,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -566,7 +566,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -616,7 +616,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -666,7 +666,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -716,7 +716,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -766,7 +766,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -816,7 +816,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -866,7 +866,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -916,7 +916,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -966,7 +966,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1016,7 +1016,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1066,7 +1066,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1116,7 +1116,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1166,7 +1166,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1216,7 +1216,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1266,7 +1266,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1316,7 +1316,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1366,7 +1366,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1416,7 +1416,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1466,7 +1466,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1516,7 +1516,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1566,7 +1566,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1616,7 +1616,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1666,7 +1666,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1716,7 +1716,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1766,7 +1766,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1816,7 +1816,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1866,7 +1866,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1916,7 +1916,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -1966,7 +1966,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2016,7 +2016,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2066,7 +2066,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2116,7 +2116,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2166,7 +2166,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2216,7 +2216,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2266,7 +2266,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2316,7 +2316,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2366,7 +2366,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2416,7 +2416,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
@@ -2466,7 +2466,7 @@ export const automotiveProblemPages:Page[]=[
       ],
       [
         "Consider equipment only after the source review",
-        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,190 400ml and ₹7,950 800ml models reference up to 2,000 sq ft; the ₹9,650 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
+        "The featured model is an enquiry starting point for permitted customer-zone ambience after underlying issues are addressed. The ₹4,450 400ml and ₹8,700 800ml models reference up to 2,000 sq ft; the ₹11,200 tower references up to 1,500 sq ft; the ₹12,000 HVAC model references up to 5,000 sq ft subject to qualified compatibility review. Tank capacity does not establish coverage or refill duration. Keep liquid and direct discharge away from vehicles, paint, leather, electronics and occupied seats."
       ],
       [
         "Verify the improvement and maintain customer choice",
