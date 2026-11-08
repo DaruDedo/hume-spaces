@@ -1,5 +1,5 @@
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { mkdirSync, readFileSync } from 'node:fs';
+import { mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { DatabaseSync, type SQLInputValue } from 'node:sqlite';
 import { Pool, types, type PoolClient } from 'pg';
@@ -8,6 +8,7 @@ import { mockPayments } from './payment-mode';
 import { commerceSchema } from './schema';
 import { oilWeightLabel, oilWeights } from './oil-sizes';
 import { defaultGstRate } from './shared';
+import { supabaseCa } from './supabase-ca';
 
 const seededOilSizes = commerceCatalog.filter(item => item.category === 'oil').flatMap(item =>
   oilWeights.map(grams => ({
@@ -116,11 +117,10 @@ function postgresPool(connectionString: string) {
   if (pool) return pool;
   const url = new URL(connectionString);
   if (url.port === '6543') throw new Error('Use the Supabase Session pooler connection on port 5432.');
-  const certPath = process.env.DATABASE_CA_PATH?.trim() || url.searchParams.get('sslrootcert') || '.commerce/supabase-ca.crt';
   for (const key of ['sslmode', 'sslrootcert', 'sslcert', 'sslkey', 'uselibpqcompat']) url.searchParams.delete(key);
   pool = new Pool({
     connectionString: url.href,
-    ssl: { rejectUnauthorized: true, ca: readFileSync(certPath, 'utf8') },
+    ssl: { rejectUnauthorized: true, ca: supabaseCa },
     connectionTimeoutMillis: 8000,
     max: 3,
     types: { getTypeParser: (oid, format) => oid === 20 && format !== 'binary' ? Number : types.getTypeParser(oid, format) },
