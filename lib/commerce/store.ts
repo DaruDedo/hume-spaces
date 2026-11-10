@@ -2,13 +2,14 @@ import { randomBytes, randomUUID } from 'node:crypto';
 import { db, transaction } from './database';
 import type { Cart, Delivery, Line, OrderState, StockItem } from './shared';
 import { itemTotals, unitPrice } from './shared';
+import { oilWeights } from './oil-sizes';
 
 export { mockPayments } from './payment-mode';
 import { mockPayments } from './payment-mode';
 export { db, transaction } from './database';
 
 type Checkout = {
-  id: string; cart: string; created: number; source: 'cart' | 'buy'; delivery: string | null;
+  id: string; cart: string; created: number; source: 'cart' | 'buy' | 'planner'; delivery: string | null;
   lines: string | null; shipping: number | null; total: number | null; attempt: string | null;
   expires: number | null; provider: string | null; payment_url: string | null; order_id: string | null;
 };
@@ -22,13 +23,22 @@ export const privateId = () => randomBytes(24).toString('base64url');
 export const validId = (id: string) => /^[A-Za-z0-9_-]{32}$/.test(id);
 export const getCheckout = (id: string) => db().prepare('SELECT * FROM checkout WHERE id=?').get<Checkout>(id);
 export const getOrder = (id: string) => db().prepare('SELECT * FROM orders WHERE id=?').get<Order>(id);
-export async function getStock(sku: string) {
-  const row = await db().prepare(`SELECT sku.* FROM sku JOIN catalogue USING(sku)
+const sellableStock = `SELECT sku.* FROM sku JOIN catalogue USING(sku)
     LEFT JOIN oil_sizes ON oil_sizes.sku=sku.sku
     LEFT JOIN catalogue AS parent ON parent.sku=oil_sizes.parent_sku
-    WHERE sku.sku=? AND catalogue.archived=0 AND COALESCE(parent.archived,0)=0
-      AND (catalogue.category <> 'oil' OR oil_sizes.sku IS NOT NULL)`).get<StockItem>(sku);
+    WHERE catalogue.archived=0 AND COALESCE(parent.archived,0)=0
+      AND (catalogue.category <> 'oil' OR oil_sizes.grams IN (${oilWeights.join(',')}))`;
+
+export async function getStock(sku: string) {
+  const row = await db().prepare(sellableStock + ' AND sku.sku=?').get<StockItem>(sku);
   return row && { ...row };
+}
+
+export async function getStockBatch(skus: string[]) {
+  if (!skus.length) return new Map<string, StockItem>();
+  const placeholders = skus.map(() => '?').join(',');
+  const rows = await db().prepare(sellableStock + ' AND sku.sku IN (' + placeholders + ')').all<StockItem>(...skus);
+  return new Map(rows.map(row => [row.sku, row]));
 }
 
 export async function quote(cart: Cart) {
@@ -49,10 +59,14 @@ export async function shippingFee() {
   return settings?.fee ?? (fallback ? Number(fallback) : mockPayments() ? 0 : NaN);
 }
 
-export async function createCheckout(cart: Cart, source: Checkout['source']) {
+export async function createCheckout(cart: Cart, source: Checkout['source'], visit?: string) {
   await quote(cart);
   const id = privateId();
-  await db().prepare('INSERT INTO checkout (id, cart, created, source) VALUES (?, ?, ?, ?)').run(id, JSON.stringify(cart), Date.now(), source);
+  await transaction(async () => {
+    await db().prepare('INSERT INTO checkout (id, cart, created, source) VALUES (?, ?, ?, ?)').run(id, JSON.stringify(cart), Date.now(), source);
+    if (visit) await db().prepare(`INSERT INTO checkout_attribution (checkout_id,visit)
+      SELECT ?,? WHERE EXISTS (SELECT 1 FROM storefront_events WHERE visit=? AND kind='page_view')`).run(id, visit, visit);
+  });
   return id;
 }
 

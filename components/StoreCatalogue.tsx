@@ -1,14 +1,40 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { catalogueHref, catalogueItems } from '@/lib/commerce/catalogue';
+import { catalogueHref, catalogueItems, oilSizes } from '@/lib/commerce/catalogue';
+import { commerceStorageConfigured } from '@/lib/commerce/database';
 import { rupees } from '@/lib/commerce/shared';
 import CommerceButtons from './CommerceButtons';
+import PairingCarousel from './PairingCarousel';
 import WhatsAppButton from './WhatsAppButton';
 
-export default async function StoreCatalogue({ category }: { category: 'equipment' | 'oil' }) {
-  const items = (await catalogueItems()).filter(item => item.category === category);
+const pairingDiffusers = ['hume-commercial-scent-machine-pro', '800ml-commercial-diffuser', 'hume-pro-commercial-tower'];
+
+export default async function StoreCatalogue({ category, recommendations = false }: {
+  category: 'equipment' | 'oil'; recommendations?: boolean;
+}) {
+  const [catalogue, packs] = await Promise.all([
+    catalogueItems(),
+    recommendations && category === 'oil' && commerceStorageConfigured() ? oilSizes() : [],
+  ]);
+  const categoryItems = catalogue.filter(item => item.category === category);
+  if (recommendations) {
+    const availableOils = new Set(packs.filter(pack => !pack.archived && pack.online && pack.stock > 0)
+      .map(pack => pack.parent_sku));
+    const recommended = category === 'oil'
+      ? categoryItems.filter(item => availableOils.has(item.sku))
+      : pairingDiffusers.flatMap(sku => categoryItems.filter(item => item.sku === sku && item.online && item.stock > 0));
+    const products = recommended.map(item => ({
+      sku: item.sku,
+      name: item.name.replace(/ · 100 mL$/, ''),
+      image: item.image,
+      description: item.description,
+      href: catalogueHref(item.sku),
+      price: category === 'equipment' ? item.price : undefined,
+    }));
+    return products.length ? <PairingCarousel category={category} products={products} /> : null;
+  }
   return <div className="product-grid catalog store-catalogue-grid">
-    {items.map(item => <article className="product-card" key={item.sku}>
+    {categoryItems.map(item => <article className="product-card" key={item.sku}>
       <div className="product-image"><Image src={item.image} alt={item.name} fill sizes="(max-width: 750px) 45vw, 30vw" /></div>
       <h3><Link className="product-card-link" href={catalogueHref(item.sku)}>{item.name.replace(/ · 100 mL$/, '')}</Link></h3>
       <p className="store-card-description">{item.description}</p>
@@ -21,6 +47,6 @@ export default async function StoreCatalogue({ category }: { category: 'equipmen
             : <WhatsAppButton topic={item.name} label="Enquire on WhatsApp" className="button outline" />}
       </div>
     </article>)}
-    {items.length === 0 && <p>No products are currently listed in this category.</p>}
+    {categoryItems.length === 0 && <p>No products are currently listed in this category.</p>}
   </div>;
 }

@@ -1,5 +1,34 @@
 import {products} from './content';
 type Product=typeof products[number];
+
+export const refillableDiffuserModels = new Set<string>([
+  'hume-commercial-scent-machine-pro',
+  '800ml-commercial-diffuser',
+  'hume-pro-commercial-tower',
+]);
+
+export const diffuserSetupSteps = [
+  'With the adapter unplugged from the wall, insert its power pin into the diffuser.',
+  'Open the lid and use the handle to lift out the bottle assembly.',
+  'Unscrew the bottle from the assembly and fill it with fragrance oil approved for your diffuser.',
+  'Screw the bottle back onto the assembly, slide it into the diffuser using the handle, and close the lid.',
+  'Plug the adapter into a wall outlet and switch on the diffuser.',
+];
+
+export const diffuserDeliverySupport = [
+  { label: 'Delivery', detail: 'We deliver across India. Estimated delivery is 5–7 days, depending on your location.' },
+  { label: 'Warranty', detail: 'These diffusers are imported directly from China and are sold without a warranty. The manufacturer has no local service presence in India.' },
+  { label: 'Repairs and spare parts', detail: 'HUME Spaces is your point of contact after purchase. We help troubleshoot issues, arrange repairs and source compatible spare parts.' },
+];
+
+export const diffuserReliability = 'Over six months of sales, HUME Spaces received no customer reports of faults with these diffusers. A clean location, upright placement and stable power help keep them running reliably over time.';
+
+export const diffuserCare = [
+  { label: 'Avoid dusty areas', detail: 'Heavy dust can clog the filter and reduce airflow.' },
+  { label: 'Keep the diffuser upright', detail: 'Tilting the diffuser with oil inside can let oil leak from the nozzle and reach the circuit board or other electronics.' },
+  { label: 'Use a stable power supply', detail: 'Use the supplied adapter and a reliable outlet. Voltage fluctuations or a short circuit can damage the electronics.' },
+];
+
 export function productUseCases(p:Product){
   const place=(name:string,slug:string)=>({name,path:`/industries/${slug}`});
   if(p.slug==='car-room-diffuser')return [{name:'Cars',path:'/equipment/car-room-diffuser'},{name:'Office cabins',path:'/industries/offices'},{name:'Small rooms',path:'/equipment/car-room-diffuser'},{name:'Hotel rooms',path:'/industries/hotels'},{name:'Personal desks',path:'/industries/offices'}];
@@ -19,6 +48,8 @@ export function productFaqs(p:Product){const personal=p.slug==='car-room-diffuse
 {q:`How is the ${p.name} installed or placed?`,a:p.installation+' Installation availability and any charges must be confirmed separately.'},
 {q:`Can one ${p.name} serve separate rooms?`,a:personal?'Consider this model for a local personal space. Do not assume it scents multiple separate rooms.':reed?'This compact reed format should be considered for a local desk or corner. Separate rooms require separate placement decisions.':hvac?'Potential distribution through ducts must be reviewed against the air-handler layout and zoning. A shared HVAC system does not guarantee even fragrance distribution.':'Do not assume one machine serves separate rooms evenly. Share a floor plan and ventilation details to assess each zone.'},
 {q:`What are the ongoing costs of the ${p.name}?`,a:personal?'Ask for approved refill prices and usage estimates; no fixed monthly cost has been confirmed.':reed?'Ask about replacement fragrance and reeds, pack sizes and prices. A verified replacement interval is needed before estimating monthly costs.':'Request approved oil prices, bottle sizes and consumption assumptions separately from equipment pricing. No fixed monthly cost is verified for this model.'},
-{q:`Does the ${p.name} include delivery, warranty or support?`,a:'Delivery timing and charges, warranty duration, exclusions, returns and support arrangements must be confirmed in writing before ordering. This website does not promise an installation service or a specific warranty.'},
+{q:`Does the ${p.name} include delivery, warranty or support?`,a:refillableDiffuserModels.has(p.slug)
+  ? diffuserDeliverySupport.map(({detail})=>detail).join(' ')
+  : 'Confirm delivery timing, charges, warranty terms, returns and support arrangements before ordering.'},
 {q:`How do I enquire about the ${p.name}?`,a:`Use the product’s WhatsApp enquiry button to contact HUME Spaces on +91 9559024822. Include your city, property type, area, ventilation and operating hours. Ask for an itemised quote and an approved oil pairing.`}
 ];}

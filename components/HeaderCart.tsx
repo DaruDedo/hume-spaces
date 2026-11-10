@@ -7,6 +7,7 @@ import CartContents from './CartContents';
 export default function HeaderCart() {
   const [count, setCount] = useState(0);
   const [open, setOpen] = useState(false);
+  const [openCount, setOpenCount] = useState(0);
   const [closing, setClosing] = useState(false);
   const drawer = useRef<HTMLDialogElement>(null);
 
@@ -15,6 +16,7 @@ export default function HeaderCart() {
     if (!dialog || dialog.open) return;
     dialog.showModal();
     setOpen(true);
+    setOpenCount(count => count + 1);
   }
 
   useEffect(() => {
@@ -64,7 +66,7 @@ export default function HeaderCart() {
         <button type="button" className="cart-drawer-close" aria-label="Close cart" onClick={() => setClosing(true)}>×</button>
       </div>
       <div className="cart-drawer-body">
-        {open && <CartContents onNavigate={() => setClosing(true)} />}
+        <CartContents refreshKey={openCount} onNavigate={() => setClosing(true)} />
       </div>
     </div>
   </dialog>

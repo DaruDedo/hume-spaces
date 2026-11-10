@@ -3,6 +3,7 @@ import { archiveSku, createSku, updateSku } from '@/app/admin/actions';
 import { catalogueItems, oilSizes, type CatalogueItem } from '@/lib/commerce/catalogue';
 import { oilWeightLabel } from '@/lib/commerce/oil-sizes';
 import { defaultGstRate } from '@/lib/commerce/shared';
+import { Filters, type Query } from '@/app/admin/views';
 
 function ProductFields({ item, pack = false }: { item?: CatalogueItem; pack?: boolean }) {
   const parentOil = item?.category === 'oil' && !pack;
@@ -29,11 +30,21 @@ function ArchiveProduct({ item }: { item: CatalogueItem }) {
   </form>;
 }
 
-export default async function AdminCatalogue() {
+export default async function AdminCatalogue({ query }: { query: Query }) {
   const [products, variants] = await Promise.all([catalogueItems(true), oilSizes()]);
+  const search = (query.q ?? '').trim().toLowerCase().slice(0, 120);
+  const matches = (item: CatalogueItem) => {
+    const searchable = (item.name + ' ' + item.sku).toLowerCase();
+    if (!searchable.includes(search)) return false;
+    if (query.status === 'low_stock') return !item.archived && item.online === 1 && item.stock <= 3;
+    if (query.status === 'online') return !item.archived && item.online === 1;
+    if (query.status === 'enquiry') return !item.archived && item.category === 'equipment' && item.online === 0;
+    if (query.status === 'archived') return Boolean(item.archived);
+    return true;
+  };
+  const filtered = products.filter(item => matches(item) || variants.some(pack => pack.parent_sku === item.sku && matches(pack)));
   return <section id="catalogue">
-    <h2>Catalogue, stock and taxes</h2>
-    <p>Remove a listing to hide it from customers while preserving past orders. You can restore it here.</p>
+    <Filters query={query} statuses={['online', 'low_stock', 'enquiry', 'archived']} placeholder="Product name or SKU" />
     <details className="commerce-panel">
       <summary>Add product or fragrance</summary>
       <form action={createSku} className="commerce-form">
@@ -42,8 +53,9 @@ export default async function AdminCatalogue() {
         <button className="button">Create listing</button>
       </form>
     </details>
-    {products.map(item => <details className="commerce-panel" key={item.sku}>
-      <summary>{item.name} · {item.archived ? 'Removed' : item.category === 'oil' ? '5 pack sizes' : item.stock + ' available'}</summary>
+    {!filtered.length && <p className="admin-card">No matching listings.</p>}
+    {filtered.map(item => <details className="commerce-panel" key={item.sku}>
+      <summary>{item.name} · {item.archived ? 'Removed' : item.category === 'oil' ? variants.filter(pack => pack.parent_sku === item.sku).length + ' pack sizes' : item.stock + ' available'}</summary>
       <form action={updateSku} className="commerce-form">
         <p>SKU {item.sku}</p>
         <ProductFields item={item} />

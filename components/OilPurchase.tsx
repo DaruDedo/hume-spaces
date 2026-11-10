@@ -1,5 +1,4 @@
 'use client';
-import RowSelect from '@/components/RowSelect';
 
 import { useState } from 'react';
 import { rupees } from '@/lib/commerce/shared';
@@ -9,22 +8,27 @@ import CommerceButtons from './CommerceButtons';
 type Pack = { sku: string; grams: number; price: number; online: number; stock: number };
 
 export default function OilPurchase({ packs }: { packs: Pack[] }) {
-  const [sku, setSku] = useState('');
-  const selected = packs.find(pack => pack.sku === sku);
+  const [selectedSkus, setSelectedSkus] = useState<string[]>([]);
+  const selected = packs.filter(pack => pack.online && pack.stock > 0 && selectedSkus.includes(pack.sku));
   return <div className="commerce-purchase">
-    <label>Pack size
-      <RowSelect value={sku} onValueChange={setSku}>
-        <option value="">Choose a weight</option>
-        {packs.map(pack => <option key={pack.sku} value={pack.sku}>
-          {oilWeightLabel(pack.grams)} · {pack.online ? rupees(pack.price) : 'Unavailable'}
-        </option>)}
-      </RowSelect>
-    </label>
-    {selected?.online
-      ? <div key={selected.sku}>
-          <p>{rupees(selected.price)} · {selected.stock > 0 ? 'In stock' : 'Out of stock'}</p>
-          <CommerceButtons items={[{ sku: selected.sku, quantity: 1 }]} unavailable={selected.stock === 0} />
-        </div>
-      : selected && <p>This pack size is currently unavailable.</p>}
+    {packs.length > 0 && <fieldset className="oil-pack-options">
+      <legend>Pack size <span>Choose one or more</span></legend>
+      <div className="oil-pack-grid">
+        {packs.map(pack => {
+          const active = selectedSkus.includes(pack.sku);
+          const available = pack.online > 0 && pack.stock > 0;
+          return <button key={pack.sku} type="button" aria-pressed={active} disabled={!available}
+            onClick={() => setSelectedSkus(current => current.includes(pack.sku)
+              ? current.filter(sku => sku !== pack.sku)
+              : [...current, pack.sku])}>
+            <strong>{oilWeightLabel(pack.grams)}</strong>
+            {available && <span className="oil-pack-icon" aria-hidden="true">{active ? '✓' : '+'}</span>}
+            <span className="oil-pack-price">{pack.online ? rupees(pack.price) : 'Unavailable'}</span>
+            {pack.online > 0 && pack.stock <= 0 && <small>Out of stock</small>}
+          </button>;
+        })}
+      </div>
+    </fieldset>}
+    {selected.length > 0 && <CommerceButtons items={selected.map(pack => ({ sku: pack.sku, quantity: 1 }))} />}
   </div>;
 }

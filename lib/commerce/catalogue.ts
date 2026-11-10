@@ -31,7 +31,8 @@ export async function catalogueItems(includeArchived = false) {
 export async function oilSizes(parentSku?: string) {
   const query = select.replace('SELECT sku.*,', 'SELECT sku.*, oil_sizes.grams,')
     + ' JOIN oil_sizes ON oil_sizes.sku=sku.sku'
-    + (parentSku === undefined ? '' : ' WHERE oil_sizes.parent_sku=?') + ' ORDER BY grams';
+    + ' WHERE oil_sizes.grams IN (' + oilWeights.join(',') + ')'
+    + (parentSku === undefined ? '' : ' AND oil_sizes.parent_sku=?') + ' ORDER BY grams';
   const packs = await db().prepare(query).all<CatalogueItem & { grams: number }>(...(parentSku === undefined ? [] : [parentSku]));
   return packs.map(pack => ({ ...pack }));
 }

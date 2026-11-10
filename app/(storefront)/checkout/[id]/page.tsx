@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { catalogueItem, deliveryEstimate } from '@/lib/commerce/catalogue';
+import { catalogueItem } from '@/lib/commerce/catalogue';
+import { deliveryMessage } from '@/lib/commerce/preferences';
 import { notFound, redirect } from 'next/navigation';
 import CheckoutForm from '@/components/CheckoutForm';
 import { RememberCheckout } from '@/components/CheckoutHistory';
@@ -65,7 +66,7 @@ export default async function CheckoutPage({ params }: { params: Promise<{ id: s
       <div className="commerce-total"><span>Shipping</span><span>{priced ? rupees(shipping) : 'Being configured'}</span></div>
       <div className="commerce-total"><span>Secure packing</span><strong>FREE</strong></div>
       {priced && <div className="commerce-total"><strong>Total</strong><strong>{rupees(total)}</strong></div>}
-      <p>{deliveryEstimate}</p>
+      <p>{await deliveryMessage()}</p>
       <Link className="text-link dark" href="/account">My account →</Link>
     </section>
     <div>

@@ -76,6 +76,15 @@
   display: none;
 }
 
+.picker[data-overlay] .list {
+  position: absolute;
+  inset: 100% 0 auto;
+  z-index: 10;
+  max-height: min(260px, 42dvh);
+  overscroll-behavior: contain;
+  box-shadow: 0 8px 24px #20372d26;
+}
+
 .list button:hover,
 .list button:focus-visible,
 .list button[aria-selected='true'] {

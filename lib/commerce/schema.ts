@@ -42,5 +42,30 @@ export const commerceSchema = `
     CREATE TABLE IF NOT EXISTS property_type_requests (
       term TEXT PRIMARY KEY, requests INTEGER NOT NULL DEFAULT 1
     );
+    CREATE TABLE IF NOT EXISTS storefront_events (
+      id TEXT PRIMARY KEY, visit TEXT NOT NULL, kind TEXT NOT NULL,
+      path TEXT NOT NULL, source TEXT NOT NULL, device TEXT NOT NULL, created BIGINT NOT NULL,
+      visitor TEXT
+    );
+    CREATE INDEX IF NOT EXISTS storefront_events_created ON storefront_events(created);
+    CREATE TABLE IF NOT EXISTS checkout_attribution (
+      checkout_id TEXT PRIMARY KEY REFERENCES checkout(id), visit TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS checkout_attribution_visit ON checkout_attribution(visit);
+    CREATE TABLE IF NOT EXISTS cart_leads (
+      id TEXT PRIMARY KEY, cart TEXT NOT NULL, updated BIGINT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS cart_leads_updated ON cart_leads(updated);
+    CREATE TABLE IF NOT EXISTS staff_activity (
+      id TEXT PRIMARY KEY, action TEXT NOT NULL, subject TEXT NOT NULL, created BIGINT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS staff_activity_subject ON staff_activity(subject,created);
+    CREATE TABLE IF NOT EXISTS notification_failures (
+      order_id TEXT NOT NULL, kind TEXT NOT NULL, reason TEXT NOT NULL, created BIGINT NOT NULL,
+      PRIMARY KEY(order_id,kind)
+    );
+    CREATE TABLE IF NOT EXISTS store_preferences (
+      key TEXT PRIMARY KEY, value TEXT NOT NULL
+    );
 
 `;

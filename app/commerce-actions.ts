@@ -5,9 +5,11 @@ import { after } from 'next/server';
 import { catalogueHref, catalogueItem } from '@/lib/commerce/catalogue';
 import { cartSchema, deliverySchema } from '@/lib/commerce/shared';
 import { createCheckout, db, getCheckout, getStock, reserve, validId } from '@/lib/commerce/store';
+import { isAdmin } from '@/lib/commerce/admin';
 import { openPayment, paymentReady, reconcile, reconcileExpired } from '@/lib/commerce/payments';
 import { sendPendingNotifications } from '@/lib/commerce/notifications';
 import { propertySearchTerm } from '@/lib/property-search-term';
+import { z } from 'zod';
 
 export async function recordPropertyType(input: unknown) {
   const term = propertySearchTerm(input);
@@ -29,16 +31,17 @@ export async function cartDetails(input: unknown) {
   return Promise.all(parsed.data.map(async line => {
     const entry = await catalogueItem(line.sku);
     const product = entry ? await getStock(line.sku) : undefined;
-    return { ...line, product, href: product ? catalogueHref(entry?.parent_sku ?? line.sku) : '/shop', image: product ? entry?.image : undefined };
+    return { ...line, product, category: entry?.category, href: product ? catalogueHref(entry?.parent_sku ?? line.sku) : '/shop', image: product ? entry?.image : undefined };
   }));
 }
 
-export async function startCheckout(input: unknown, source: 'cart' | 'buy') {
+export async function startCheckout(input: unknown, source: 'cart' | 'buy' | 'planner', visit?: string) {
   const parsed = cartSchema.safeParse(input);
-  if (!parsed.success || !['cart', 'buy'].includes(source)) return { error: 'Check the items and quantities in your cart.' };
+  if (!parsed.success || !['cart', 'buy', 'planner'].includes(source)) return { error: 'Check the items and quantities in your cart.' };
   try {
     await reconcileExpired();
-    return { url: '/checkout/' + await createCheckout(parsed.data, source) };
+    const attribution = visit && !(await isAdmin()) ? z.string().uuid().safeParse(visit).data : undefined;
+    return { url: '/checkout/' + await createCheckout(parsed.data, source, attribution) };
   } catch {
     return { error: 'Some items are unavailable in the requested quantity. Review your cart and try again.' };
   }

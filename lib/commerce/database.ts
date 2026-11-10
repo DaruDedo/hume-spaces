@@ -68,6 +68,11 @@ function postgresUrl() {
   return mockPayments() ? undefined : process.env.DATABASE_URL?.trim();
 }
 
+export function deliveryJsonField(field: 'email' | 'name') {
+  const value = postgresUrl() ? 'CAST(delivery AS JSON)' : 'delivery';
+  return `(${value} ->> '${field}')`;
+}
+
 function localDatabase() {
   if (sqlite) return sqlite;
   const configured = process.env.COMMERCE_DB_PATH?.trim();
@@ -81,6 +86,9 @@ function localDatabase() {
   const seedCatalogue = connection.prepare('INSERT INTO catalogue (sku,category,description,image) VALUES (?,?,?,?) ON CONFLICT(sku) DO NOTHING');
   connection.exec('BEGIN IMMEDIATE');
   try {
+    if (!connection.prepare('PRAGMA table_info(storefront_events)').all().some(column => column.name === 'visitor')) {
+      connection.exec('ALTER TABLE storefront_events ADD COLUMN visitor TEXT');
+    }
     for (const product of commerceCatalog) {
       seed.run(product.sku, product.name, product.price, product.online ? openingStock : 0, Number(product.online));
       seedCatalogue.run(product.sku, product.category, product.description, product.image);
@@ -158,6 +166,7 @@ async function initializePostgres(activePool: Pool) {
     await client.query('REVOKE ALL ON SCHEMA ' + namespace + ' FROM PUBLIC');
     await client.query('SET LOCAL search_path TO ' + namespace + ', pg_catalog');
     await client.query(commerceSchema);
+    await client.query('ALTER TABLE storefront_events ADD COLUMN IF NOT EXISTS visitor TEXT');
     async function seedRows(table: string, columns: string, rows: (string | number)[][]) {
       const width = rows[0].length;
       const placeholders = rows.map((_, index) => '(' + Array.from({ length: width }, (_, offset) => '$' + (index * width + offset + 1)).join(',') + ')');

@@ -30,5 +30,5 @@ export function useGalleryRotation(imageCount: number) {
     setPlaying(false);
   }
 
-  return { active, playing, select, toggle: () => setPlaying(value => !value) };
+  return { active, playing, select };
 }

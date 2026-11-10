@@ -6,7 +6,7 @@ import { propertySearchTerm } from '@/lib/property-search-term';
 
 type Option = { value?: string | number; children?: ReactNode; disabled?: boolean };
 
-export default function RowSelect({ children, name, value, defaultValue, required, disabled, onValueChange, searchPlaceholder, onAddOption, resultLimit }: {
+export default function RowSelect({ children, name, value, defaultValue, required, disabled, onValueChange, searchPlaceholder, onAddOption, resultLimit, overlay }: {
   children: ReactNode;
   name?: string;
   value?: string | number;
@@ -17,6 +17,7 @@ export default function RowSelect({ children, name, value, defaultValue, require
   searchPlaceholder?: string;
   onAddOption?: (term: string) => void;
   resultLimit?: number;
+  overlay?: boolean;
 }) {
   const options = Children.toArray(children).filter(isValidElement<Option>).map(({ props }) => ({
     ...props,
@@ -50,13 +51,17 @@ export default function RowSelect({ children, name, value, defaultValue, require
     if (!open) return;
     const target = list.current?.querySelector<HTMLButtonElement>('[aria-selected="true"]:not(:disabled)')
       ?? list.current?.querySelector<HTMLButtonElement>('button:not(:disabled)');
-    (search.current ?? target)?.focus();
-  }, [open]);
+    (search.current ?? target)?.focus({ preventScroll: overlay });
+    if (overlay && list.current && target) {
+      const menu = list.current;
+      menu.scrollTop = Math.max(0, target.offsetTop + target.offsetHeight - menu.clientHeight);
+    }
+  }, [open, overlay]);
 
   function close() {
     setOpen(false);
     setQuery('');
-    trigger.current?.focus();
+    trigger.current?.focus({ preventScroll: overlay });
   }
 
   function navigate(event: KeyboardEvent<HTMLSpanElement>) {
@@ -85,7 +90,7 @@ export default function RowSelect({ children, name, value, defaultValue, require
     }
   }
 
-  return <span className={styles.picker} onBlur={event => {
+  return <span className={styles.picker} data-overlay={overlay || undefined} onBlur={event => {
     if (!event.currentTarget.contains(event.relatedTarget)) {
       setOpen(false);
       setQuery('');

@@ -1,4 +1,4 @@
-import { db, getOrder, mockPayments } from './store';
+import { db, getOrder, mockPayments, transaction } from './store';
 import type { Delivery } from './shared';
 
 export function commerceEmailConfigured() {
@@ -18,6 +18,7 @@ export async function sendPendingNotifications(orderId?: string) {
     const subject = row.kind === 'shipment' ? 'Your HUME Spaces order has shipped'
       : row.kind === 'refill' ? 'HUME Spaces refill reminder' : 'Your HUME Spaces order is confirmed';
     const tracking = row.kind === 'shipment' && order.tracking ? '\nTracking reference: ' + order.tracking : '';
+    let failure: string;
     try {
       const response = await fetch('https://api.resend.com/emails', {
         method: 'POST',
@@ -34,9 +35,20 @@ export async function sendPendingNotifications(orderId?: string) {
         }),
         signal: AbortSignal.timeout(5000),
       });
-      if (response.ok) await db().prepare('UPDATE notifications SET sent=? WHERE order_id=? AND kind=?').run(Date.now(), row.order_id, row.kind);
+      if (response.ok) {
+        await transaction(async () => {
+          await db().prepare('UPDATE notifications SET sent=? WHERE order_id=? AND kind=?').run(Date.now(), row.order_id, row.kind);
+          await db().prepare('DELETE FROM notification_failures WHERE order_id=? AND kind=?').run(row.order_id, row.kind);
+        });
+        continue;
+      }
+      failure = 'Resend returned HTTP ' + response.status;
     } catch {
-      // The durable queue keeps the message available for retry.
+      failure = 'Delivery attempt interrupted';
     }
+    await db().prepare(`INSERT INTO notification_failures (order_id,kind,reason,created)
+      SELECT ?,?,?,? WHERE EXISTS (SELECT 1 FROM notifications WHERE order_id=? AND kind=? AND sent IS NULL)
+      ON CONFLICT(order_id,kind) DO UPDATE SET reason=excluded.reason,created=excluded.created`)
+      .run(row.order_id, row.kind, failure, Date.now(), row.order_id, row.kind);
   }
 }

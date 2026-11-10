@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState, type FormEvent } from 'react';
 import { recordPropertyType, startCheckout } from '@/app/commerce-actions';
+import { currentStorefrontVisit } from '@/lib/commerce/activity-session';
 import { propertySearchTerm } from '@/lib/property-search-term';
 import { oilWeightLabel } from '@/lib/commerce/oil-sizes';
 import { fragranceSlug } from '@/lib/fragrances';
@@ -75,6 +76,7 @@ export default function PropertyScentPlanner() {
     const result = propertyScentPlan(property.audienceId, Number(fields.get('area')), Number(fields.get('hours')), Number(fields.get('days')));
     setFragranceIndex(0);
     setRecommendation(result);
+    if (result?.plan) window.dispatchEvent(new Event('hume-planner-result'));
     setError(result ? '' : 'Check the area, hours and days of use.');
   }
 
@@ -87,7 +89,7 @@ export default function PropertyScentPlanner() {
       ...plan.packs.map(({ grams, quantity }) => ({ sku: propertyOilSku(fragrance.id, grams), quantity })),
     ];
     try {
-      const result = await startCheckout(items, 'buy');
+      const result = await startCheckout(items, 'planner', currentStorefrontVisit());
       if (result.url) {
         window.location.assign(result.url);
         return;

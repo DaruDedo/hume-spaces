@@ -21,8 +21,63 @@
 .commerce-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0}
 .commerce-actions [role=status]:empty{display:none}
 .commerce-actions [role=status]{flex-basis:100%}
+.fragrance-cart-prompt {
+  width: min(440px, calc(100% - 32px));
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fffdf8;
+  color: inherit;
+  pointer-events: auto;
+}
+.fragrance-cart-prompt::backdrop { background: rgb(24 38 29 / 45%); }
+.fragrance-cart-prompt .commerce-panel { margin: 0; padding: 22px; border: 0; }
+.fragrance-cart-prompt h2 { margin: 6px 0 8px; }
+.cart-fragrance-offer { background: #edf2e9; }
+.cart-fragrance-offer p { margin: 0 0 10px; }
 .commerce-purchase{margin:14px 0}
 .commerce-purchase p{margin:0 0 8px}
+.oil-pack-options{min-width:0;margin:0 0 12px;padding:0;border:0}
+.oil-pack-options legend{margin-bottom:8px;font-weight:700}
+.oil-pack-options legend span{margin-left:8px;color:var(--muted);font-size:12px;font-weight:400}
+.oil-pack-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.oil-pack-grid button{display:grid;grid-template-columns:1fr auto;align-content:center;align-items:center;gap:3px 4px;min-height:56px;padding:7px 9px;border:1px solid #a2af9b;border-radius:10px;background:#fffdf8;color:var(--green);text-align:left;line-height:1.25;cursor:pointer}
+.oil-pack-grid button:hover:not(:disabled){border-color:var(--green);background:#eef2e8}
+.oil-pack-grid .oil-pack-icon{display:grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#e9eee3;font-size:15px;line-height:1}
+.oil-pack-price,.oil-pack-grid small{grid-column:1/-1;color:var(--muted);font-size:12px}
+.oil-pack-grid button[aria-pressed=true]{border-color:var(--green);background:var(--green);color:#fffdf8}
+.oil-pack-grid button[aria-pressed=true] .oil-pack-icon{background:#fffdf8;color:var(--green);font-size:12px}
+.oil-pack-grid button[aria-pressed=true] .oil-pack-price{color:#fffdf8}
+.oil-pack-grid button[aria-pressed=true]:hover{background:var(--green)}
+.oil-pack-grid button:disabled{opacity:.65;cursor:default}
+
+.fragrance-pairing-heading{align-items:center}
+.fragrance-pairing-controls{display:flex;flex-shrink:0;gap:6px}
+.fragrance-pairing-controls button{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:#fffdf8;color:var(--green);cursor:pointer}
+.fragrance-pairing-controls button:hover{background:#e0ebdd}
+.fragrance-pairing-track{position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/4);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;padding:4px 0}
+.fragrance-pairing-track[data-equipment]{grid-auto-columns:calc((100% - 24px)/3)}
+.fragrance-pairing-track .product-card{min-width:0;scroll-snap-align:start}
+.fragrance-pairing-track .product-card>a{display:block;padding:8px;border:1px solid #9dad94;border-radius:12px;background:#fbfcf6;height:100%}
+.fragrance-pairing-track .product-card>a:hover,.fragrance-pairing-track .product-card>a:focus-visible{border-color:var(--green);background:#eef3e8}
+.fragrance-pairing-track .product-card>a:focus-visible{outline-offset:-2px}
+.fragrance-pairing-track .product-image{height:auto;aspect-ratio:1;border-radius:8px;margin-bottom:10px}
+.fragrance-pairing-track .product-image img{object-fit:contain}
+.fragrance-pairing-card-title{display:flex;align-items:flex-start;justify-content:space-between;gap:5px;color:var(--green)}
+.site-arrow-up-right{display:inline-block;width:1em;height:1em;flex:none;vertical-align:-.12em}
+.whatsapp-button .site-arrow-up-right{width:16px;height:16px}
+.fragrance-pairing-card-title span{display:grid;place-items:center;flex:none;width:20px;height:20px;border-radius:50%;background:#e4ecde;font-size:13px;line-height:1}
+.fragrance-pairing-track .product-card h3{min-height:0;margin:0;font-size:20px}
+.fragrance-pairing-track .store-card-description{margin:5px 0 0;line-height:1.45}
+.pairing-progress{width:min(100%,180px);height:4px;margin:12px auto 0;overflow:hidden;border-radius:999px;background:#dce5d7}
+.pairing-progress span{display:block;height:100%;border-radius:inherit;background:var(--green);transition:width 180ms ease}
+@media(prefers-reduced-motion:reduce){.pairing-progress span{transition:none}}
+@media(max-width:750px){
+  .fragrance-pairing-track,.fragrance-pairing-track[data-equipment]{grid-auto-columns:calc((100% - 10px)/2);gap:10px}
+  .fragrance-pairing-track .product-card h3{font-size:16px}
+  .fragrance-pairing-heading{gap:12px}
+  .fragrance-pairing-heading h2{font-size:clamp(22px,5vw,32px)}
+}
 .header-cart{order:2;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:44px;min-height:44px;padding-inline:10px;border:1px solid var(--line);border-radius:24px;font-size:13px;font-weight:700;white-space:nowrap}
 .header-cart-count{display:grid;place-items:center;min-width:21px;padding:2px 5px;border-radius:14px;background:var(--green);color:var(--paper);font-size:11px}
 button.header-cart{color:inherit;cursor:pointer}
@@ -55,7 +110,11 @@ button.header-cart{color:inherit;cursor:pointer}
   background: rgb(24 38 29 / 42%);
 }
 
-body:has(.cart-drawer[open]) {
+html:has(.cart-drawer) {
+  scrollbar-gutter: stable;
+}
+
+html:has(.cart-drawer[open]) {
   overflow: hidden;
 }
 
@@ -95,6 +154,11 @@ body:has(.cart-drawer[open]) {
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 8px 20px max(20px, env(safe-area-inset-bottom));
+}
+
+.cart-placeholder {
+  min-height: 90px;
+  background: #f0eee6;
 }
 
 .cart-drawer .commerce-row {
