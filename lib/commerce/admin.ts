@@ -4,8 +4,11 @@ import { matchesSecret } from './payments';
 
 const cookieName = 'hume_staff';
 const ttl = 120 * 24 * 60 * 60;
-export const adminConfigured = () => (process.env.COMMERCE_ADMIN_PASSWORD?.length ?? 0) >= (process.env.NODE_ENV === 'development' ? 1 : 24)
-  && (process.env.COMMERCE_SESSION_SECRET?.length ?? 0) >= 32;
+export function adminConfigured() {
+  const passwordLength = process.env.COMMERCE_ADMIN_PASSWORD?.length ?? 0;
+  return passwordLength > 0 && passwordLength <= 256
+    && (process.env.COMMERCE_SESSION_SECRET?.length ?? 0) >= 32;
+}
 
 function signature(value: string) {
   return createHmac('sha256', process.env.COMMERCE_SESSION_SECRET!)

@@ -4,7 +4,7 @@ The catalogue includes the 400 mL and 800 mL commercial diffusers, the Tower Com
 
 ## Local review
 
-Use Node 22.17 or later. Set `COMMERCE_PAYMENT_MODE=mock` in the local process and set `COMMERCE_ADMIN_PASSWORD` (at least 24 characters) and `COMMERCE_SESSION_SECRET` (at least 32 characters) in `.env`. Mock mode uses local SQLite even when `DATABASE_URL` is set. A fresh mock database seeds ten units per online SKU. Shop at `/shop`, manage the store at `/admin`, and test both success and failure from the mock payment page.
+Use Node 22.17 or later. Set `COMMERCE_PAYMENT_MODE=mock` in the local process and set `COMMERCE_ADMIN_PASSWORD` (your sign-in password, 1–256 characters) and `COMMERCE_SESSION_SECRET` (a separate random key of at least 32 characters used to sign staff session cookies) in `.env`. Mock mode uses local SQLite even when `DATABASE_URL` is set. A fresh mock database seeds ten units per online SKU. Shop at `/shop`, manage the store at `/admin`, and test both success and failure from the mock payment page.
 
 ## Production configuration
 
