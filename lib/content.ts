@@ -1,6 +1,7 @@
 import {fragranceCatalog} from './fragrance-catalog';
 import {buyerGuides} from './buyer-guides';
 import {additionalPlaces} from './places';
+import {fragranceSamplesAnswer} from './brand';
 export const waterlessDiffusionTechnology = 'Waterless cold-air diffusion';
 export const waterlessDiffusionDescription = 'Uses cold air to diffuse fragrance oil. No water is needed.';
 export const products = [
@@ -27,13 +28,13 @@ export const guides = [
  {slug:'fragrance-and-compatibility',title:'Choosing a fragrance for your business',description:'Use the scent profile as a conversation starter, then verify the oil and equipment pairing.',sections:[['Choose a scent profile','Citrus and tea, soft woods, green notes and mineral profiles offer different starting points. The existing HUME library contains six concepts; stock, samples and final formulas are not confirmed.'],['Consider the space and its users','Describe the materials, nearby food or treatment products and how long people stay in the area. Ask about guest and staff preferences rather than choosing solely from a fragrance name.'],['Confirm oil and machine compatibility','Do not treat perfume, reed liquid or essential oil as a universal machine refill. Ask for the approved formula and instructions for the exact machine.'],['Choose intensity and unscented areas','Plan a restrained setting and unscented alternatives. No hypoallergenic, therapeutic, odour-neutralising or certification claims have been verified.']]}
 ];
 export const faqs = [
- ['Which machine suits my space?','Start with area, ceiling height, layout, ventilation and operating hours. The selector prepares a brief for review; it does not calculate a guaranteed machine recommendation.'],
- ['Are the coverage figures guaranteed?','No. These are specifications listed in the existing HUME reference and are pending supplier confirmation. Actual suitability depends on room volume, airflow and zoning.'],
- ['How much will equipment and oil cost?','Request an itemised quotation. Equipment prices and oil pack prices are pending approval, and no verified consumption rate is available for a monthly estimate.'],
- ['Do you offer installation, maintenance or a warranty?','Availability, responsibilities and terms must be confirmed in your quotation. This website does not promise installation, maintenance visits or a warranty.'],
- ['Can I subscribe to refills or managed scenting?','HUME Spaces provides commercial scenting and custom fragrance development. Ask for refill supply, service availability and any recurring plan terms in your project quotation.'],
- ['Can I use any fragrance oil?','No universal compatibility is established. Confirm the approved formula, viscosity and instructions for your specific machine before adding oil.'],
- ['Are fragrance samples available?','Sample availability and trial arrangements need confirmation. Include your preferred scent direction in your enquiry.']
+ ['Which machine suits my space?', 'Start with a reed diffuser for a desk or small corner, a standalone scent machine for an open room or reception, or an HVAC system for suitable duct-connected zones. Use the property planner to compare options using your floor area, ceiling height and operating hours.'],
+ ['How should I use the listed coverage figures?', 'Use the listed coverage to shortlist models. A room’s ceiling height, airflow and layout affect how far fragrance travels. Open rooms and separate zones can need different setups even when the total floor area is the same.'],
+ ['How much will equipment and oil cost?', 'Shop and product pages show listed equipment and fragrance pack prices. Your ongoing oil cost depends on pack size, diffuser output and operating hours. Use the oil usage estimator to plan refills around your schedule.'],
+ ['Do you offer installation, maintenance or a warranty?', 'We provide setup guidance, installation support and after-sales help. Maintenance options depend on the equipment and location. Some imported diffusers are sold without a warranty, with troubleshooting, repair and spare-parts support available through HUME Spaces.'],
+ ['Can I subscribe to refills or managed scenting?', 'Yes. We supply fragrance oil refills and offer managed scenting options. A managed plan can combine equipment, refills and scheduled care, depending on your location and the needs of your property.'],
+ ['Can I use any fragrance oil?', 'Choose a HUME fragrance oil approved for your machine from the scent families you like. Reed diffusers use their own liquid. Matching the refill to the equipment helps it diffuse as intended.'],
+ ['Are fragrance samples available?', fragranceSamplesAnswer],
 ];
 export const referenceNotice = 'Specifications from the existing HUME catalog; pending confirmation. Coverage is indicative and depends on layout, ceiling height and airflow.';
 

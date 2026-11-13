@@ -1,0 +1,54 @@
+.indicator {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 2000;
+  display: grid;
+  justify-items: center;
+  pointer-events: none;
+  visibility: hidden;
+  animation: reveal 1ms 140ms forwards;
+}
+
+.track {
+  width: 100%;
+  height: 4px;
+  overflow: hidden;
+  background: #dce6d6;
+}
+
+.track > div {
+  width: 38%;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  background: var(--green);
+  animation: travel 1.35s ease-in-out infinite;
+}
+
+.indicator > span {
+  margin-top: 8px;
+  max-width: calc(100vw - 24px);
+  padding: 5px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--green);
+  box-shadow: 0 3px 12px #243e3522;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+@keyframes reveal {
+  to { visibility: visible; }
+}
+
+@keyframes travel {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(265%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track > div {
+    width: 100%;
+    animation: none;
+  }
+}

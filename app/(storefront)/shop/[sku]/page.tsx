@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { notFound, redirect } from 'next/navigation';
 import { catalogueHref, catalogueItem, deliveryEstimate, oilSizes } from '@/lib/commerce/catalogue';
 import CommercePurchase from '@/components/CommercePurchase';
+import CustomerReviews from '@/components/CustomerReviews';
 import FragranceGallery from '@/components/FragranceGallery';
 import OilPurchase from '@/components/OilPurchase';
 import StoreCatalogue from '@/components/StoreCatalogue';
@@ -30,6 +31,7 @@ export default async function CatalogueProduct({ params }: { params: Promise<{ s
         <p>{deliveryEstimate}</p>
       </div>
     </div>
+    <CustomerReviews product={{ sku: item.sku, name: item.name }} />
     {item.category === 'oil' && <StoreCatalogue category="equipment" recommendations />}
   </section>;
 }

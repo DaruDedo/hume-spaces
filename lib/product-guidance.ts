@@ -1,4 +1,6 @@
 import {products} from './content';
+import {fragranceSamplesAnswer} from './brand';
+import {rupees} from './commerce/shared';
 type Product=typeof products[number];
 
 export const refillableDiffuserModels = new Set<string>([
@@ -37,19 +39,76 @@ export function productUseCases(p:Product){
   if(p.slug==='hume-pro-commercial-tower')return [place('Hotel lobbies','hotels'),place('Retail stores','retail'),place('Showrooms','showrooms'),place('Spa receptions','spas'),place('Resort lounges','resorts'),place('Office receptions','offices'),place('Salon receptions','salons'),place('Gym receptions','gyms'),place('Separate café entrances','cafes'),place('Mall concierge areas','malls')];
   return [place('Hotel lobbies','hotels'),place('Gyms','gyms'),place('Offices','offices'),place('Retail stores','retail'),place('Showrooms','showrooms'),place('Salon receptions','salons'),place('Spa receptions','spas'),place('Resort lounges','resorts'),place('Separate café entrances','cafes'),place('Mall concierge areas','malls')];
 }
-export function productFaqs(p:Product){const personal=p.slug==='car-room-diffuser';const reed=p.slug==='hume-mini-reed-diffuser-50ml';const hvac=p.slug==='hume-hvac-scenting-system';const tower=p.slug==='hume-pro-commercial-tower';const uses=productUseCases(p).map(i=>i.name).join(', ');return [
-{q:`Where can the ${p.name} be used?`,a:`The ${p.name} can be considered for ${uses.toLowerCase()}. ${reed?'It is a small-area reed format, not a whole-property scenting system.':hvac?'Each proposed area needs a duct-system compatibility and zoning review.':'Review each area’s layout, ventilation and user preferences before choosing equipment.'}`},
-{q:`What is the fragrance capacity of the ${p.name}?`,a:personal?'The fragrance capacity has not been confirmed. Ask for the reservoir size and supplied refill details before ordering.':`The listed fragrance capacity is ${p.capacity}. ${reed?'Confirm the supplied reed fragrance and replacement instructions.':'Oil capacity describes the reservoir size; it does not establish a guaranteed refill interval.'}`},
-{q:`How much area does the ${p.name} cover?`,a:`Listed coverage: ${p.coverage}. This is indicative, not guaranteed. Ceiling height, ventilation, open doors, room divisions and operating conditions affect suitability. ${reed?'Discuss a desk or small corner rather than assuming coverage of a hotel lobby.':hvac?'A floor-area figure does not establish HVAC or multi-zone compatibility.':'Review the actual zone before relying on the listed floor-area figure.'}`},
-{q:`What is the price of the ${p.name}?`,a:`The listed equipment price is ₹${p.price.toLocaleString('en-IN')}. Confirm GST, delivery charges, availability and any included fragrance before ordering. A WhatsApp enquiry does not place an order.`},
-{q:`Does the ${p.name} have app or wireless control?`,a:personal?'Controls, wireless connectivity and app support have not been confirmed for this model. Ask for the supplied specifications.':reed?'This reed diffuser uses passive diffusion and does not require a plug or mobile app.':hvac?'The listed format is duct-connected. App controls and operating interfaces must be confirmed for the actual HVAC model before ordering.':tower?'The Tower Commercial Diffuser lists Bluetooth app control and multiple schedules. Confirm app compatibility and setup requirements for the supplied model.':`${p.name} has Wi-Fi and Bluetooth connectivity with mobile app control. Confirm phone compatibility and setup instructions before purchase.`},
-{q:`Which fragrance should I use with the ${p.name}?`,a:personal?'Confirm the approved refill and instructions for this diffuser before use.':reed?'Use the reed fragrance approved for the Mini Reed Diffuser. Reed liquid is not a machine refill. Confirm the supplied fragrance and replacement guidance.':`Use fragrance oil approved for the ${p.name}. Do not assume perfume, essential oil or reed liquid can be used as a machine refill. Confirm the formula and refill instructions before use.`},
-{q:`How often does the ${p.name} need refilling?`,a:personal?'A refill interval has not been confirmed. Ask for capacity and consumption guidance for your intended use.':reed?'Refill or replacement timing has not been verified. Follow the supplied instructions and confirm the replacement options for this 50 ml reed format.':hvac||tower?'No verified refill interval is available for this model. Usage depends on output, operating hours, oil formula and airflow. Ask for a usage estimate based on your schedule.':`The ${p.name} is described as offering up to a month between refills. This is usage-dependent, not a guarantee. Higher output or longer operating hours can require earlier refilling.`},
-{q:`How is the ${p.name} installed or placed?`,a:p.installation+' Installation availability and any charges must be confirmed separately.'},
-{q:`Can one ${p.name} serve separate rooms?`,a:personal?'Consider this model for a local personal space. Do not assume it scents multiple separate rooms.':reed?'This compact reed format should be considered for a local desk or corner. Separate rooms require separate placement decisions.':hvac?'Potential distribution through ducts must be reviewed against the air-handler layout and zoning. A shared HVAC system does not guarantee even fragrance distribution.':'Do not assume one machine serves separate rooms evenly. Share a floor plan and ventilation details to assess each zone.'},
-{q:`What are the ongoing costs of the ${p.name}?`,a:personal?'Ask for approved refill prices and usage estimates; no fixed monthly cost has been confirmed.':reed?'Ask about replacement fragrance and reeds, pack sizes and prices. A verified replacement interval is needed before estimating monthly costs.':'Request approved oil prices, bottle sizes and consumption assumptions separately from equipment pricing. No fixed monthly cost is verified for this model.'},
-{q:`Does the ${p.name} include delivery, warranty or support?`,a:refillableDiffuserModels.has(p.slug)
-  ? diffuserDeliverySupport.map(({detail})=>detail).join(' ')
-  : 'Confirm delivery timing, charges, warranty terms, returns and support arrangements before ordering.'},
-{q:`How do I enquire about the ${p.name}?`,a:`Use the product’s WhatsApp enquiry button to contact HUME Spaces on +91 9559024822. Include your city, property type, area, ventilation and operating hours. Ask for an itemised quote and an approved oil pairing.`}
-];}
+export function productFaqs(p: Product, price = p.price * 100) {
+  const personal = p.slug === 'car-room-diffuser';
+  const reed = p.slug === 'hume-mini-reed-diffuser-50ml';
+  const hvac = p.slug === 'hume-hvac-scenting-system';
+  const tower = p.slug === 'hume-pro-commercial-tower';
+  const uses = productUseCases(p).map(use => use.name).join(', ');
+
+  return [
+    {
+      q: `Where can the ${p.name} be used?`,
+      a: `Suggested spaces include ${uses}. ${reed ? 'Place it where you want a light fragrance close by.' : hvac ? 'It suits properties with compatible central air distribution.' : 'Choose a location with airflow suited to the area you want to scent.'}`,
+    },
+    {
+      q: `What is the fragrance capacity of the ${p.name}?`,
+      a: personal ? 'This is a compact diffuser for personal spaces. Its reservoir volume is currently unlisted.' : `The ${p.name} holds ${p.capacity} of ${reed ? 'reed fragrance' : 'fragrance oil'}.`,
+    },
+    {
+      q: `How much area does the ${p.name} cover?`,
+      a: personal ? 'It is designed for cars, cabins and small rooms.' : `Listed coverage is ${p.coverage.toLowerCase()}. ${reed ? 'It works best in a small area such as a desk or corner.' : 'Ceiling height, airflow and room divisions help determine whether this model is the right size.'}`,
+    },
+    {
+      q: `What is the price of the ${p.name}?`,
+      a: `The listed equipment price is ${rupees(price)}. For products sold online, checkout shows shipping and the final order total.`,
+    },
+    {
+      q: `Does the ${p.name} have app or wireless control?`,
+      a: personal ? 'App and wireless control details are currently unlisted for this compact model.'
+        : reed ? 'It works by passive diffusion. The reeds draw up the fragrance and release it into the surrounding air.'
+        : hvac ? 'This model connects to central ducting. The operating setup depends on the HVAC equipment and how the zones are arranged.'
+        : tower ? 'Yes. The tower has Bluetooth app control and supports multiple schedules.'
+        : 'Yes. You can adjust the diffuser through its mobile app using Wi-Fi or Bluetooth.',
+    },
+    {
+      q: `Which fragrance should I use with the ${p.name}?`,
+      a: personal ? 'Use the refill approved for the Car & Room Diffuser. Start with a light fragrance for an enclosed space.'
+        : reed ? 'Use the liquid made for the Mini Reed Diffuser. Fresh tea, citrus or soft floral profiles are good starting points for a small area.'
+        : 'Use a fragrance oil approved for your machine. Try white tea for a light, welcoming scent, citrus for freshness, or soft woods for a warmer character.',
+    },
+    {q: 'Are fragrance samples available?', a: fragranceSamplesAnswer},
+    {
+      q: `How often does the ${p.name} need refilling?`,
+      a: personal ? 'Refill timing depends on how often and how long you run the diffuser.'
+        : reed ? 'The reeds release fragrance continuously. Airflow and temperature affect how quickly the 50 ml bottle is used.'
+        : hvac || tower ? 'Your output setting and operating hours determine how quickly the oil is used. Use the oil estimator to plan refills for your schedule.'
+        : 'A fill can last up to a month depending on the settings and operating hours. Higher output or longer daily use means refilling sooner.',
+    },
+    {
+      q: `How is the ${p.name} installed or placed?`,
+      a: hvac ? 'The diffuser connects to suitable central air ducting. The air-handler layout and the zones it serves determine the connection point.' : p.installation,
+    },
+    {
+      q: `Can one ${p.name} serve separate rooms?`,
+      a: personal || reed ? 'This diffuser is best for one local area. Use separate units for rooms where you want independent fragrance.'
+        : hvac ? 'A compatible HVAC setup can distribute fragrance through connected ducts. Separately controlled zones may need their own dosing points.'
+        : 'A standalone diffuser works best in an open, connected space. Use separate units for enclosed rooms that need their own scent level.',
+    },
+    {
+      q: `What are the ongoing costs of the ${p.name}?`,
+      a: personal ? 'The recurring cost is the approved refill. How often you replace it depends on your usage.'
+        : reed ? 'Budget for replacement reed fragrance and reeds as needed. Airflow and temperature affect how long each fill lasts.'
+        : 'The main recurring cost is fragrance oil. Multiply your estimated monthly oil use by the cost per gram of your selected pack to budget for refills.',
+    },
+    {
+      q: `Does the ${p.name} include delivery, warranty or support?`,
+      a: refillableDiffuserModels.has(p.slug) ? diffuserDeliverySupport.map(({detail}) => detail).join(' ')
+        : 'We deliver across India, with estimated delivery in 5–7 days depending on location. HUME Spaces provides after-sales help. Warranty and return terms vary by model and order.',
+    },
+    {
+      q: `How do I enquire about the ${p.name}?`,
+      a: 'Use the WhatsApp button on this page. Include your city, type of space and approximate area so we can recommend a suitable setup and fragrance pairing.',
+    },
+  ];
+}
