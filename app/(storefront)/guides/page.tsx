@@ -1,5 +1,5 @@
 import {guidePath} from '@/lib/guide-path';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import {PageIntro} from '@/components/Shell';
 import {guides,faqs} from '@/lib/content';
 import {metadata} from '@/lib/site';

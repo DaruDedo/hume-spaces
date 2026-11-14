@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import { savedCheckoutSummaries } from '@/app/commerce-actions';
 
 const storageKey = 'hume-checkout-history';

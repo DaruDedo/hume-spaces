@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import RowSelect from '@/components/RowSelect';
 import { rupees } from '@/lib/commerce/shared';
 
@@ -13,6 +13,16 @@ export const date = (time: number) => new Intl.DateTimeFormat('en-IN', {
   dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Kolkata',
 }).format(time);
 export const label = (status: string) => status.replaceAll('_', ' ');
+
+export function RecordSummary({ title, detail, status, value }: {
+  title: string; detail: string; status: string; value?: string;
+}) {
+  return <summary className="admin-record-summary">
+    <span><strong>{title}</strong><small>{detail}</small></span>
+    {value && <strong className="admin-record-value">{value}</strong>}
+    <span className="admin-badge" data-status={status}>{label(status)}</span>
+  </summary>;
+}
 
 export function Filters({ query, statuses, placeholder }: { query: Query; statuses?: string[]; placeholder: string }) {
   return <form className="admin-filters">
@@ -34,9 +44,9 @@ export function Pager({ query, page, more }: { query: Query; page: number; more:
   </nav>;
 }
 
-export function ProductLines({ lines }: { lines: { sku: string; name?: string; quantity: number; price?: number }[] }) {
+export function ProductLines({ lines }: { lines: { sku: string; name?: string; quantity: number; price?: number; discount?: number }[] }) {
   return <ul className="admin-lines">{lines.map(line => <li key={line.sku}>
     <span>{line.quantity} × {line.name ?? line.sku}</span>
-    {line.price !== undefined && <strong>{rupees(line.price * line.quantity)}</strong>}
+    {line.price !== undefined && <strong>{rupees(line.price * line.quantity - (line.discount ?? 0))}</strong>}
   </li>)}</ul>;
 }

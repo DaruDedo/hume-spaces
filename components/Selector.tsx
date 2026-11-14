@@ -4,7 +4,7 @@ import WhatsAppButton from './WhatsAppButton';
 import {useState,useEffect,useRef} from 'react';
 import {useSearchParams} from 'next/navigation';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import {industries} from '@/lib/content';
 import {selectorGuidance} from '@/lib/lead';
 

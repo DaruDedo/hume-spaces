@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import { useEffect, useId, useRef } from 'react';
 
 export default function FragranceCartPrompt({ onClose }: { onClose: () => void }) {

@@ -1,15 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { cardAvailability } from '@/app/commerce-actions';
+import { rupees } from '@/lib/commerce/shared';
 import CommerceButtons from './CommerceButtons';
 import WhatsAppButton from './WhatsAppButton';
 
 type Availability = Awaited<ReturnType<typeof cardAvailability>>;
 let pending: Promise<Availability> | undefined;
 
-export default function CommerceCardActions({ sku, name, packHref, cartOnly = false }: { sku: string; name: string; packHref?: string; cartOnly?: boolean }) {
+export default function CommerceCardActions({ sku, name, oilStartingPrice, cartOnly = false }: { sku: string; name: string; oilStartingPrice?: number; cartOnly?: boolean }) {
   const [products, setProducts] = useState<Availability>();
 
   useEffect(() => {
@@ -19,10 +19,13 @@ export default function CommerceCardActions({ sku, name, packHref, cartOnly = fa
     return () => { active = false; };
   }, []);
 
-  if (!products) return <p className="commerce-card-status">Checking availability…</p>;
-  const item = products[sku];
+  const item = products?.[sku];
   if (item?.archived) return <span className="catalogue-archived" hidden />;
-  if (packHref) return <Link className="button outline" href={packHref}>Choose pack size</Link>;
+  if (oilStartingPrice !== undefined) {
+    const pack = products?.[sku + '-50g'];
+    return pack?.archived ? null : <p className="product-price fragrance-starting-price">From {rupees(pack?.price ?? oilStartingPrice)} <small>· 50 g</small></p>;
+  }
+  if (!products) return <p className="commerce-card-status">Checking availability…</p>;
   if (!item?.online) return <WhatsAppButton topic={name} label="Enquire on WhatsApp" className="button outline" />;
 
   return <>

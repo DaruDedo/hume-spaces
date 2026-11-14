@@ -67,5 +67,17 @@ export const commerceSchema = `
     CREATE TABLE IF NOT EXISTS store_preferences (
       key TEXT PRIMARY KEY, value TEXT NOT NULL
     );
+    CREATE TABLE IF NOT EXISTS promotions (
+      id TEXT PRIMARY KEY, code TEXT UNIQUE, title TEXT NOT NULL, description TEXT NOT NULL,
+      kind TEXT NOT NULL, value INTEGER NOT NULL, scope TEXT NOT NULL, skus TEXT NOT NULL,
+      minimum BIGINT NOT NULL, quantity INTEGER NOT NULL, cap BIGINT NOT NULL,
+      starts BIGINT, ends BIGINT, usage_limit INTEGER NOT NULL, customer_limit INTEGER NOT NULL,
+      enabled INTEGER NOT NULL, published INTEGER NOT NULL, archived INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE TABLE IF NOT EXISTS checkout_promotions (
+      checkout_id TEXT PRIMARY KEY REFERENCES checkout(id), code TEXT,
+      promotion_id TEXT REFERENCES promotions(id), snapshot TEXT, email TEXT
+    );
+    CREATE INDEX IF NOT EXISTS checkout_promotions_usage ON checkout_promotions(promotion_id,email);
 
 `;

@@ -6,7 +6,7 @@ Visible names match the permanent IDs unless renamed by the owner; Cotton is dis
 |---|---|---|
 | Aqua | Aqua | 450 |
 | Aventus | Aventus | 900 |
-| BR 540 | BR 540 | 600 |
+| BR 540 | Amber Valley | 600 |
 | Cherry Blossom | Cherry Blossom | 580 |
 | Cotton | Clean Cotton | 450 |
 | Dove | Dove | 450 |

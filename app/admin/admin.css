@@ -48,6 +48,22 @@
 .admin-content .commerce-panel p { margin: 10px 0; }
 .admin-content .commerce-form { margin-top: 14px; }
 .admin-badge { display: inline-block; background: #e5efe2; border-radius: 30px; margin-left: 10px; padding: 3px 9px; font-size: 12px; text-transform: capitalize; }
+.admin-record-summary { display: flex; align-items: center; gap: 10px; list-style: none; }
+.admin-record-summary::-webkit-details-marker { display: none; }
+.admin-record-summary > :first-child { flex: 1; min-width: 0; }
+.admin-record-summary small { display: block; color: var(--admin-muted); font-weight: 400; }
+.admin-record-summary .admin-badge { margin-left: 0; white-space: nowrap; }
+.admin-record-summary::after { content: '+'; font-size: 16px; width: 16px; flex: none; text-align: center; }
+.commerce-panel[open] > .admin-record-summary::after { content: '−'; }
+.admin-badge:is([data-status=awaiting_payment],[data-status=low_stock],[data-status=refund_pending]) { background: #f8ecd3; color: #694b16; }
+.admin-badge:is([data-status=payment_expired],[data-status=out_of_stock],[data-status=refunded]) { background: #f6e6e1; color: #75372b; }
+.admin-badge:is([data-status=inactive],[data-status=archived],[data-status=enquiry]) { background: #edf0ec; color: var(--admin-muted); }
+.admin-content .commerce-panel h3 { font-size: 17px; margin: 16px 0 6px; }
+@media (max-width: 520px) {
+  .admin-record-summary { flex-wrap: wrap; gap: 5px 8px; }
+  .admin-record-summary > :first-child { flex-basis: 100%; }
+  .admin-record-summary::after { margin-left: auto; }
+}
 .admin-notice { background: #e5efe2; border-radius: 8px; padding: 10px 14px; }
 .admin-notice[role=alert], .admin-login [role=alert] { background: #f8e7de; padding: 10px; }
 .admin-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 10px; margin-bottom: 16px; }

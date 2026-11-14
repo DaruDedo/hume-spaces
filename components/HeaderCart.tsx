@@ -62,12 +62,10 @@ export default function HeaderCart() {
     onClose={() => { setOpen(false); setClosing(false); }}>
     <div className="cart-drawer-inner">
       <div className="cart-drawer-heading">
-        <h2 id="cart-drawer-title">Your cart</h2>
+        <h2 id="cart-drawer-title">Your cart <span className="cart-heading-count">{count}</span></h2>
         <button type="button" className="cart-drawer-close" aria-label="Close cart" onClick={() => setClosing(true)}>×</button>
       </div>
-      <div className="cart-drawer-body">
-        <CartContents refreshKey={openCount} onNavigate={() => setClosing(true)} />
-      </div>
+      <CartContents drawer refreshKey={openCount} onNavigate={() => setClosing(true)} />
     </div>
   </dialog>
   </>;

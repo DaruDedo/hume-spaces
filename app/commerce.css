@@ -170,6 +170,136 @@ html:has(.cart-drawer[open]) {
   flex-basis: 100%;
 }
 
+.cart-heading-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 28px;
+  min-height: 28px;
+  margin-left: 5px;
+  padding-inline: 7px;
+  border-radius: 99px;
+  background: #e4ebdf;
+  font-size: .78rem;
+  vertical-align: middle;
+}
+
+.cart-drawer .cart-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.cart-content .cart-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 12px;
+}
+
+.cart-line .commerce-cart-product {
+  grid-column: 1 / -1;
+}
+
+.cart-line .commerce-cart-product p {
+  margin: 2px 0;
+}
+
+.cart-stock {
+  display: inline-block;
+  border-radius: 99px;
+  background: #f3e6dc;
+  color: #713e2c;
+  padding: 1px 8px;
+  font-size: .75rem;
+}
+
+.cart-stock[data-available='true'] {
+  background: #e5eddf;
+  color: var(--green);
+}
+
+.cart-content .cart-quantity {
+  display: grid;
+  grid-template-columns: auto minmax(0, 70px);
+  align-items: start;
+  width: fit-content;
+  gap: 6px;
+}
+
+.cart-quantity > span { align-self: center; }
+
+.cart-remove {
+  grid-column: 3;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.cart-totals summary {
+  min-height: 44px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.cart-totals summary::-webkit-details-marker { display: none; }
+.cart-totals-chevron {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 0 3px 6px;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+.cart-totals[open] .cart-totals-chevron { transform: rotate(225deg); }
+.cart-breakdown {
+  max-height: min(11rem, 30dvh);
+  overflow-y: auto;
+  padding: 6px 0 8px;
+  border-top: 1px solid var(--line);
+  font-size: .84rem;
+}
+
+.cart-breakdown p { margin: 8px 0 0; }
+
+.cart-checkout {
+  display: grid;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  background: #fffdf8;
+}
+
+.cart-drawer .cart-checkout {
+  flex-shrink: 0;
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  box-shadow: 0 -6px 20px #223b2810;
+}
+
+.cart-checkout .commerce-total strong {
+  font-size: 1.25rem;
+}
+
+.cart-checkout .button {
+  width: 100%;
+  min-height: 48px;
+  font-size: .95rem;
+}
+
+.cart-checkout-message:empty { display: none; }
+
+@media (max-width: 560px) {
+  .cart-drawer-heading { padding: 12px 16px; }
+  .cart-drawer-body { padding: 4px 12px 12px; }
+  .cart-content .cart-line { padding: 12px; gap: 8px; }
+}
+
 @keyframes cart-slide-in {
   from { transform: translateX(100%); }
   to { transform: translateX(0); }
@@ -228,37 +358,10 @@ html:has(.cart-drawer[open]) {
 @media (max-width: 750px) {
   .product-grid.catalog.store-catalogue-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px 10px;
   }
 
   .store-catalogue-grid .product-card {
     min-width: 0;
-    padding: 8px;
-    grid-row: span 5;
-  }
-
-  .store-catalogue-grid .product-card:not(:has(.product-price)) {
-    grid-row: span 4;
-  }
-
-  .store-catalogue-grid .product-card .product-image {
-    height: auto;
-    aspect-ratio: 1;
-  }
-
-  .store-catalogue-grid .product-card h3 {
-    font-size: clamp(16px, 4.6vw, 22px);
-    overflow-wrap: anywhere;
-  }
-
-  .store-catalogue-grid .store-card-description {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    margin: 0;
-    font-size: 12px;
-    line-height: 1.4;
   }
 
   .product-grid .product-card .simple-card-actions {
@@ -293,5 +396,22 @@ html:has(.cart-drawer[open]) {
   .product-card .simple-card-actions [role="status"] {
     font-size: 12px;
     line-height: 1.35;
+  }
+}
+.checkout-coupon{margin:1rem 0;padding-top:.75rem;border-top:1px solid var(--line)}
+.checkout-coupon-form{display:flex;align-items:end;gap:.5rem;margin:.5rem 0}
+.checkout-coupon-form label{flex:1;min-width:0;margin:0}
+.checkout-coupon-form .button{min-height:44px;padding-inline:1rem}
+@media (max-width: 750px) {
+  .catalog .product-card .product-price.fragrance-starting-price {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: -.02em;
+    text-align: start;
+  }
+
+  .fragrance-starting-price small {
+    font-size: .75em;
+    white-space: nowrap;
   }
 }

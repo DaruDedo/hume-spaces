@@ -1,6 +1,6 @@
 import {fragranceSlug} from '@/lib/fragrances';
 import {guidePath} from '@/lib/guide-path';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import {PageIntro} from '@/components/Shell';
 import {products,industries,guides,scents} from '@/lib/content';
 export const metadata={title:'Search HUME Spaces',robots:{index:false,follow:true}};

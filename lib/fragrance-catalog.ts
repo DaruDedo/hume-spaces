@@ -29,7 +29,7 @@ export const fragranceCatalog = [
   },
   {
     "id": "BR 540",
-    "name": "BR 540",
+    "name": "Amber Valley",
     "price": 600,
     "volumeMl": 100,
     "concentration": "100% pure fragrance oil",

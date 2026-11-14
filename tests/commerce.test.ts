@@ -5,7 +5,9 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { after, test } from 'node:test';
 import { createHmac } from 'node:crypto';
-import { confirmPayment, createCheckout, db, getCheckout, getOrder, getStock, reserve } from '../lib/commerce/store';
+import { confirmPayment, createCheckout, db, getCheckout, getOrder, getStock, quote, release, reserve } from '../lib/commerce/store';
+import { checkoutPromotion } from '../lib/commerce/promotions';
+import { oilPackPrice, oilWeights } from '../lib/commerce/oil-sizes';
 import { openPayment, reconcile, refund, signed } from '../lib/commerce/payments';
 
 const directory = mkdtempSync(join(tmpdir(), 'hume-commerce-'));
@@ -74,4 +76,42 @@ test('payment signatures reject modified payloads and incorrect secrets', () => 
   assert.ok(signed(raw, signature, 'test-secret'));
   assert.ok(!signed(Buffer.from('{}'), signature, 'test-secret'));
   assert.ok(!signed(raw, signature, 'wrong'));
+});
+
+test('oil prices use the 1 kg base and graduated pack markups', async () => {
+  assert.deepEqual(oilWeights.map(grams => oilPackPrice(400000, grams)), [24000, 46000, 110000, 210000, 400000]);
+  const dove = (await getStock('oil-dove-1000g'))!;
+  assert.equal(dove.price, 450000);
+  assert.equal((await getStock('oil-dove-50g'))!.price, 27000);
+});
+
+test('promotion limits are reserved atomically and released with abandoned payment', async () => {
+  const cart = [{ sku, quantity: 1 }];
+  const first = await createCheckout(cart, 'buy');
+  const second = await createCheckout(cart, 'buy');
+  const rule = 'test-promotion';
+  await db().prepare(`INSERT INTO promotions (id,code,title,description,kind,value,scope,skus,minimum,quantity,cap,
+    usage_limit,customer_limit,enabled,published) VALUES (?,?,'Test coupon','','percent',1000,'sku',?,0,1,0,1,1,1,0)`)
+    .run(rule, 'SAVE10', JSON.stringify([sku]));
+  for (const id of [first, second]) await db().prepare('INSERT INTO checkout_promotions (checkout_id,code) VALUES (?,?)').run(id, 'SAVE10');
+  const preview = await quote(cart, 'SAVE10');
+  const fullPrice = (await getStock(sku))!.price;
+  assert.equal(preview.total, fullPrice - Math.round(fullPrice * .1) + 7500);
+  assert.equal(preview.tax, Math.round((preview.total - 7500) * 1800 / 11800));
+  const attempts = await Promise.allSettled([first, second].map(id => reserve(id, delivery, preview.total)));
+  const reserved = attempts.find(attempt => attempt.status === 'fulfilled');
+  assert.ok(reserved && reserved.status === 'fulfilled');
+  assert.equal(attempts.filter(attempt => attempt.status === 'fulfilled').length, 1);
+  const pending = reserved.value;
+  assert.equal((await checkoutPromotion(pending.id))?.code, 'SAVE10');
+  assert.ok((await checkoutPromotion(pending.id))?.snapshot);
+  await release(pending.id, pending.attempt!);
+  assert.equal((await checkoutPromotion(pending.id))?.snapshot, null);
+  const other = pending.id === first ? second : first;
+  const payable = await reserve(other, delivery, preview.total);
+  await openPayment(payable);
+  const provider = (await getCheckout(other))!.provider!;
+  const order = await confirmPayment(provider, 'mock_promotion', preview.total, 'INR');
+  assert.equal(order.total, preview.total);
+  assert.equal((await quote(cart, 'SAVE10')).couponAccepted, false);
 });

@@ -12,7 +12,7 @@ export default async function CommercePurchase({ sku, children }: { sku: string;
   if (!product?.online) return children;
   return <div className="commerce-purchase">
     <div className="product-price-row">
-      <p className="product-price">₹{(product.price / 100).toLocaleString('en-IN', { maximumFractionDigits: 2 })}</p>
+      <p className="product-price">{rupees(product.price)}</p>
       <span>{product.stock > 0 ? 'In stock' : 'Out of stock'}</span>
     </div>
     {product.wholesale_min > 0 && <p>{rupees(product.wholesale_price)} each when you buy {product.wholesale_min} or more.</p>}

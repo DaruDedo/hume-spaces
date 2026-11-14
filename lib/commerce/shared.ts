@@ -11,15 +11,17 @@ export type StockItem = {
   wholesale_min: number; wholesale_price: number;
 };
 export const unitPrice = (item: StockItem, quantity: number) =>
-  item.wholesale_min > 0 && quantity >= item.wholesale_min ? item.wholesale_price : item.price;
-export type Line = Cart[number] & { name: string; price: number; tax: number };
+  item.wholesale_min > 0 && quantity >= item.wholesale_min && item.wholesale_price > 0
+    ? Math.min(item.wholesale_price, item.price) : item.price;
+export type Line = Cart[number] & { name: string; price: number; tax: number; discount?: number };
+export const lineTotal = (line: Pick<Line, 'price' | 'quantity' | 'discount'>) => line.price * line.quantity - (line.discount ?? 0);
 export const defaultGstRate = 1800;
 
-export function itemTotals(lines: Pick<Line, 'price' | 'quantity' | 'tax'>[]) {
+export function itemTotals(lines: Pick<Line, 'price' | 'quantity' | 'tax' | 'discount'>[]) {
   let subtotal = 0;
   let tax = 0;
   for (const line of lines) {
-    const gross = line.price * line.quantity;
+    const gross = lineTotal(line);
     subtotal += gross;
     tax += Math.round(gross * line.tax / (10000 + line.tax));
   }
@@ -41,7 +43,12 @@ export const deliverySchema = z.object({
   gstBilling: gstBillingSchema.optional(),
 });
 export type Delivery = z.infer<typeof deliverySchema>;
-export const rupees = (paise: number) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(paise / 100);
+export const rupees = (paise: number) => new Intl.NumberFormat('en-IN', {
+  style: 'currency',
+  currency: 'INR',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+}).format(paise / 100);
 
 export const orderStates = ['paid', 'packed', 'shipped', 'refund_pending', 'refunded'] as const;
 export type OrderState = typeof orderStates[number];

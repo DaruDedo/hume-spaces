@@ -1,13 +1,14 @@
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import { db, getStockBatch, shippingFee } from '@/lib/commerce/store';
 import { deliveryJsonField } from '@/lib/commerce/database';
 import { commerceEmailConfigured } from '@/lib/commerce/notifications';
 import { deliveryMessage } from '@/lib/commerce/preferences';
-import { rupees, unitPrice, type Cart } from '@/lib/commerce/shared';
+import { itemTotals, rupees, unitPrice, type Cart, type Delivery, type Line } from '@/lib/commerce/shared';
+import { paymentReady } from '@/lib/commerce/payments';
 import { maintain, updateShipping } from './actions';
 import CopyCheckoutLink from './CopyCheckoutLink';
 import { periodCutoff } from './periods';
-import { date, day, Filters, label, pageNumber, Pager, ProductLines, type Query } from './views';
+import { date, day, Filters, label, pageNumber, Pager, ProductLines, RecordSummary, type Query } from './views';
 
 const inactiveWindow = 24 * 60 * 60 * 1000;
 type Count = { name: string; count: number };
@@ -148,23 +149,29 @@ async function AnalyticsDetails({ start, previousStart, traffic }: { start: numb
   </>;
 }
 
-type QueueRow = { id: string; cart: string; updated: number; status: string; source: string; order_id: string | null };
+type QueueRow = {
+  id: string; cart: string; updated: number; status: string; source: string; order_id: string | null;
+  delivery: string | null; lines: string | null; shipping: number | null; total: number | null; expires: number | null;
+};
 
 export async function Queue({ query, carts, period }: { query: Query; carts: boolean; period: string }) {
-  const statuses = carts ? ['active', 'inactive'] : ['started', 'inactive', 'awaiting_payment', 'completed'];
+  const statuses = carts ? ['active', 'inactive'] : ['started', 'awaiting_payment', 'payment_expired', 'inactive', 'completed'];
   const status = statuses.includes(query.status ?? '') ? query.status! : '';
   const search = '%' + (query.q ?? '').toLowerCase().slice(0, 120) + '%';
   const page = pageNumber(query);
   const now = Date.now();
   const cutoff = now - inactiveWindow;
   const select = carts
-    ? "SELECT id, cart, updated, CASE WHEN updated>=? THEN 'active' ELSE 'inactive' END AS status, '' AS source, NULL AS order_id, '' AS delivery FROM cart_leads"
+    ? `SELECT id, cart, updated, CASE WHEN updated>=? THEN 'active' ELSE 'inactive' END AS status,
+      '' AS source, NULL AS order_id, NULL AS delivery, NULL AS lines, NULL AS shipping, NULL AS total, NULL AS expires FROM cart_leads`
     : `SELECT id,cart,created AS updated,CASE WHEN order_id IS NOT NULL THEN 'completed'
       WHEN attempt IS NOT NULL AND expires>? THEN 'awaiting_payment'
-      WHEN created>=? AND attempt IS NULL THEN 'started' ELSE 'inactive' END AS status,source,order_id,delivery FROM checkout`;
+      WHEN attempt IS NOT NULL AND expires<=? THEN 'payment_expired'
+      WHEN created>=? THEN 'started' ELSE 'inactive' END AS status,source,order_id,delivery,lines,shipping,total,expires FROM checkout`;
+  const nowSeconds = Math.floor(now / 1000);
   const rows = await db().prepare(`SELECT * FROM (${select}) AS queue WHERE updated>=? AND (?='' OR status=?)
     AND (LOWER(id) LIKE ? OR LOWER(cart) LIKE ? OR LOWER(delivery) LIKE ?) ORDER BY updated DESC LIMIT 51 OFFSET ?`)
-    .all<QueueRow>(...(carts ? [cutoff] : [now, cutoff]), periodCutoff(period, now), status, status, search, search, search, (page - 1) * 50);
+    .all<QueueRow>(...(carts ? [cutoff] : [nowSeconds, nowSeconds, cutoff]), periodCutoff(period, now), status, status, search, search, search, (page - 1) * 50);
   const decoded = rows.slice(0, 50).map(row => ({ ...row, items: JSON.parse(row.cart) as Cart }));
   const skus = [...new Set(decoded.flatMap(row => row.items.map(item => item.sku)))];
   const stock = await getStockBatch(skus);
@@ -172,20 +179,29 @@ export async function Queue({ query, carts, period }: { query: Query; carts: boo
     <Filters query={query} statuses={statuses} placeholder={carts ? 'Cart ID or product SKU' : 'Checkout ID, product SKU or email'} />
     {!rows.length && <p className="admin-card">No matching {carts ? 'carts' : 'checkouts'}.</p>}
     {decoded.map(row => {
-      const lines = row.items.map(item => {
+      const savedLines = row.lines ? JSON.parse(row.lines) as Line[] : null;
+      const delivery = row.delivery ? JSON.parse(row.delivery) as Delivery : null;
+      const lines = savedLines ?? row.items.map(item => {
         const product = stock.get(item.sku);
         return { ...item, name: product?.name, price: product ? unitPrice(product, item.quantity) : undefined };
       });
       const value = lines.every(line => line.price !== undefined)
-        ? rupees(lines.reduce((total, line) => total + line.price! * line.quantity, 0))
+        ? rupees(savedLines ? itemTotals(savedLines).subtotal : lines.reduce((total, line) => total + line.price! * line.quantity, 0))
         : 'Price unavailable';
+      const quantity = lines.reduce((sum, line) => sum + line.quantity, 0);
+      const firstItem = lines[0]?.name ?? lines[0]?.sku ?? (carts ? 'Cart' : 'Checkout');
       return <details className="commerce-panel" key={row.id}>
-        <summary><span>{date(row.updated)} · {lines.reduce((sum, line) => sum + line.quantity, 0)} units</span>
-          <span className="admin-badge">{label(row.status)}</span></summary>
+        <RecordSummary title={delivery?.name ?? firstItem} detail={`${date(row.updated)} · ${quantity} units`}
+          status={row.status} value={row.total === null ? value : rupees(row.total)} />
         <ProductLines lines={lines} />
-        <p>Estimated item value at current prices · {value}</p>
+        <p>{savedLines ? 'Items at checkout' : 'Estimated item value at current prices'} · {value}</p>
+        {savedLines && <p>GST included · {rupees(itemTotals(savedLines).tax)} · Shipping · {rupees(row.shipping ?? 0)}</p>}
         {carts ? <p>Cart ID · {row.id}</p> : <>
+          <p>Checkout ID · {row.id}</p>
           <p>Source · {row.source === 'buy' ? 'Buy Now' : label(row.source)}</p>
+          {delivery ? <p>{delivery.email} · {delivery.phone}<br />{delivery.address}, {delivery.city}, {delivery.state} {delivery.pin}</p>
+            : <p>Delivery details pending.</p>}
+          {row.expires && !row.order_id && <p>Payment window ends · {date(row.expires * 1000)}</p>}
           <Link href={'/checkout/' + row.id}>Open customer checkout</Link>
           <CopyCheckoutLink path={'/checkout/' + row.id} />
           {row.order_id && <p><Link href={'/admin/orders?q=' + row.order_id}>Find the order</Link></p>}
@@ -236,6 +252,11 @@ export async function Settings() {
         <p>Enter 0 for free shipping. Fee changes apply to new payment attempts.</p>
         <button className="button">Save shipping settings</button>
       </form>
+    </section>
+    <section className="admin-card">
+      <h2>Checkout readiness</h2>
+      <p>Online payments · {paymentReady() ? 'Configured' : 'Setup pending'}</p>
+      <p>Shipping fee · {Number.isFinite(fee) ? rupees(fee) : 'Setup pending'}</p>
     </section>
     <section className="admin-card">
       <h2>Email delivery</h2>

@@ -11,9 +11,83 @@ import { reconcileExpired, refund } from '@/lib/commerce/payments';
 import { sendPendingNotifications } from '@/lib/commerce/notifications';
 import { createOilSizes } from '@/lib/commerce/catalogue';
 import { recordStaffActivity } from '@/lib/commerce/staff-activity';
+import { couponPattern } from '@/lib/commerce/promotions';
+import { randomUUID } from 'node:crypto';
+import { revalidatePath } from 'next/cache';
+import { oilPackPrice, oilWeights } from '@/lib/commerce/oil-sizes';
 
 async function requireAdmin() {
   if (!await isAdmin()) redirect('/admin');
+}
+
+const promotionForm = z.object({
+  id: z.union([z.literal(''), z.string().uuid()]),
+  code: z.string().trim().toUpperCase().refine(code => !code || couponPattern.test(code)),
+  title: z.string().trim().min(2).max(80),
+  description: z.string().trim().max(240),
+  kind: z.enum(['percent', 'fixed', 'shipping']),
+  value: z.coerce.number().min(0).max(1000000),
+  scope: z.enum(['all', 'equipment', 'oil', 'sku']),
+  skus: z.string().max(10000).transform(raw => [...new Set(raw.toLowerCase().split(/[\s,]+/).filter(Boolean))])
+    .pipe(z.array(z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(150)).max(60)),
+  minimum: z.coerce.number().min(0).max(10000000),
+  quantity: z.coerce.number().int().min(0).max(4950),
+  cap: z.coerce.number().min(0).max(1000000),
+  starts: z.string().refine(value => !value || /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(value) && Number.isFinite(Date.parse(value + '+05:30'))),
+  ends: z.string().refine(value => !value || /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(value) && Number.isFinite(Date.parse(value + '+05:30'))),
+  usageLimit: z.coerce.number().int().min(0).max(1000000),
+  customerLimit: z.coerce.number().int().min(0).max(1000000),
+  enabled: z.literal('on').optional(),
+  published: z.literal('on').optional(),
+}).refine(rule =>
+  (rule.kind === 'shipping' || Math.round(rule.value * 100) > 0) &&
+  (rule.kind !== 'percent' || rule.value <= 100) &&
+  (rule.scope !== 'sku' || rule.skus.length > 0) &&
+  (rule.customerLimit === 0 || Boolean(rule.code)) &&
+  (!rule.starts || !rule.ends || rule.starts < rule.ends),
+);
+
+export async function savePromotion(form: FormData) {
+  await requireAdmin();
+  const parsed = promotionForm.safeParse(Object.fromEntries(form));
+  if (!parsed.success) redirect('/admin/promotions?error=promotion');
+  const rule = parsed.data;
+  const id = rule.id || randomUUID();
+  const code = rule.code || null;
+  const saved = await transaction(async () => {
+    if (code && await db().prepare('SELECT id FROM promotions WHERE code=? AND id<>?').get(code, id)) return false;
+    if (rule.scope === 'sku') {
+      const skus = await db().prepare(`SELECT sku FROM catalogue WHERE archived=0 AND sku IN (${rule.skus.map(() => '?').join(',')})`).all(...rule.skus);
+      if (skus.length !== rule.skus.length) return false;
+    }
+    const values = [code, rule.title, rule.description, rule.kind, rule.kind === 'shipping' ? 0 : Math.round(rule.value * 100),
+      rule.scope, JSON.stringify(rule.scope === 'sku' ? rule.skus : []), Math.round(rule.minimum * 100), rule.quantity,
+      Math.round(rule.cap * 100), rule.starts ? Date.parse(rule.starts + '+05:30') : null,
+      rule.ends ? Date.parse(rule.ends + '+05:30') : null, rule.usageLimit, rule.customerLimit,
+      Number(Boolean(rule.enabled)), Number(Boolean(rule.published))] as const;
+    const result = rule.id
+      ? await db().prepare(`UPDATE promotions SET code=?,title=?,description=?,kind=?,value=?,scope=?,skus=?,minimum=?,
+        quantity=?,cap=?,starts=?,ends=?,usage_limit=?,customer_limit=?,enabled=?,published=? WHERE id=? AND archived=0`).run(...values, id)
+      : await db().prepare(`INSERT INTO promotions (code,title,description,kind,value,scope,skus,minimum,quantity,cap,
+        starts,ends,usage_limit,customer_limit,enabled,published,id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(...values, id);
+    if (!result.changes) return false;
+    await recordStaffActivity(rule.id ? 'Updated promotion' : 'Created promotion', id);
+    return true;
+  });
+  if (!saved) redirect('/admin/promotions?error=promotion');
+  revalidatePath('/offers');
+  redirect('/admin/promotions?saved=1');
+}
+
+export async function archivePromotion(id: string) {
+  await requireAdmin();
+  if (!z.string().uuid().safeParse(id).success) redirect('/admin/promotions?error=promotion');
+  await transaction(async () => {
+    const result = await db().prepare('UPDATE promotions SET archived=1,enabled=0 WHERE id=? AND archived=0').run(id);
+    if (result.changes) await recordStaffActivity('Archived promotion', id);
+  });
+  revalidatePath('/offers');
+  redirect('/admin/promotions?saved=1');
 }
 
 export async function savePeriod(form: FormData) {
@@ -74,10 +148,20 @@ export async function updateSku(form: FormData) {
   if (!input.success) redirect('/admin/catalogue?error=sku');
   const item = input.data;
   const updated = await transaction(async () => {
-    const result = await db().prepare(`UPDATE sku SET name=?,price=?,stock=stock+?,tax=?,online=?,wholesale_min=?,wholesale_price=?
-      WHERE sku=? AND stock+? >= 0`).run(item.name, Math.round(item.price * 100), item.stockChange, Math.round(item.tax * 100),
+    const pack = await db().prepare('SELECT parent_sku,grams FROM oil_sizes WHERE sku=?')
+      .get<{ parent_sku: string; grams: number }>(item.sku);
+    const price = Math.round(item.price * 100);
+    const result = await db().prepare(`UPDATE sku SET name=?,price=COALESCE(?,price),stock=stock+?,tax=?,online=?,wholesale_min=?,wholesale_price=?
+      WHERE sku=? AND stock+? >= 0`).run(item.name, pack && pack.grams !== 1000 ? null : price, item.stockChange, Math.round(item.tax * 100),
       Number(item.online), item.wholesaleMin, Math.round(item.wholesalePrice * 100), item.sku, item.stockChange);
     if (result.changes !== 1) return false;
+    if (pack?.grams === 1000) {
+      for (const grams of oilWeights) {
+        if (grams === 1000) continue;
+        await db().prepare('UPDATE sku SET price=? WHERE sku=(SELECT sku FROM oil_sizes WHERE parent_sku=? AND grams=?)')
+          .run(oilPackPrice(price, grams), pack.parent_sku, grams);
+      }
+    }
     await db().prepare('UPDATE catalogue SET description=?,image=? WHERE sku=?')
       .run(item.description, item.image, item.sku);
     await recordStaffActivity('Updated SKU', item.sku);
@@ -98,7 +182,7 @@ export async function createSku(form: FormData) {
     if (!result.changes) return false;
     await db().prepare('INSERT INTO catalogue (sku,category,description,image) VALUES (?,?,?,?)')
       .run(item.sku, item.category, item.description, item.image);
-    if (item.category === 'oil') await createOilSizes(item.sku, item.name, item.description, item.image);
+    if (item.category === 'oil') await createOilSizes(item.sku, item.name, item.description, item.image, Math.round(item.price * 100));
     await recordStaffActivity('Created SKU', item.sku);
     return true;
   });

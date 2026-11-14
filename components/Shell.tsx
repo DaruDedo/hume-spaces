@@ -1,5 +1,5 @@
 import WhatsAppButton from '@/components/WhatsAppButton';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import Navigation from './Navigation';
 import HeaderCart from './HeaderCart';
 export function Header() {

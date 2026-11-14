@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import { cookies } from 'next/headers';
 import AdminCatalogue from '@/components/AdminCatalogue';
 import { adminConfigured, isAdmin } from '@/lib/commerce/admin';
@@ -7,6 +7,7 @@ import Orders from './Orders';
 import { Dashboard, Queue, Customers, Settings, Activity } from './Panels';
 import type { Query } from './views';
 import PeriodPicker from './PeriodPicker';
+import Promotions from './Promotions';
 import { periodCookie, validPeriod } from './periods';
 
 export type { Query } from './views';
@@ -16,6 +17,7 @@ export const panels = {
   checkouts: 'Checkouts',
   orders: 'Orders',
   catalogue: 'Catalogue & inventory',
+  promotions: 'Promotions',
   customers: 'Customers',
   analytics: 'Analytics',
   settings: 'Settings',
@@ -32,6 +34,7 @@ const errors: Record<string, string> = {
   order: 'This action is unavailable for the current order state. Shipping requires a tracking reference.',
   refund: 'The refund still needs verification. Use Retry refund to check again.',
   payment: 'Some payment reservations could not be checked. Try again.',
+  promotion: 'Check the offer values, schedule, SKUs and coupon code. Each code must be unique.',
 };
 
 function Nav({ panel }: { panel: Panel }) {
@@ -82,6 +85,7 @@ export default async function Workspace({ panel, query }: { panel: Panel; query:
         {(panel === 'carts' || panel === 'checkouts') && <Queue query={query} carts={panel === 'carts'} period={period} />}
         {panel === 'orders' && <Orders query={query} period={period} />}
         {panel === 'catalogue' && <AdminCatalogue query={query} />}
+        {panel === 'promotions' && <Promotions />}
         {panel === 'customers' && <Customers query={query} />}
         {panel === 'settings' && <Settings />}
         {panel === 'activity' && <Activity />}

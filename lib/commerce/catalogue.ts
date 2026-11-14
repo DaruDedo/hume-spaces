@@ -1,7 +1,7 @@
 import { commerceCatalog } from './catalog';
 import { commerceStorageConfigured, db } from './database';
 import { defaultGstRate, type StockItem } from './shared';
-import { oilWeightLabel, oilWeights } from './oil-sizes';
+import { oilPackPrice, oilWeightLabel, oilWeights } from './oil-sizes';
 
 export type CatalogueItem = StockItem & {
   category: 'equipment' | 'oil';
@@ -37,12 +37,12 @@ export async function oilSizes(parentSku?: string) {
   return packs.map(pack => ({ ...pack }));
 }
 
-// New sizes start as enquiry items until staff enter their selling prices.
-export async function createOilSizes(parentSku: string, name: string, description: string, image: string) {
+// New sizes remain enquiry items until staff enter stock and enable purchase.
+export async function createOilSizes(parentSku: string, name: string, description: string, image: string, kiloPaise: number) {
   for (const grams of oilWeights) {
     const sku = parentSku + '-' + grams + 'g';
-    const result = await db().prepare('INSERT INTO sku (sku,name,price,stock,online,tax) VALUES (?,?,1,0,0,?) ON CONFLICT(sku) DO NOTHING')
-      .run(sku, name + ' · ' + oilWeightLabel(grams), defaultGstRate);
+    const result = await db().prepare('INSERT INTO sku (sku,name,price,stock,online,tax) VALUES (?,?,?,0,0,?) ON CONFLICT(sku) DO NOTHING')
+      .run(sku, name + ' · ' + oilWeightLabel(grams), oilPackPrice(kiloPaise, grams), defaultGstRate);
     if (!result.changes) throw new Error('A pack SKU already exists.');
     await db().prepare("INSERT INTO catalogue (sku,category,description,image) VALUES (?,'oil',?,?)").run(sku, description, image);
     await db().prepare('INSERT INTO oil_sizes (sku,parent_sku,grams) VALUES (?,?,?)').run(sku, parentSku, grams);

@@ -1,7 +1,8 @@
 import RowSelect from '@/components/RowSelect';
 import { notFound } from 'next/navigation';
 import { db, getOrder, validId } from '@/lib/commerce/store';
-import { itemTotals, rupees, type Delivery, type Line } from '@/lib/commerce/shared';
+import { itemTotals, lineTotal, rupees, type Delivery, type Line } from '@/lib/commerce/shared';
+import { checkoutPromotion, type AppliedPromotion } from '@/lib/commerce/promotions';
 import { commerceEmailConfigured } from '@/lib/commerce/notifications';
 import CommerceButtons from '@/components/CommerceButtons';
 import CommercePrivateLink from '@/components/CommercePrivateLink';
@@ -20,6 +21,8 @@ export default async function OrderPage({ params }: { params: Promise<{ id: stri
   if (!order) notFound();
   const lines = JSON.parse(order.lines) as Line[];
   const { beforeTax, tax } = itemTotals(lines);
+  const snapshot = (await checkoutPromotion(order.checkout_id))?.snapshot;
+  const offer: AppliedPromotion | null = snapshot ? JSON.parse(snapshot) : null;
   const billing = (JSON.parse(order.delivery) as Delivery).gstBilling;
   const invoiceReady = billing && await db().prepare('SELECT 1 FROM order_invoices WHERE order_id=?').get(id);
   const remindersEnabled = commerceEmailConfigured()
@@ -33,10 +36,11 @@ export default async function OrderPage({ params }: { params: Promise<{ id: stri
     <CommercePrivateLink label="Copy order link" />
     <CompletedCart checkoutId={order.checkout_id} />
     <div className="commerce-panel">
-      {lines.map(line => <div className="commerce-total" key={line.sku}><span>{line.quantity} × {line.name}</span><strong>{rupees(line.price * line.quantity)}</strong></div>)}
+      {lines.map(line => <div className="commerce-total" key={line.sku}><span>{line.quantity} × {line.name}</span><strong>{rupees(lineTotal(line))}</strong></div>)}
       <div className="commerce-total"><span>Items subtotal before GST</span><span>{rupees(beforeTax)}</span></div>
       <div className="commerce-total"><span>GST included in item prices</span><span>{rupees(tax)}</span></div>
       <div className="commerce-total"><span>Shipping</span><span>{rupees(order.shipping)}</span></div>
+      {offer && <div className="commerce-total"><span>Savings included · {offer.title}</span><strong>{rupees(offer.discount + offer.shippingDiscount)}</strong></div>}
       <div className="commerce-total"><strong>Order total</strong><strong>{rupees(order.total)}</strong></div>
       {order.tracking && <p>Tracking reference <strong>{order.tracking}</strong></p>}
     </div>

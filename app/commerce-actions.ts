@@ -4,7 +4,9 @@ import { commerceStorageConfigured } from '@/lib/commerce/database';
 import { after } from 'next/server';
 import { catalogueHref, catalogueItem } from '@/lib/commerce/catalogue';
 import { cartSchema, deliverySchema } from '@/lib/commerce/shared';
-import { createCheckout, db, getCheckout, getStock, reserve, validId } from '@/lib/commerce/store';
+import { createCheckout, db, getCheckout, getStock, quote, reserve, transaction, validId } from '@/lib/commerce/store';
+import { couponPattern } from '@/lib/commerce/promotions';
+import { revalidatePath } from 'next/cache';
 import { isAdmin } from '@/lib/commerce/admin';
 import { openPayment, paymentReady, reconcile, reconcileExpired } from '@/lib/commerce/payments';
 import { sendPendingNotifications } from '@/lib/commerce/notifications';
@@ -20,9 +22,9 @@ export async function recordPropertyType(input: unknown) {
 
 export async function cardAvailability() {
   if (!commerceStorageConfigured()) return {};
-  const rows = await db().prepare('SELECT sku.sku, online, stock, archived FROM sku JOIN catalogue USING(sku)')
-    .all<{ sku: string; online: number; stock: number; archived: number }>();
-  return Object.fromEntries(rows.map(row => [row.sku, { online: row.online === 1 && !row.archived, available: row.stock > 0, archived: row.archived === 1 }]));
+  const rows = await db().prepare('SELECT sku.sku, price, online, stock, archived FROM sku JOIN catalogue USING(sku)')
+    .all<{ sku: string; price: number; online: number; stock: number; archived: number }>();
+  return Object.fromEntries(rows.map(row => [row.sku, { price: row.price, online: row.online === 1 && !row.archived, available: row.stock > 0, archived: row.archived === 1 }]));
 }
 
 export async function cartDetails(input: unknown) {
@@ -44,6 +46,28 @@ export async function startCheckout(input: unknown, source: 'cart' | 'buy' | 'pl
     return { url: '/checkout/' + await createCheckout(parsed.data, source, attribution) };
   } catch {
     return { error: 'Some items are unavailable in the requested quantity. Review your cart and try again.' };
+  }
+}
+
+export async function changeCheckoutCoupon(id: string, input: string | null) {
+  if (!validId(id) || (input !== null && (typeof input !== 'string' || input.length > 32))) return 'Enter a valid coupon code.';
+  const code = input?.trim().toUpperCase() ?? null;
+  if (code !== null && !couponPattern.test(code)) return 'Enter a valid coupon code.';
+  try {
+    const error = await transaction(async () => {
+      const checkout = await getCheckout(id);
+      if (!checkout || checkout.attempt || checkout.order_id) return 'This checkout can no longer be changed.';
+      if (code) {
+        const priced = await quote(JSON.parse(checkout.cart), code);
+        if (!priced.couponAccepted) return 'This code is unavailable or your items do not meet its conditions.';
+      }
+      await db().prepare(`INSERT INTO checkout_promotions (checkout_id,code) VALUES (?,?)
+        ON CONFLICT(checkout_id) DO UPDATE SET code=excluded.code`).run(id, code);
+    });
+    if (error) return error;
+    revalidatePath('/checkout/' + id);
+  } catch {
+    return 'Could not update the coupon. Try again.';
   }
 }
 

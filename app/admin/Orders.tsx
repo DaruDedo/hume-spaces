@@ -1,17 +1,19 @@
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import { db, type Order } from '@/lib/commerce/store';
-import { orderStates, rupees, type Delivery } from '@/lib/commerce/shared';
+import { itemTotals, orderStates, rupees, type Delivery, type Line } from '@/lib/commerce/shared';
 import { updateOrder, uploadInvoice } from './actions';
-import { date, Filters, pageNumber, Pager, ProductLines, type Query } from './views';
+import { date, Filters, pageNumber, Pager, ProductLines, RecordSummary, type Query } from './views';
 import { periodCutoff } from './periods';
+import type { AppliedPromotion } from '@/lib/commerce/promotions';
 
 export default async function Orders({ query, period }: { query: Query; period: string }) {
   const search = '%' + (query.q ?? '').slice(0, 120).toLowerCase() + '%';
   const status = orderStates.find(state => state === query.status) ?? '';
   const page = pageNumber(query);
-  const orders = await db().prepare(`SELECT * FROM orders WHERE created>=? AND (?='' OR state=?)
+  const orders = await db().prepare(`SELECT orders.*, cp.snapshot AS promotion FROM orders
+    LEFT JOIN checkout_promotions cp ON cp.checkout_id=orders.checkout_id WHERE created>=? AND (?='' OR state=?)
     AND (LOWER(id) LIKE ? OR LOWER(delivery) LIKE ?) ORDER BY created DESC LIMIT 51 OFFSET ?`)
-    .all<Order>(periodCutoff(period), status, status, search, search, (page - 1) * 50);
+    .all<Order & { promotion: string | null }>(periodCutoff(period), status, status, search, search, (page - 1) * 50);
   const visible = orders.slice(0, 50);
   const ids = visible.map(order => order.id);
   const placeholders = ids.map(() => '?').join(',');
@@ -26,12 +28,21 @@ export default async function Orders({ query, period }: { query: Query; period: 
     {orders.length === 0 && <p>No orders match these filters.</p>}
     {visible.map(order => {
       const delivery: Delivery = JSON.parse(order.delivery);
+      const lines: Line[] = JSON.parse(order.lines);
+      const totals = itemTotals(lines);
+      const offer: AppliedPromotion | null = order.promotion ? JSON.parse(order.promotion) : null;
       const changes = activity.filter(change => change.subject === order.id).slice(0, 15);
       return <details className="commerce-panel" key={order.id}>
-        <summary>{delivery.name} · {rupees(order.total)} · {order.state.replace('_', ' ')}</summary>
+        <RecordSummary title={delivery.name} detail={`${date(order.created)} · ${delivery.city}`}
+          status={order.state} value={rupees(order.total)} />
+        <h3>Delivery</h3>
         <p>{delivery.email} · {delivery.phone}</p>
         <p>{delivery.address}, {delivery.city}, {delivery.state} {delivery.pin}</p>
-        <p>{date(order.created)} · {rupees(order.total)}</p><ProductLines lines={JSON.parse(order.lines)} />
+        <h3>Items and payment</h3>
+        <ProductLines lines={lines} />
+        <p>Items · {rupees(totals.subtotal)} · GST included · {rupees(totals.tax)} · Shipping · {rupees(order.shipping)}</p>
+        {offer && <p>{offer.title}{offer.code ? ' · ' + offer.code : ''} · {rupees(offer.discount + offer.shippingDiscount)} saved</p>}
+        <p>Order ID · {order.id}</p>
         <p>Payment reference {order.payment_id}</p>
         {order.refund_id && <p>Refund reference {order.refund_id}</p>}
         {order.tracking && <p>Tracking {order.tracking}</p>}

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import Image from 'next/image';
 import {siteOrigin} from '@/lib/site';
 import {JsonLd,breadcrumbData} from './StructuredData';

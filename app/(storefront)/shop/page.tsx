@@ -1,5 +1,5 @@
 import StoreCatalogue from '@/components/StoreCatalogue';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import {PageIntro} from '@/components/Shell';
 
 import {metadata} from '@/lib/site';

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import Image from 'next/image';
 import {hotelProblemPages,hotelProblemClusters} from '@/lib/hotel-problems';
 import {metadata,siteOrigin} from '@/lib/site';

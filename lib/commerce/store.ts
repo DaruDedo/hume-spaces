@@ -3,6 +3,7 @@ import { db, transaction } from './database';
 import type { Cart, Delivery, Line, OrderState, StockItem } from './shared';
 import { itemTotals, unitPrice } from './shared';
 import { oilWeights } from './oil-sizes';
+import { checkoutPromotion, pricePromotion } from './promotions';
 
 export { mockPayments } from './payment-mode';
 import { mockPayments } from './payment-mode';
@@ -41,16 +42,17 @@ export async function getStockBatch(skus: string[]) {
   return new Map(rows.map(row => [row.sku, row]));
 }
 
-export async function quote(cart: Cart) {
+export async function quote(cart: Cart, code?: string | null, email?: string) {
   const lines: Line[] = [];
+  const stock = await getStockBatch(cart.map(item => item.sku));
   for (const item of cart) {
-    const product = await getStock(item.sku);
+    const product = stock.get(item.sku);
     if (!product?.online || product.stock < item.quantity) throw new Error('Some items are unavailable in the requested quantity.');
     lines.push({ ...item, name: product.name, price: unitPrice(product, item.quantity), tax: product.tax });
   }
-  const { subtotal, tax } = itemTotals(lines);
-  const shipping = await shippingFee();
-  return { lines, subtotal, tax, shipping, total: subtotal + shipping };
+  const priced = await pricePromotion(lines, await shippingFee(), code, email);
+  const { subtotal, tax } = itemTotals(priced.lines);
+  return { ...priced, subtotal, tax, total: subtotal + priced.shipping };
 }
 
 export async function shippingFee() {
@@ -75,7 +77,9 @@ export function reserve(checkoutId: string, delivery: Delivery, expectedTotal: n
     const checkout = await getCheckout(checkoutId);
     if (!checkout || checkout.order_id) throw new Error('This checkout has already been completed.');
     if (checkout.attempt) return checkout;
-    const { lines, shipping, total } = await quote(JSON.parse(checkout.cart));
+    const code = (await checkoutPromotion(checkoutId))?.code;
+    const { lines, shipping, total, offer, couponAccepted } = await quote(JSON.parse(checkout.cart), code, delivery.email);
+    if (code && !couponAccepted) throw new Error('This coupon is no longer available for this order or email. Remove it to continue.');
     if (!Number.isSafeInteger(shipping) || shipping < 0 || !Number.isSafeInteger(total)) throw new Error('Shipping is being configured.');
     if (total !== expectedTotal) throw new Error('The total changed. Reload this checkout to review the updated price.');
     for (const line of lines) {
@@ -85,6 +89,9 @@ export function reserve(checkoutId: string, delivery: Delivery, expectedTotal: n
     const expires = Math.floor(Date.now() / 1000) + 3600;
     await db().prepare('UPDATE checkout SET delivery=?, lines=?, shipping=?, total=?, attempt=?, expires=? WHERE id=?')
       .run(JSON.stringify(delivery), JSON.stringify(lines), shipping, total, randomUUID(), expires, checkoutId);
+    if (offer) await db().prepare(`INSERT INTO checkout_promotions (checkout_id,promotion_id,snapshot,email) VALUES (?,?,?,?)
+      ON CONFLICT(checkout_id) DO UPDATE SET promotion_id=excluded.promotion_id,snapshot=excluded.snapshot,email=excluded.email`)
+      .run(checkoutId, offer.id, JSON.stringify(offer), delivery.email.toLowerCase());
     return (await getCheckout(checkoutId))!;
   });
 }
@@ -101,12 +108,13 @@ export async function release(checkoutId: string, attempt: string) {
       await db().prepare('UPDATE sku SET stock=stock+? WHERE sku=?').run(line.quantity, line.sku);
     }
     await db().prepare('UPDATE checkout SET attempt=NULL, expires=NULL, provider=NULL, payment_url=NULL, lines=NULL, shipping=NULL, total=NULL WHERE id=?').run(checkoutId);
+    await db().prepare('UPDATE checkout_promotions SET promotion_id=NULL,snapshot=NULL,email=NULL WHERE checkout_id=?').run(checkoutId);
   });
 }
 
 export function confirmPayment(provider: string, paymentId: string, amount: number, currency: string) {
   return transaction(async () => {
-    const checkout = await db().prepare('SELECT * FROM checkout WHERE provider=?').get(provider) as Checkout | undefined;
+    const checkout = await db().prepare('SELECT * FROM checkout WHERE provider=?').get<Checkout>(provider);
     if (!checkout) throw new Error('Payment link is not recorded yet.');
     if (amount !== checkout.total || currency !== 'INR') throw new Error('Payment amount does not match.');
     if (checkout.order_id) {

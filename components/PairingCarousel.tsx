@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import { useEffect, useId, useRef, useState } from 'react';
 import { rupees } from '@/lib/commerce/shared';
 import ArrowUpRight from './ArrowUpRight';
@@ -96,7 +96,7 @@ export default function PairingCarousel({ products, category }: { products: Prod
               <span aria-hidden="true"><ArrowUpRight /></span>
             </div>
             <p className="store-card-description">{product.description}</p>
-            {product.price !== undefined && <strong>{rupees(product.price)}</strong>}
+            {product.price !== undefined && <strong>{equipment ? rupees(product.price) : <>From {rupees(product.price)} <small>· 50 g</small></>}</strong>}
           </Link>
         </article>;
       })}

@@ -4,7 +4,7 @@ import {buyerGuides} from '@/lib/buyer-guides';
 import {JsonLd,breadcrumbData} from '@/components/StructuredData';
 import {siteOrigin} from '@/lib/site';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import {notFound,permanentRedirect} from 'next/navigation';
 import {PageIntro} from '@/components/Shell';
 import {guides} from '@/lib/content';

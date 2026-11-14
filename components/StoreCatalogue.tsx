@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { catalogueHref, catalogueItems, oilSizes } from '@/lib/commerce/catalogue';
 import { commerceStorageConfigured } from '@/lib/commerce/database';
 import { rupees } from '@/lib/commerce/shared';
+import { products as equipment } from '@/lib/content';
+import CatalogueCard from './CatalogueCard';
 import CommerceButtons from './CommerceButtons';
 import PairingCarousel from './PairingCarousel';
 import WhatsAppButton from './WhatsAppButton';
@@ -14,8 +14,9 @@ export default async function StoreCatalogue({ category, recommendations = false
 }) {
   const [catalogue, packs] = await Promise.all([
     catalogueItems(),
-    recommendations && category === 'oil' && commerceStorageConfigured() ? oilSizes() : [],
+    category === 'oil' && commerceStorageConfigured() ? oilSizes() : [],
   ]);
+  const startingPrices = new Map(packs.filter(pack => pack.grams === 50 && !pack.archived).map(pack => [pack.parent_sku, pack.price]));
   const categoryItems = catalogue.filter(item => item.category === category);
   if (recommendations) {
     const availableOils = new Set(packs.filter(pack => !pack.archived && pack.online && pack.stock > 0)
@@ -29,24 +30,24 @@ export default async function StoreCatalogue({ category, recommendations = false
       image: item.image,
       description: item.description,
       href: catalogueHref(item.sku),
-      price: category === 'equipment' ? item.price : undefined,
+      price: category === 'equipment' ? item.price : startingPrices.get(item.sku),
     }));
     return products.length ? <PairingCarousel category={category} products={products} /> : null;
   }
-  return <div className="product-grid catalog store-catalogue-grid">
-    {categoryItems.map(item => <article className="product-card" key={item.sku}>
-      <div className="product-image"><Image src={item.image} alt={item.name} fill sizes="(max-width: 750px) 45vw, 30vw" /></div>
-      <h3><Link className="product-card-link" href={catalogueHref(item.sku)}>{item.name.replace(/ · 100 mL$/, '')}</Link></h3>
-      <p className="store-card-description">{item.description}</p>
-      {category === 'equipment' && <p className="product-price">{rupees(item.price)}</p>}
-      <div className="simple-card-actions">
-        {category === 'oil'
-          ? <Link className="button outline" href={catalogueHref(item.sku)}>Choose pack size</Link>
-          : item.online
-            ? <CommerceButtons items={[{ sku: item.sku, quantity: 1 }]} unavailable={item.stock === 0} />
-            : <WhatsAppButton topic={item.name} label="Enquire on WhatsApp" className="button outline" />}
-      </div>
-    </article>)}
+  const fragrance = category === 'oil';
+  return <div className={`product-grid catalog store-catalogue-grid${fragrance ? ' fragrance-catalog' : ''}`}>
+    {categoryItems.map(item => {
+      const startingPrice = startingPrices.get(item.sku);
+      const coverage = equipment.find(product => product.slug === item.sku)?.coverage;
+      const footer = fragrance
+        ? startingPrice !== undefined && <p className="product-price fragrance-starting-price">From {rupees(startingPrice)} <small>· 50 g</small></p>
+        : item.online
+          ? <CommerceButtons items={[{ sku: item.sku, quantity: 1 }]} unavailable={item.stock === 0} />
+          : <WhatsAppButton topic={item.name} label="Enquire on WhatsApp" className="button outline" />;
+      return <CatalogueCard key={item.sku} fragrance={fragrance} name={item.name.replace(/ · 100 mL$/, '')}
+        href={catalogueHref(item.sku)} image={item.image} detail={coverage ? `Coverage: ${coverage}*` : item.description}
+        price={!fragrance && <p className="product-price">{rupees(item.price)}</p>} footer={footer} />;
+    })}
     {categoryItems.length === 0 && <p>No products are currently listed in this category.</p>}
   </div>;
 }

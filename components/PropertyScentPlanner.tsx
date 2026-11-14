@@ -1,7 +1,7 @@
 'use client';
 import RowSelect from '@/components/RowSelect';
 
-import Link from 'next/link';
+import Link, { startPageProgress } from '@/components/PageProgress';
 import Image from 'next/image';
 import { useEffect, useState, type FormEvent } from 'react';
 import { recordPropertyType, startCheckout } from '@/app/commerce-actions';
@@ -83,6 +83,8 @@ export default function PropertyScentPlanner() {
   async function buyPlan() {
     if (!plan || !fragrance || buying) return;
     setBuying(true);
+    const stopProgress = startPageProgress('Opening checkout');
+    let navigating = false;
     setError('');
     const items = [
       ...plan.machines.map(({ sku, quantity }) => ({ sku, quantity })),
@@ -92,13 +94,16 @@ export default function PropertyScentPlanner() {
       const result = await startCheckout(items, 'planner', currentStorefrontVisit());
       if (result.url) {
         window.location.assign(result.url);
+        navigating = true;
         return;
       }
       setError(result.error ?? 'Unable to start checkout. Please try again.');
     } catch {
       setError('Unable to start checkout. Please try again.');
+    } finally {
+      if (!navigating) stopProgress();
+      setBuying(false);
     }
-    setBuying(false);
   }
 
   return (

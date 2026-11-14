@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import Link, { startPageProgress } from '@/components/PageProgress';
 import { cartDetails, startCheckout } from '@/app/commerce-actions';
 import { currentStorefrontVisit } from '@/lib/commerce/activity-session';
 import { cartSchema, type Cart } from '@/lib/commerce/shared';
@@ -47,13 +47,19 @@ export default function CommerceButtons({ items, label = 'Add to Cart', buyNow =
 
   async function buy() {
     setBusy(true);
+    const stopProgress = startPageProgress('Opening checkout');
+    let navigating = false;
     try {
       const result = await startCheckout(items, 'buy', currentStorefrontVisit());
-      if (result.url) window.location.assign(result.url);
+      if (result.url) {
+        window.location.assign(result.url);
+        navigating = true;
+      }
       else setMessage(result.error ?? 'Unable to start checkout.');
     } catch {
       setMessage('Unable to start checkout. Try again.');
     } finally {
+      if (!navigating) stopProgress();
       setBusy(false);
     }
   }

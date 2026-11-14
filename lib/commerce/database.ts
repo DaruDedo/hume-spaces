@@ -6,7 +6,7 @@ import { Pool, types, type PoolClient } from 'pg';
 import { commerceCatalog, enquiryEquipment } from './catalog';
 import { mockPayments } from './payment-mode';
 import { commerceSchema } from './schema';
-import { oilWeightLabel, oilWeights } from './oil-sizes';
+import { oilPackPercent, oilPackPrice, oilWeightLabel, oilWeights } from './oil-sizes';
 import { defaultGstRate } from './shared';
 import { supabaseCa } from './supabase-ca';
 
@@ -17,7 +17,7 @@ const seededOilSizes = commerceCatalog.filter(item => item.category === 'oil').f
     sku: item.sku + '-' + grams + 'g',
     name: item.name.split(' · ')[0] + ' · ' + oilWeightLabel(grams),
     grams,
-    price: Math.round(item.price * grams / 100),
+    price: oilPackPrice(item.price * 10, grams),
   })),
 );
 
@@ -25,6 +25,23 @@ const seedSizeSql = 'INSERT INTO oil_sizes (sku,parent_sku,grams) VALUES (?,?,?)
 const openingStock = 10;
 const catalogueUpdate = 'INSERT INTO catalogue_updates (name) VALUES (\'open-catalogue-v1\') ON CONFLICT DO NOTHING';
 const gstUpdate = "INSERT INTO catalogue_updates (name) VALUES ('catalogue-gst-18-v1') ON CONFLICT DO NOTHING";
+const packPriceUpdate = "INSERT INTO catalogue_updates (name) VALUES ('oil-pack-prices-from-kilo-v1') ON CONFLICT DO NOTHING";
+const amberValleyUpdate = "INSERT INTO catalogue_updates (name) VALUES ('rename-amber-valley-v1') ON CONFLICT DO NOTHING";
+const renameAmberValley = `
+  UPDATE sku SET name=REPLACE(name, 'BR 540', 'Amber Valley')
+  WHERE (sku='oil-br-540' OR sku IN (SELECT sku FROM oil_sizes WHERE parent_sku='oil-br-540'))
+    AND name LIKE 'BR 540%';
+`;
+const recalculateOilPackPrices = `UPDATE sku SET price=(
+  SELECT CAST(ROUND(base.price * 1.0 * CASE pack.grams
+    ${oilWeights.filter(grams => grams !== 1000).map(grams => `WHEN ${grams} THEN ${grams * oilPackPercent[grams]}`).join(' ')}
+    END / 100000.0) AS INTEGER)
+  FROM oil_sizes pack JOIN oil_sizes kilo ON kilo.parent_sku=pack.parent_sku AND kilo.grams=1000
+    JOIN sku base ON base.sku=kilo.sku WHERE pack.sku=sku.sku
+) WHERE sku IN (SELECT pack.sku FROM oil_sizes pack
+  JOIN oil_sizes kilo ON kilo.parent_sku=pack.parent_sku AND kilo.grams=1000
+  JOIN sku base ON base.sku=kilo.sku
+  WHERE pack.grams IN (50,100,250,500) AND base.price>=20)`;
 const applyGst = `UPDATE sku SET tax=${defaultGstRate}`;
 const equipmentUpdate = "INSERT INTO catalogue_updates (name) VALUES ('equipment-prices-and-enquiries-v1') ON CONFLICT DO NOTHING";
 const updateEquipment = `
@@ -102,6 +119,8 @@ function localDatabase() {
     if (connection.prepare(catalogueUpdate).run().changes) connection.exec(openCatalogueSql);
     if (connection.prepare(gstUpdate).run().changes) connection.exec(applyGst);
     if (connection.prepare(equipmentUpdate).run().changes) connection.exec(updateEquipment);
+    if (connection.prepare(packPriceUpdate).run().changes) connection.exec(recalculateOilPackPrices);
+    if (connection.prepare(amberValleyUpdate).run().changes) connection.exec(renameAmberValley);
     connection.exec('COMMIT');
   } catch (error) {
     connection.exec('ROLLBACK');
@@ -181,6 +200,8 @@ async function initializePostgres(activePool: Pool) {
     if ((await client.query(catalogueUpdate)).rowCount) await client.query(openCatalogueSql);
     if ((await client.query(gstUpdate)).rowCount) await client.query(applyGst);
     if ((await client.query(equipmentUpdate)).rowCount) await client.query(updateEquipment);
+    if ((await client.query(packPriceUpdate)).rowCount) await client.query(recalculateOilPackPrices);
+    if ((await client.query(amberValleyUpdate)).rowCount) await client.query(renameAmberValley);
     await client.query('COMMIT');
   } catch (error) {
     await client.query('ROLLBACK').catch(() => undefined);

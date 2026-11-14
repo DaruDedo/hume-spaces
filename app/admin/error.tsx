@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 
 export default function AdminError({ reset }: { reset: () => void }) {
   return <div className="admin-login">

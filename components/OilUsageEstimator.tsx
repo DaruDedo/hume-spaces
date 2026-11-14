@@ -2,7 +2,7 @@
 import RowSelect from '@/components/RowSelect';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import { useState, type FormEvent } from 'react';
 import styles from './OilUsageEstimator.module.css';
 import CommerceButtons from './CommerceButtons';

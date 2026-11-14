@@ -1,7 +1,8 @@
 import styles from './StorefrontSkeleton.module.css';
+import { LoadingPageProgress } from './PageProgress';
 
 export default function StorefrontSkeleton({ product = false }: { product?: boolean }) {
-  return <div className={`wrap ${styles.loading}`} role="status" aria-label="Loading page">
+  return <><LoadingPageProgress /><div className={`wrap ${styles.loading}`} aria-hidden="true">
     <div className={`${styles.preview} ${product ? styles.product : ''}`} aria-hidden="true">
       <div className={`${styles.block} ${styles.image}`} />
       <div className={styles.copy}>
@@ -15,5 +16,5 @@ export default function StorefrontSkeleton({ product = false }: { product?: bool
         </div>}
       </div>
     </div>
-  </div>;
+  </div></>;
 }

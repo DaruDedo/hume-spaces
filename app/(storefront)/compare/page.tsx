@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/PageProgress';
 import {PageIntro} from '@/components/Shell';
 import {ProductCard} from '@/components/Cards';
 import {products,referenceNotice} from '@/lib/content';
